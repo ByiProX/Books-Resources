@@ -33,14 +33,16 @@ def connect(user, host, password):
     return child
 
 
-def main():
-    host = 'localhost'
-    user = 'root'
-    password = 'toor'
-
+def main(user, host, password):
     child = connect(user, host, password)
     send_command(child, 'cat /etc/shadow | grep root')
 
 
 if __name__ == '__main__':
-    main()
+    host1 = '140.143.38.125'
+    user1 = 'root'
+    password1 = 'Wkx299792458tx'
+    main(user=user1, host=host1, password=password1)
+
+
+
