@@ -1,0 +1,8946 @@
+%!PS-Adobe-2.0 EPSF-2.0
+%%Creator: dvips(k) 5.95a Copyright 2005 Radical Eye Software
+%%Title: temp.dvi
+%%BoundingBox: 121 532 692 1017
+%%DocumentFonts: Helvetica Helvetica-Bold Helvetica-Oblique
+%%+ Helvetica-BoldOblique Times-Roman Times-Bold Times-Italic
+%%+ Times-BoldItalic Courier Courier-Bold Courier-Oblique
+%%+ Courier-BoldOblique Symbol
+%%EndComments
+%DVIPSWebPage: (www.radicaleye.com)
+%DVIPSCommandLine: dvips -E -Ppdf -G0 temp
+%DVIPSParameters: dpi=8000
+%DVIPSSource:  TeX output 2012.12.26:2239
+%%BeginProcSet: tex.pro 0 0
+%!
+/TeXDict 300 dict def TeXDict begin/N{def}def/B{bind def}N/S{exch}N/X{S
+N}B/A{dup}B/TR{translate}N/isls false N/vsize 11 72 mul N/hsize 8.5 72
+mul N/landplus90{false}def/@rigin{isls{[0 landplus90{1 -1}{-1 1}ifelse 0
+0 0]concat}if 72 Resolution div 72 VResolution div neg scale isls{
+landplus90{VResolution 72 div vsize mul 0 exch}{Resolution -72 div hsize
+mul 0}ifelse TR}if Resolution VResolution vsize -72 div 1 add mul TR[
+matrix currentmatrix{A A round sub abs 0.00001 lt{round}if}forall round
+exch round exch]setmatrix}N/@landscape{/isls true N}B/@manualfeed{
+statusdict/manualfeed true put}B/@copies{/#copies X}B/FMat[1 0 0 -1 0 0]
+N/FBB[0 0 0 0]N/nn 0 N/IEn 0 N/ctr 0 N/df-tail{/nn 8 dict N nn begin
+/FontType 3 N/FontMatrix fntrx N/FontBBox FBB N string/base X array
+/BitMaps X/BuildChar{CharBuilder}N/Encoding IEn N end A{/foo setfont}2
+array copy cvx N load 0 nn put/ctr 0 N[}B/sf 0 N/df{/sf 1 N/fntrx FMat N
+df-tail}B/dfs{div/sf X/fntrx[sf 0 0 sf neg 0 0]N df-tail}B/E{pop nn A
+definefont setfont}B/Cw{Cd A length 5 sub get}B/Ch{Cd A length 4 sub get
+}B/Cx{128 Cd A length 3 sub get sub}B/Cy{Cd A length 2 sub get 127 sub}
+B/Cdx{Cd A length 1 sub get}B/Ci{Cd A type/stringtype ne{ctr get/ctr ctr
+1 add N}if}B/CharBuilder{save 3 1 roll S A/base get 2 index get S
+/BitMaps get S get/Cd X pop/ctr 0 N Cdx 0 Cx Cy Ch sub Cx Cw add Cy
+setcachedevice Cw Ch true[1 0 0 -1 -.1 Cx sub Cy .1 sub]{Ci}imagemask
+restore}B/D{/cc X A type/stringtype ne{]}if nn/base get cc ctr put nn
+/BitMaps get S ctr S sf 1 ne{A A length 1 sub A 2 index S get sf div put
+}if put/ctr ctr 1 add N}B/I{cc 1 add D}B/bop{userdict/bop-hook known{
+bop-hook}if/SI save N @rigin 0 0 moveto/V matrix currentmatrix A 1 get A
+mul exch 0 get A mul add .99 lt{/QV}{/RV}ifelse load def pop pop}N/eop{
+SI restore userdict/eop-hook known{eop-hook}if showpage}N/@start{
+userdict/start-hook known{start-hook}if pop/VResolution X/Resolution X
+1000 div/DVImag X/IEn 256 array N 2 string 0 1 255{IEn S A 360 add 36 4
+index cvrs cvn put}for pop 65781.76 div/vsize X 65781.76 div/hsize X}N
+/p{show}N/RMat[1 0 0 -1 0 0]N/BDot 260 string N/Rx 0 N/Ry 0 N/V{}B/RV/v{
+/Ry X/Rx X V}B statusdict begin/product where{pop false[(Display)(NeXT)
+(LaserWriter 16/600)]{A length product length le{A length product exch 0
+exch getinterval eq{pop true exit}if}{pop}ifelse}forall}{false}ifelse
+end{{gsave TR -.1 .1 TR 1 1 scale Rx Ry false RMat{BDot}imagemask
+grestore}}{{gsave TR -.1 .1 TR Rx Ry scale 1 1 false RMat{BDot}
+imagemask grestore}}ifelse B/QV{gsave newpath transform round exch round
+exch itransform moveto Rx 0 rlineto 0 Ry neg rlineto Rx neg 0 rlineto
+fill grestore}B/a{moveto}B/delta 0 N/tail{A/delta X 0 rmoveto}B/M{S p
+delta add tail}B/b{S p tail}B/c{-4 M}B/d{-3 M}B/e{-2 M}B/f{-1 M}B/g{0 M}
+B/h{1 M}B/i{2 M}B/j{3 M}B/k{4 M}B/w{0 rmoveto}B/l{p -4 w}B/m{p -3 w}B/n{
+p -2 w}B/o{p -1 w}B/q{p 1 w}B/r{p 2 w}B/s{p 3 w}B/t{p 4 w}B/x{0 S
+rmoveto}B/y{3 2 roll p a}B/bos{/SS save N}B/eos{SS restore}B end
+
+%%EndProcSet
+%%BeginProcSet: alt-rule.pro 0 0
+%!
+% Patch by TVZ
+% Makes dvips files draw rules with stroke rather than fill.
+% Makes narrow rules more predictable at low resolutions
+% after distilling to PDF.
+% May have unknown consequences for very thick rules.
+% Tested only with dvips 5.85(k).
+TeXDict begin
+/QV {
+  gsave newpath /ruleY X /ruleX X
+  Rx Ry gt
+  { ruleX ruleY Ry 2 div sub moveto Rx 0 rlineto Ry }
+  { ruleX Rx 2 div add ruleY moveto 0 Ry neg rlineto Rx }
+  ifelse
+  setlinewidth 0 setlinecap stroke grestore
+} bind def
+end
+
+%%EndProcSet
+%%BeginProcSet: texnansi.enc 0 0
+% @psencodingfile{
+%   author = "Y&Y, Inc.",
+%   version = "1.1",
+%   date = "1 December 1996",
+%   filename = "texnansi.enc",
+%   email = "help@YandY.com",
+%   address = "45 Walden Street // Concord, MA 01742, USA",
+%   codetable = "ISO/ASCII",
+%   checksum = "xx",
+%   docstring = "Encoding for fonts in Adobe Type 1 format for use with TeX."
+% }
+%
+% The idea is to have all 228 characters normally included in Type 1 text
+% fonts (plus a few more) available for typesetting.  This is effectively
+% the character set in Adobe Standard Encoding, ISO Latin 1, plus a few more.
+%
+% Character code assignments were made as follows:
+%
+% (1) The character layout largely matches `ASCII' in the 32 -- 126 range,
+% except for `circumflex' in 94 and `tilde' in 126, to match `TeX text'
+% (`asciicircumflex' and `asciitilde' appear in 158 and 142 instead).
+%
+% (2) The character layout matches `Windows ANSI' in almost all places,
+% except for `quoteright' in 39 and `quoteleft' in 96 to match ASCII
+% (`quotesingle' and `grave' appear in 129 and 18 instead).
+%
+% (3) The character layout matches `TeX typewriter' used by CM text fonts
+% in most places (except for discordant positions such as hungarumlaut
+% (instead of braceright), dotaccent (instead of underscore) etc.
+%
+% (4) Remaining characters are assigned arbitrarily to the `control character'
+% range (0 -- 31), avoiding 0, 9, 10 and 13 in case we meet dumb software
+% - similarly one should really avoid 127 and 128 if possible.
+% In addition, the 8 open slots in Windows ANSI between 128 and 159 are used.
+%
+% (5) Y&Y Lucida Bright includes some extra ligatures and such; ff, ffi, ffl,
+% and `dotlessj,' these are included 11 -- 15, and 17.
+%
+% (6) Hyphen appears both at 45 and 173 for compatibility with both ASCII
+% and Windows ANSI.
+%
+% (7) It doesn't really matter where ligatures appear (both real, such as ffi,
+% and pseudo such as ---) since these should not be accessed directly, only
+% via ligature information in the TFM file.
+%
+% SAMPLE USAGE (in `psfonts.map' file for DVIPS):
+% 
+% lbr LucidaBright "TeXnANSIEncoding ReEncodeFont" <texnansi.enc <lbr.pfb
+%
+% This tells DVIPS that the font called `lbr' in TeX has PostScript 
+% FontName `LucidaBright.'  It also asks DVIPS to expand the file `lbr.pfb'
+% into PFA form, to include the attached `texnansi.enc' encoding vector,
+% and to then actually reencode the font based on that encoding vector.
+%
+% Revised 1996 June 1 by adding second position for `fl' to avoid Acrobat bug.
+% Revised 1996 June 1 by adding second position for `fraction' for same reason.
+% Revised 1997 Oct 1 by adding cwm  (used in boundary char TFM code)
+% Revised 1998 Mar 1 by adding Unicode for Euro character
+%
+/TeXnANSIEncoding [
+/.notdef % 0
+/Euro % /Uni20AC 1
+/.notdef % 2
+/.notdef % 3
+/fraction %	4
+/dotaccent %	5
+/hungarumlaut %	6
+/ogonek	%	7
+/fl	%	8
+/.notdef % /fraction %	9	not used (see 4), backward compatability only
+/cwm	%	10	not used, except boundary char internally maybe
+/ff    %	11
+/fi    %	12
+/.notdef % /fl    %	13	not used (see 8), backward compatability only
+/ffi   %	14
+/ffl   %	15
+/dotlessi %	16
+/dotlessj %	17
+/grave %	18
+/acute %	19
+/caron %	20
+/breve %	21
+/macron %	22
+/ring  %	23
+/cedilla %	24
+/germandbls %	25
+/ae    %	26
+/oe    %	27
+/oslash %	28
+/AE    %	29
+/OE    %	30
+/Oslash %	31
+/space %	32	% /suppress in TeX text
+/exclam %	33
+/quotedbl %	34	% /quotedblright in TeX text
+/numbersign %	35
+/dollar %	36
+/percent %	37
+/ampersand %	38
+/quoteright %	39	% /quotesingle in ANSI
+/parenleft %	40
+/parenright %	41
+/asterisk %	42
+/plus  %	43
+/comma %	44
+/hyphen %	45
+/period %	46
+/slash %	47
+/zero  %	48
+/one   %	49
+/two   %	50
+/three %	51
+/four  %	52
+/five  %	53
+/six   %	54
+/seven %	55
+/eight %	56
+/nine  %	57
+/colon %	58
+/semicolon %	59
+/less  %	60	% /exclamdown in Tex text
+/equal %	61
+/greater %	62	% /questiondown in TeX text
+/question %	63
+/at %	64
+/A %	65
+/B %	66
+/C %	67
+/D %	68
+/E %	69
+/F %	70
+/G %	71
+/H %	72
+/I %	73
+/J %	74
+/K %	75
+/L %	76
+/M %	77
+/N %	78
+/O %	79
+/P %	80
+/Q %	81
+/R %	82
+/S %	83
+/T %	84
+/U %	85
+/V %	86
+/W %	87
+/X %	88
+/Y %	89
+/Z %	90
+/bracketleft %	91
+/backslash %	92	% /quotedblleft in TeX text
+/bracketright %	93
+/circumflex %	94	% /asciicircum in ASCII
+/underscore %	95	% /dotaccent in TeX text
+/quoteleft %	96	% /grave accent in ANSI
+/a %	97
+/b %	98
+/c %	99
+/d %	100
+/e %	101
+/f %	102
+/g %	103
+/h %	104
+/i %	105
+/j %	106
+/k %	107
+/l %	108
+/m %	109
+/n %	110
+/o %	111
+/p %	112
+/q %	113
+/r %	114
+/s %	115
+/t %	116
+/u %	117
+/v %	118
+/w %	119
+/x %	120
+/y %	121
+/z %	122
+/braceleft %	123	% /endash in TeX text
+/bar   %	124	% /emdash in TeX test
+/braceright %	125	% /hungarumlaut in TeX text
+/tilde %	126	% /asciitilde in ASCII
+/dieresis %	127	not used (see 168), use higher up instead
+/Lslash	%	128	this position is unfortunate, but now too late to fix
+/quotesingle %	129
+/quotesinglbase %	130
+/florin %	131
+/quotedblbase %	132
+/ellipsis %	133
+/dagger %	134
+/daggerdbl %	135
+/circumflex %	136
+/perthousand %	137
+/Scaron %	138
+/guilsinglleft %	139
+/OE    %	140
+/Zcaron %	141
+/asciicircum %	142
+/minus %	143
+/lslash %	144
+/quoteleft %	145
+/quoteright %	146
+/quotedblleft %	147
+/quotedblright %	148
+/bullet %	149
+/endash %	150
+/emdash %	151
+/tilde %	152
+/trademark %	153
+/scaron %	154
+/guilsinglright %	155
+/oe    %	156
+/zcaron %	157
+/asciitilde %	158
+/Ydieresis %	159
+/nbspace %	160	% /space (no break space)
+/exclamdown %	161
+/cent  %	162
+/sterling %	163
+/currency %	164
+/yen   %	165
+/brokenbar %	166
+/section %	167
+/dieresis %	168
+/copyright %	169
+/ordfeminine %	170
+/guillemotleft %	171
+/logicalnot %	172
+/sfthyphen %	173 % /hyphen (hanging hyphen)
+/registered %	174
+/macron %	175
+/degree %	176
+/plusminus %	177
+/twosuperior %	178
+/threesuperior %	179
+/acute %	180
+/mu    %	181
+/paragraph %	182
+/periodcentered %	183
+/cedilla %	184
+/onesuperior %	185
+/ordmasculine %	186
+/guillemotright %	187
+/onequarter %	188
+/onehalf %	189
+/threequarters %	190
+/questiondown %	191
+/Agrave %	192
+/Aacute %	193
+/Acircumflex %	194
+/Atilde %	195
+/Adieresis %	196
+/Aring %	197
+/AE    %	198
+/Ccedilla %	199
+/Egrave %	200
+/Eacute %	201
+/Ecircumflex %	202
+/Edieresis %	203
+/Igrave %	204
+/Iacute %	205
+/Icircumflex %	206
+/Idieresis %	207
+/Eth   %	208
+/Ntilde %	209
+/Ograve %	210
+/Oacute %	211
+/Ocircumflex %	212
+/Otilde %	213
+/Odieresis %	214
+/multiply %	215	% OE in T1
+/Oslash %	216
+/Ugrave %	217
+/Uacute %	218
+/Ucircumflex %	219
+/Udieresis %	220
+/Yacute %	221
+/Thorn %	222
+/germandbls %	223
+/agrave %	224
+/aacute %	225
+/acircumflex %	226
+/atilde %	227
+/adieresis %	228
+/aring %	229
+/ae    %	230
+/ccedilla %	231
+/egrave %	232
+/eacute %	233
+/ecircumflex %	234
+/edieresis %	235
+/igrave %	236
+/iacute %	237
+/icircumflex %	238
+/idieresis %	239
+/eth   %	240
+/ntilde %	241
+/ograve %	242
+/oacute %	243
+/ocircumflex %	244
+/otilde %	245
+/odieresis %	246
+/divide %	247	% oe in T1
+/oslash %	248
+/ugrave %	249
+/uacute %	250
+/ucircumflex %	251
+/udieresis %	252
+/yacute %	253
+/thorn %	254
+/ydieresis %	255	% germandbls in T1
+] def
+
+%%EndProcSet
+%%BeginProcSet: 8r.enc 0 0
+% File 8r.enc  TeX Base 1 Encoding  Revision 2.0  2002-10-30
+%
+% @@psencodingfile@{
+%   author    = "S. Rahtz, P. MacKay, Alan Jeffrey, B. Horn, K. Berry,
+%                W. Schmidt, P. Lehman",
+%   version   = "2.0",
+%   date      = "30 October 2002",
+%   filename  = "8r.enc",
+%   email     = "tex-fonts@@tug.org",
+%   docstring = "This is the encoding vector for Type1 and TrueType
+%                fonts to be used with TeX.  This file is part of the
+%                PSNFSS bundle, version 9"
+% @}
+% 
+% The idea is to have all the characters normally included in Type 1 fonts
+% available for typesetting. This is effectively the characters in Adobe
+% Standard encoding, ISO Latin 1, Windows ANSI including the euro symbol,
+% MacRoman, and some extra characters from Lucida.
+% 
+% Character code assignments were made as follows:
+% 
+% (1) the Windows ANSI characters are almost all in their Windows ANSI
+% positions, because some Windows users cannot easily reencode the
+% fonts, and it makes no difference on other systems. The only Windows
+% ANSI characters not available are those that make no sense for
+% typesetting -- rubout (127 decimal), nobreakspace (160), softhyphen
+% (173). quotesingle and grave are moved just because it's such an
+% irritation not having them in TeX positions.
+% 
+% (2) Remaining characters are assigned arbitrarily to the lower part
+% of the range, avoiding 0, 10 and 13 in case we meet dumb software.
+% 
+% (3) Y&Y Lucida Bright includes some extra text characters; in the
+% hopes that other PostScript fonts, perhaps created for public
+% consumption, will include them, they are included starting at 0x12.
+% These are /dotlessj /ff /ffi /ffl.
+% 
+% (4) hyphen appears twice for compatibility with both ASCII and Windows.
+%
+% (5) /Euro was assigned to 128, as in Windows ANSI
+%
+% (6) Missing characters from MacRoman encoding incorporated as follows:
+%
+%     PostScript      MacRoman        TeXBase1
+%     --------------  --------------  --------------
+%     /notequal       173             0x16
+%     /infinity       176             0x17
+%     /lessequal      178             0x18
+%     /greaterequal   179             0x19
+%     /partialdiff    182             0x1A
+%     /summation      183             0x1B
+%     /product        184             0x1C
+%     /pi             185             0x1D
+%     /integral       186             0x81
+%     /Omega          189             0x8D
+%     /radical        195             0x8E
+%     /approxequal    197             0x8F
+%     /Delta          198             0x9D
+%     /lozenge        215             0x9E
+%
+/TeXBase1Encoding [
+% 0x00
+ /.notdef /dotaccent /fi /fl
+ /fraction /hungarumlaut /Lslash /lslash
+ /ogonek /ring /.notdef /breve
+ /minus /.notdef /Zcaron /zcaron
+% 0x10
+ /caron /dotlessi /dotlessj /ff
+ /ffi /ffl /notequal /infinity
+ /lessequal /greaterequal /partialdiff /summation
+ /product /pi /grave /quotesingle
+% 0x20
+ /space /exclam /quotedbl /numbersign
+ /dollar /percent /ampersand /quoteright
+ /parenleft /parenright /asterisk /plus
+ /comma /hyphen /period /slash
+% 0x30
+ /zero /one /two /three
+ /four /five /six /seven
+ /eight /nine /colon /semicolon
+ /less /equal /greater /question
+% 0x40
+ /at /A /B /C
+ /D /E /F /G
+ /H /I /J /K
+ /L /M /N /O
+% 0x50
+ /P /Q /R /S
+ /T /U /V /W
+ /X /Y /Z /bracketleft
+ /backslash /bracketright /asciicircum /underscore
+% 0x60
+ /quoteleft /a /b /c
+ /d /e /f /g
+ /h /i /j /k
+ /l /m /n /o
+% 0x70
+ /p /q /r /s
+ /t /u /v /w
+ /x /y /z /braceleft
+ /bar /braceright /asciitilde /.notdef
+% 0x80
+ /Euro /integral /quotesinglbase /florin
+ /quotedblbase /ellipsis /dagger /daggerdbl
+ /circumflex /perthousand /Scaron /guilsinglleft
+ /OE /Omega /radical /approxequal
+% 0x90
+ /.notdef /.notdef /.notdef /quotedblleft
+ /quotedblright /bullet /endash /emdash
+ /tilde /trademark /scaron /guilsinglright
+ /oe /Delta /lozenge /Ydieresis
+% 0xA0
+ /.notdef /exclamdown /cent /sterling
+ /currency /yen /brokenbar /section
+ /dieresis /copyright /ordfeminine /guillemotleft
+ /logicalnot /hyphen /registered /macron
+% 0xD0
+ /degree /plusminus /twosuperior /threesuperior
+ /acute /mu /paragraph /periodcentered
+ /cedilla /onesuperior /ordmasculine /guillemotright
+ /onequarter /onehalf /threequarters /questiondown
+% 0xC0
+ /Agrave /Aacute /Acircumflex /Atilde
+ /Adieresis /Aring /AE /Ccedilla
+ /Egrave /Eacute /Ecircumflex /Edieresis
+ /Igrave /Iacute /Icircumflex /Idieresis
+% 0xD0
+ /Eth /Ntilde /Ograve /Oacute
+ /Ocircumflex /Otilde /Odieresis /multiply
+ /Oslash /Ugrave /Uacute /Ucircumflex
+ /Udieresis /Yacute /Thorn /germandbls
+% 0xE0
+ /agrave /aacute /acircumflex /atilde
+ /adieresis /aring /ae /ccedilla
+ /egrave /eacute /ecircumflex /edieresis
+ /igrave /iacute /icircumflex /idieresis
+% 0xF0
+ /eth /ntilde /ograve /oacute
+ /ocircumflex /otilde /odieresis /divide
+ /oslash /ugrave /uacute /ucircumflex
+ /udieresis /yacute /thorn /ydieresis
+] def
+
+
+%%EndProcSet
+%%BeginProcSet: special.pro 0 0
+%!
+TeXDict begin/SDict 200 dict N SDict begin/@SpecialDefaults{/hs 612 N
+/vs 792 N/ho 0 N/vo 0 N/hsc 1 N/vsc 1 N/ang 0 N/CLIP 0 N/rwiSeen false N
+/rhiSeen false N/letter{}N/note{}N/a4{}N/legal{}N}B/@scaleunit 100 N
+/@hscale{@scaleunit div/hsc X}B/@vscale{@scaleunit div/vsc X}B/@hsize{
+/hs X/CLIP 1 N}B/@vsize{/vs X/CLIP 1 N}B/@clip{/CLIP 2 N}B/@hoffset{/ho
+X}B/@voffset{/vo X}B/@angle{/ang X}B/@rwi{10 div/rwi X/rwiSeen true N}B
+/@rhi{10 div/rhi X/rhiSeen true N}B/@llx{/llx X}B/@lly{/lly X}B/@urx{
+/urx X}B/@ury{/ury X}B/magscale true def end/@MacSetUp{userdict/md known
+{userdict/md get type/dicttype eq{userdict begin md length 10 add md
+maxlength ge{/md md dup length 20 add dict copy def}if end md begin
+/letter{}N/note{}N/legal{}N/od{txpose 1 0 mtx defaultmatrix dtransform S
+atan/pa X newpath clippath mark{transform{itransform moveto}}{transform{
+itransform lineto}}{6 -2 roll transform 6 -2 roll transform 6 -2 roll
+transform{itransform 6 2 roll itransform 6 2 roll itransform 6 2 roll
+curveto}}{{closepath}}pathforall newpath counttomark array astore/gc xdf
+pop ct 39 0 put 10 fz 0 fs 2 F/|______Courier fnt invertflag{PaintBlack}
+if}N/txpose{pxs pys scale ppr aload pop por{noflips{pop S neg S TR pop 1
+-1 scale}if xflip yflip and{pop S neg S TR 180 rotate 1 -1 scale ppr 3
+get ppr 1 get neg sub neg ppr 2 get ppr 0 get neg sub neg TR}if xflip
+yflip not and{pop S neg S TR pop 180 rotate ppr 3 get ppr 1 get neg sub
+neg 0 TR}if yflip xflip not and{ppr 1 get neg ppr 0 get neg TR}if}{
+noflips{TR pop pop 270 rotate 1 -1 scale}if xflip yflip and{TR pop pop
+90 rotate 1 -1 scale ppr 3 get ppr 1 get neg sub neg ppr 2 get ppr 0 get
+neg sub neg TR}if xflip yflip not and{TR pop pop 90 rotate ppr 3 get ppr
+1 get neg sub neg 0 TR}if yflip xflip not and{TR pop pop 270 rotate ppr
+2 get ppr 0 get neg sub neg 0 S TR}if}ifelse scaleby96{ppr aload pop 4
+-1 roll add 2 div 3 1 roll add 2 div 2 copy TR .96 dup scale neg S neg S
+TR}if}N/cp{pop pop showpage pm restore}N end}if}if}N/normalscale{
+Resolution 72 div VResolution 72 div neg scale magscale{DVImag dup scale
+}if 0 setgray}N/psfts{S 65781.76 div N}N/startTexFig{/psf$SavedState
+save N userdict maxlength dict begin/magscale true def normalscale
+currentpoint TR/psf$ury psfts/psf$urx psfts/psf$lly psfts/psf$llx psfts
+/psf$y psfts/psf$x psfts currentpoint/psf$cy X/psf$cx X/psf$sx psf$x
+psf$urx psf$llx sub div N/psf$sy psf$y psf$ury psf$lly sub div N psf$sx
+psf$sy scale psf$cx psf$sx div psf$llx sub psf$cy psf$sy div psf$ury sub
+TR/showpage{}N/erasepage{}N/setpagedevice{pop}N/copypage{}N/p 3 def
+@MacSetUp}N/doclip{psf$llx psf$lly psf$urx psf$ury currentpoint 6 2 roll
+newpath 4 copy 4 2 roll moveto 6 -1 roll S lineto S lineto S lineto
+closepath clip newpath moveto}N/endTexFig{end psf$SavedState restore}N
+/@beginspecial{SDict begin/SpecialSave save N gsave normalscale
+currentpoint TR @SpecialDefaults count/ocount X/dcount countdictstack N}
+N/@setspecial{CLIP 1 eq{newpath 0 0 moveto hs 0 rlineto 0 vs rlineto hs
+neg 0 rlineto closepath clip}if ho vo TR hsc vsc scale ang rotate
+rwiSeen{rwi urx llx sub div rhiSeen{rhi ury lly sub div}{dup}ifelse
+scale llx neg lly neg TR}{rhiSeen{rhi ury lly sub div dup scale llx neg
+lly neg TR}if}ifelse CLIP 2 eq{newpath llx lly moveto urx lly lineto urx
+ury lineto llx ury lineto closepath clip}if/showpage{}N/erasepage{}N
+/setpagedevice{pop}N/copypage{}N newpath}N/@endspecial{count ocount sub{
+pop}repeat countdictstack dcount sub{end}repeat grestore SpecialSave
+restore end}N/@defspecial{SDict begin}N/@fedspecial{end}B/li{lineto}B
+/rl{rlineto}B/rc{rcurveto}B/np{/SaveX currentpoint/SaveY X N 1
+setlinecap newpath}N/st{stroke SaveX SaveY moveto}N/fil{fill SaveX SaveY
+moveto}N/ellipse{/endangle X/startangle X/yrad X/xrad X/savematrix
+matrix currentmatrix N TR xrad yrad scale 0 0 1 startangle endangle arc
+savematrix setmatrix}N end
+
+%%EndProcSet
+%%BeginProcSet: color.pro 0 0
+%!
+TeXDict begin/setcmykcolor where{pop}{/setcmykcolor{dup 10 eq{pop
+setrgbcolor}{1 sub 4 1 roll 3{3 index add neg dup 0 lt{pop 0}if 3 1 roll
+}repeat setrgbcolor pop}ifelse}B}ifelse/TeXcolorcmyk{setcmykcolor}def
+/TeXcolorrgb{setrgbcolor}def/TeXcolorgrey{setgray}def/TeXcolorgray{
+setgray}def/TeXcolorhsb{sethsbcolor}def/currentcmykcolor where{pop}{
+/currentcmykcolor{currentrgbcolor 10}B}ifelse/DC{exch dup userdict exch
+known{pop pop}{X}ifelse}B/GreenYellow{0.15 0 0.69 0 setcmykcolor}DC
+/Yellow{0 0 1 0 setcmykcolor}DC/Goldenrod{0 0.10 0.84 0 setcmykcolor}DC
+/Dandelion{0 0.29 0.84 0 setcmykcolor}DC/Apricot{0 0.32 0.52 0
+setcmykcolor}DC/Peach{0 0.50 0.70 0 setcmykcolor}DC/Melon{0 0.46 0.50 0
+setcmykcolor}DC/YellowOrange{0 0.42 1 0 setcmykcolor}DC/Orange{0 0.61
+0.87 0 setcmykcolor}DC/BurntOrange{0 0.51 1 0 setcmykcolor}DC
+/Bittersweet{0 0.75 1 0.24 setcmykcolor}DC/RedOrange{0 0.77 0.87 0
+setcmykcolor}DC/Mahogany{0 0.85 0.87 0.35 setcmykcolor}DC/Maroon{0 0.87
+0.68 0.32 setcmykcolor}DC/BrickRed{0 0.89 0.94 0.28 setcmykcolor}DC/Red{
+0 1 1 0 setcmykcolor}DC/OrangeRed{0 1 0.50 0 setcmykcolor}DC/RubineRed{
+0 1 0.13 0 setcmykcolor}DC/WildStrawberry{0 0.96 0.39 0 setcmykcolor}DC
+/Salmon{0 0.53 0.38 0 setcmykcolor}DC/CarnationPink{0 0.63 0 0
+setcmykcolor}DC/Magenta{0 1 0 0 setcmykcolor}DC/VioletRed{0 0.81 0 0
+setcmykcolor}DC/Rhodamine{0 0.82 0 0 setcmykcolor}DC/Mulberry{0.34 0.90
+0 0.02 setcmykcolor}DC/RedViolet{0.07 0.90 0 0.34 setcmykcolor}DC
+/Fuchsia{0.47 0.91 0 0.08 setcmykcolor}DC/Lavender{0 0.48 0 0
+setcmykcolor}DC/Thistle{0.12 0.59 0 0 setcmykcolor}DC/Orchid{0.32 0.64 0
+0 setcmykcolor}DC/DarkOrchid{0.40 0.80 0.20 0 setcmykcolor}DC/Purple{
+0.45 0.86 0 0 setcmykcolor}DC/Plum{0.50 1 0 0 setcmykcolor}DC/Violet{
+0.79 0.88 0 0 setcmykcolor}DC/RoyalPurple{0.75 0.90 0 0 setcmykcolor}DC
+/BlueViolet{0.86 0.91 0 0.04 setcmykcolor}DC/Periwinkle{0.57 0.55 0 0
+setcmykcolor}DC/CadetBlue{0.62 0.57 0.23 0 setcmykcolor}DC
+/CornflowerBlue{0.65 0.13 0 0 setcmykcolor}DC/MidnightBlue{0.98 0.13 0
+0.43 setcmykcolor}DC/NavyBlue{0.94 0.54 0 0 setcmykcolor}DC/RoyalBlue{1
+0.50 0 0 setcmykcolor}DC/Blue{1 1 0 0 setcmykcolor}DC/Cerulean{0.94 0.11
+0 0 setcmykcolor}DC/Cyan{1 0 0 0 setcmykcolor}DC/ProcessBlue{0.96 0 0 0
+setcmykcolor}DC/SkyBlue{0.62 0 0.12 0 setcmykcolor}DC/Turquoise{0.85 0
+0.20 0 setcmykcolor}DC/TealBlue{0.86 0 0.34 0.02 setcmykcolor}DC
+/Aquamarine{0.82 0 0.30 0 setcmykcolor}DC/BlueGreen{0.85 0 0.33 0
+setcmykcolor}DC/Emerald{1 0 0.50 0 setcmykcolor}DC/JungleGreen{0.99 0
+0.52 0 setcmykcolor}DC/SeaGreen{0.69 0 0.50 0 setcmykcolor}DC/Green{1 0
+1 0 setcmykcolor}DC/ForestGreen{0.91 0 0.88 0.12 setcmykcolor}DC
+/PineGreen{0.92 0 0.59 0.25 setcmykcolor}DC/LimeGreen{0.50 0 1 0
+setcmykcolor}DC/YellowGreen{0.44 0 0.74 0 setcmykcolor}DC/SpringGreen{
+0.26 0 0.76 0 setcmykcolor}DC/OliveGreen{0.64 0 0.95 0.40 setcmykcolor}
+DC/RawSienna{0 0.72 1 0.45 setcmykcolor}DC/Sepia{0 0.83 1 0.70
+setcmykcolor}DC/Brown{0 0.81 1 0.60 setcmykcolor}DC/Tan{0.14 0.42 0.56 0
+setcmykcolor}DC/Gray{0 0 0 0.50 setcmykcolor}DC/Black{0 0 0 1
+setcmykcolor}DC/White{0 0 0 0 setcmykcolor}DC end
+
+%%EndProcSet
+TeXDict begin 40258437 52099154 1000 8000 8000 (temp.dvi)
+@start end
+%%EndProlog
+%%BeginSetup
+%%Feature: *Resolution 8000dpi
+TeXDict begin
+ end
+%%EndSetup
+TeXDict begin 1 0 bop Black Black 5535 20790 a
+ currentpoint currentpoint translate 0.28 0.28 scale neg exch neg exch
+translate
+ 5535 20790
+a @beginspecial 0 @llx 0 @lly 569 @urx 483 @ury 5690
+@rwi @setspecial
+%%BeginDocument: ch-analysis-files/figures/Hanoi.eps
+%!PS-Adobe-3.0 EPSF-3.0
+%%Creator: ImageMark Software Labs
+%%For: () ()
+%%Title: C:\book\Hanoi.eps
+%%CreationDate: () ()
+%%BoundingBox: 0 0 569 483
+%%DocumentProcessColors: Black
+%%ColorUsage:Black&White
+%%DocumentFonts: Helvetica
+%%+Helvetica-Bold
+%%+Helvetica-Oblique
+%%+Helvetica-BoldOblique
+%%+Times-Roman
+%%+Times-Bold
+%%+Times-Italic
+%%+Times-BoldItalic
+%%+Courier
+%%+Courier-Bold
+%%+Courier-Oblique
+%%+Courier-BoldOblique
+%%+Symbol
+%%DocumentSuppliedResources: procset Adobe_level2_AI5 1.2 0
+%%+ procset Adobe_screens_AI5 1.0 0
+%%+ procset Adobe_typography_AI5 1.0 0
+%%+ procset Adobe_ColorImage_AI6 1.1 0
+%%+ procset Adobe_blend_AI5 1.0 0
+%%+ procset Adobe_pattern_AI5 1.0 0
+%%+ procset Adobe_Illustrator_AI5 1.0 0
+%AI5_FileFormat 3.0
+%AI3_ColorUsage: Black&White
+%AI3_TemplateBox: 0 0 569 483
+%AI3_TileBox: 0 0 569 483
+%AI3_DocumentPreview: None
+%%Template:
+%%PageOrigin:0.0000 0.0000
+%AI7_GridSettings: 72 8 72 8 1 0 0.8 0.8 0.8 0.9 0.9 0.9
+%%EndComments
+%%BeginProlog
+%%BeginResource: procset Adobe_level2_AI5 1.2 0
+%%Title: (Adobe Illustrator (R) Version 5.0 Level 2 Emulation)
+%%Version: 1.2 0
+%%CreationDate: (04/10/93) ()
+%%Copyright: ((C) 1987-1996 Adobe Systems Incorporated All Rights Reserved)
+userdict /Adobe_level2_AI5 25 dict dup begin
+	put
+	/packedarray where not
+	{
+		userdict begin
+		/packedarray
+		{
+			array astore readonly
+		} bind def
+		/setpacking /pop load def
+		/currentpacking false def
+	 end
+		0
+	} if
+	pop
+	userdict /defaultpacking currentpacking put true setpacking
+	/initialize
+	{
+		Adobe_level2_AI5 begin
+	} bind def
+	/terminate
+	{
+		currentdict Adobe_level2_AI5 eq
+		{
+		 end
+		} if
+	} bind def
+	mark
+	/setcustomcolor where not
+	{
+		/findcmykcustomcolor
+		{
+			0
+			6 packedarray
+		} bind def
+		/findrgbcustomcolor
+		{
+			1
+			5 packedarray
+		} bind def
+		/setcustomcolor
+		{
+			exch 
+			aload pop 
+			0 eq
+			{
+				pop
+				4
+				{
+					4 index mul
+					4 1 roll
+				} repeat
+				5 -1 roll pop
+				setcmykcolor
+			}
+			{
+				pop
+				3
+				{
+					1 exch sub
+					3 index mul 
+					1 exch sub
+					3 1 roll
+				} repeat
+				4 -1 roll pop
+				setrgbcolor
+			} ifelse
+		}
+		def
+	} if
+	
+	/gt38? mark {version cvr cvx exec} stopped {cleartomark true} {38 gt exch pop} ifelse def
+	userdict /deviceDPI 72 0 matrix defaultmatrix dtransform dup mul exch dup mul add sqrt put
+	userdict /level2?
+	systemdict /languagelevel known dup
+	{
+		pop systemdict /languagelevel get 2 ge
+	} if
+	put
+/level2ScreenFreq
+{
+ begin
+		60
+		HalftoneType 1 eq
+		{
+			pop Frequency
+		} if
+		HalftoneType 2 eq
+		{
+			pop GrayFrequency
+		} if
+		HalftoneType 5 eq
+		{
+			pop Default level2ScreenFreq
+		} if
+ end
+} bind def
+userdict /currentScreenFreq  
+	level2? {currenthalftone level2ScreenFreq} {currentscreen pop pop} ifelse put
+level2? not
+	{
+		/setcmykcolor where not
+		{
+			/setcmykcolor
+			{
+				exch .11 mul add exch .59 mul add exch .3 mul add
+				1 exch sub setgray
+			} def
+		} if
+		/currentcmykcolor where not
+		{
+			/currentcmykcolor
+			{
+				0 0 0 1 currentgray sub
+			} def
+		} if
+		/setoverprint where not
+		{
+			/setoverprint /pop load def
+		} if
+		/selectfont where not
+		{
+			/selectfont
+			{
+				exch findfont exch
+				dup type /arraytype eq
+				{
+					makefont
+				}
+				{
+					scalefont
+				} ifelse
+				setfont
+			} bind def
+		} if
+		/cshow where not
+		{
+			/cshow
+			{
+				[
+				0 0 5 -1 roll aload pop
+				] cvx bind forall
+			} bind def
+		} if
+	} if
+	cleartomark
+	/anyColor?
+	{
+		add add add 0 ne
+	} bind def
+	/testColor
+	{
+		gsave
+		setcmykcolor currentcmykcolor
+		grestore
+	} bind def
+	/testCMYKColorThrough
+	{
+		testColor anyColor?
+	} bind def
+	userdict /composite?
+	level2?
+	{
+		gsave 1 1 1 1 setcmykcolor currentcmykcolor grestore
+		add add add 4 eq
+	}
+	{
+		1 0 0 0 testCMYKColorThrough
+		0 1 0 0 testCMYKColorThrough
+		0 0 1 0 testCMYKColorThrough
+		0 0 0 1 testCMYKColorThrough
+		and and and
+	} ifelse
+	put
+	composite? not
+	{
+		userdict begin
+		gsave
+		/cyan? 1 0 0 0 testCMYKColorThrough def
+		/magenta? 0 1 0 0 testCMYKColorThrough def
+		/yellow? 0 0 1 0 testCMYKColorThrough def
+		/black? 0 0 0 1 testCMYKColorThrough def
+		grestore
+		/isCMYKSep? cyan? magenta? yellow? black? or or or def
+		/customColor? isCMYKSep? not def
+	 end
+	} if
+ end defaultpacking setpacking
+%%EndResource
+%%BeginResource: procset Adobe_typography_AI5 1.0 1
+%%Title: (Typography Operators)
+%%Version: 1.0 
+%%CreationDate:(03/26/93) ()
+%%Copyright: ((C) 1987-1993 Adobe Systems Incorporated All Rights Reserved)
+currentpacking true setpacking
+userdict /Adobe_typography_AI5 54 dict dup begin
+put
+/initialize
+{
+ begin
+ begin
+	Adobe_typography_AI5 begin
+	Adobe_typography_AI5
+	{
+		dup xcheck
+		{
+			bind
+		} if
+		pop pop
+	} forall
+ end
+ end
+ end
+	Adobe_typography_AI5 begin
+} def
+/terminate
+{
+	currentdict Adobe_typography_AI5 eq
+	{
+	 end
+	} if
+} def
+/modifyEncoding
+{
+	/_tempEncode exch ddef
+	/_pntr 0 ddef
+	{
+		counttomark -1 roll
+		dup type dup /marktype eq
+		{
+			pop pop exit
+		}
+		{
+			/nametype eq
+			{
+				_tempEncode /_pntr dup load dup 3 1 roll 1 add ddef 3 -1 roll
+				put
+			}
+			{
+				/_pntr exch ddef
+			} ifelse
+		} ifelse
+	} loop
+	_tempEncode
+} def
+/TE
+{
+	StandardEncoding 256 array copy modifyEncoding
+	/_nativeEncoding exch def
+} def
+%
+/TZ
+{
+	dup type /arraytype eq
+	{
+		/_wv exch def
+	}
+	{
+		/_wv 0 def
+	} ifelse
+	/_useNativeEncoding exch def
+	pop pop
+	findfont _wv type /arraytype eq
+	{
+		_wv makeblendedfont
+	} if
+	dup length 2 add dict
+ begin
+	mark exch
+	{
+		1 index /FID ne
+		{
+			def
+		} if
+		cleartomark mark
+	} forall
+	pop
+	/FontName exch def
+	counttomark 0 eq
+	{
+		1 _useNativeEncoding eq
+		{
+			/Encoding _nativeEncoding def
+		} if
+		cleartomark
+	}
+	{
+		/Encoding load 256 array copy
+		modifyEncoding /Encoding exch def
+	} ifelse
+	FontName currentdict
+ end
+	definefont pop
+} def
+/tr
+{
+	_ax _ay 3 2 roll
+} def
+/trj
+{
+	_cx _cy _sp _ax _ay 6 5 roll
+} def
+/a0
+{
+	/Tx
+	{
+		dup
+		currentpoint 3 2 roll
+		tr _psf
+		newpath moveto
+		tr _ctm _pss
+	} ddef
+	/Tj
+	{
+		dup
+		currentpoint 3 2 roll
+		trj _pjsf
+		newpath moveto
+		trj _ctm _pjss
+	} ddef
+} def
+/a1
+{
+	/Tx
+	{
+		dup currentpoint 4 2 roll gsave
+		dup currentpoint 3 2 roll
+		tr _psf
+		newpath moveto
+		tr _ctm _pss
+		grestore 3 1 roll moveto tr sp
+	} ddef
+	/Tj
+	{
+		dup currentpoint 4 2 roll gsave
+		dup currentpoint 3 2 roll
+		trj _pjsf
+		newpath moveto
+		trj _ctm _pjss
+		grestore 3 1 roll moveto tr jsp
+	} ddef
+} def
+/e0
+{
+	/Tx
+	{
+		tr _psf
+	} ddef
+	/Tj
+	{
+		trj _pjsf
+	} ddef
+} def
+/e1
+{
+	/Tx
+	{
+		dup currentpoint 4 2 roll gsave
+		tr _psf
+		grestore 3 1 roll moveto tr sp
+	} ddef
+	/Tj
+	{
+		dup currentpoint 4 2 roll gsave
+		trj _pjsf
+		grestore 3 1 roll moveto tr jsp
+	} ddef
+} def
+/i0
+{
+	/Tx
+	{
+		tr sp
+	} ddef
+	/Tj
+	{
+		trj jsp
+	} ddef
+} def
+/i1
+{
+	W N
+} def
+/o0
+{
+	/Tx
+	{
+		tr sw rmoveto
+	} ddef
+	/Tj
+	{
+		trj swj rmoveto
+	} ddef
+} def
+/r0
+{
+	/Tx
+	{
+		tr _ctm _pss
+	} ddef
+	/Tj
+	{
+		trj _ctm _pjss
+	} ddef
+} def
+/r1
+{
+	/Tx
+	{
+		dup currentpoint 4 2 roll currentpoint gsave newpath moveto
+		tr _ctm _pss
+		grestore 3 1 roll moveto tr sp
+	} ddef
+	/Tj
+	{
+		dup currentpoint 4 2 roll currentpoint gsave newpath moveto
+		trj _ctm _pjss
+		grestore 3 1 roll moveto tr jsp
+	} ddef
+} def
+/To
+{
+	pop _ctm currentmatrix pop
+} def
+/TO
+{
+	iTe _ctm setmatrix newpath
+} def
+/Tp
+{
+	pop _tm astore pop _ctm setmatrix
+	_tDict begin
+	/W
+	{
+	} def
+	/h
+	{
+	} def
+} def
+/TP
+{
+ end
+	iTm 0 0 moveto
+} def
+/Tr
+{
+	_render 3 le
+	{
+		currentpoint newpath moveto
+	} if
+	dup 8 eq
+	{
+		pop 0
+	}
+	{
+		dup 9 eq
+		{
+			pop 1
+		} if
+	} ifelse
+	dup /_render exch ddef
+	_renderStart exch get load exec
+} def
+/iTm
+{
+	_ctm setmatrix _tm concat 0 _rise translate _hs 1 scale
+} def
+/Tm
+{
+	_tm astore pop iTm 0 0 moveto
+} def
+/Td
+{
+	_mtx translate _tm _tm concatmatrix pop iTm 0 0 moveto
+} def
+/iTe
+{
+	_render -1 eq
+	{
+	}
+	{
+		_renderEnd _render get dup null ne
+		{
+			load exec
+		}
+		{
+			pop
+		} ifelse
+	} ifelse
+	/_render -1 ddef
+} def
+/Ta
+{
+	pop
+} def
+/Tf
+{
+	dup 1000 div /_fScl exch ddef
+%
+	selectfont
+} def
+/Tl
+{
+	pop
+	0 exch _leading astore pop
+} def
+/Tt
+{
+	pop
+} def
+/TW
+{
+	3 npop
+} def
+/Tw
+{
+	/_cx exch ddef
+} def
+/TC
+{
+	3 npop
+} def
+/Tc
+{
+	/_ax exch ddef
+} def
+/Ts
+{
+	/_rise exch ddef
+	currentpoint
+	iTm
+	moveto
+} def
+/Ti
+{
+	3 npop
+} def
+/Tz
+{
+	100 div /_hs exch ddef
+	iTm
+} def
+/TA
+{
+	pop
+} def
+/Tq
+{
+	pop
+} def
+/Th
+{
+	pop pop pop pop pop
+} def
+/TX
+{
+	pop
+} def
+/Tk
+{
+	exch pop _fScl mul neg 0 rmoveto
+} def
+/TK
+{
+	2 npop
+} def
+/T*
+{
+	_leading aload pop neg Td
+} def
+/T*-
+{
+	_leading aload pop Td
+} def
+/T-
+{
+	_hyphen Tx
+} def
+/T+
+{
+} def
+/TR
+{
+	_ctm currentmatrix pop
+	_tm astore pop
+	iTm 0 0 moveto
+} def
+/TS
+{
+	currentfont 3 1 roll
+	/_Symbol_ _fScl 1000 mul selectfont
+	
+	0 eq
+	{
+		Tx
+	}
+	{
+		Tj
+	} ifelse
+	setfont
+} def
+/Xb
+{
+	pop pop
+} def
+/Tb /Xb load def
+/Xe
+{
+	pop pop pop pop
+} def
+/Te /Xe load def
+/XB
+{
+} def
+/TB /XB load def
+currentdict readonly pop
+end
+setpacking
+%%EndResource
+%%BeginResource: procset Adobe_screens_AI5 1.2 0
+%%Title: (Adobe Illustrator (R) Version 5.0 Custom Halftone Screens ProcSet)
+%%Version: 1.2 0
+%%CreationDate: (03/24/93) ()
+%%Copyright: ((C) 1987-1996 Adobe Systems Incorporated All Rights Reserved)
+userdict /defaultpacking currentpacking put true setpacking
+systemdict begin
+userdict /Adobe_screens_AI5 15 dict dup begin
+put
+/initialize
+{
+	Adobe_screens_AI5 begin
+	/screenid
+		deviceDPI 600 gt composite? not or
+		{
+		-1
+		}
+		{
+			deviceDPI currentScreenFreq 
+			dup dup 60 ge exch 150 le and deviceDPI 300 le and
+		{
+			pop 60
+		} if
+		div 1.41421 div 0.5 add cvi
+		} ifelse
+	def
+	
+	2 screenid eq
+	{
+		/customsize 16 def
+		/customdata /customdata2 def
+		setcustomscreen
+	} if
+	
+	3 screenid eq
+	{
+		/customsize 24 def
+		/customdata /customdata3 def
+		setcustomscreen
+	} if
+	
+	4 screenid eq
+	{
+		/customsize 16 def
+		/customdata /customdata4 def
+		setcustomscreen
+	} if
+	
+	5 screenid eq
+	{
+		/customsize 20 def
+		/customdata /customdata5 def
+		setcustomscreen
+	} if
+	
+	6 screenid eq
+	{
+		/customsize 24 def
+		/customdata /customdata6 def
+		setcustomscreen
+	} if
+	
+	7 screenid eq
+	{
+		/customsize 28 def
+		/customdata /customdata7 def
+		setcustomscreen
+	} if
+	
+	8 screenid eq
+	{
+		/customsize 16 def
+		/customdata /customdata8 def
+		setcustomscreen
+	} if
+} def
+/terminate
+{
+	currentdict Adobe_screens_AI5 eq
+	{
+	 end
+	} if
+} def
+/setcustomscreen
+{
+	deviceDPI customsize div 0
+	{
+		1 add 2 div customsize mul cvi exch
+		1 add 2 div customsize mul cvi exch
+		customsize mul add
+		customdata load exch get 256 div
+	} setscreen
+} def
+/customdata2 28 28 mul string def
+currentfile customdata2 readhexstring
+4180E8694988E2634382EA6B4B8AE061A01939C8A81737C2A21B3BCAAA1636C0
+F8795998F6775796FA7B5B9AF57656952ED8B80727D6B60F2FDABA0626D5B50E
+4E8DE6674786EE6F4F8EE5664685ED6EAD1434C6A61F3FCEAE1232C5A51E3ECD
+F3745493FE7F5F9EF1725291FD7E5E9D24D3B30C2CDEBE0222D1B10A2ADDBD04
+4483EB6C4C8BE1624281E96A4A89E364A31C3CCBAB1535C1A11A3AC9A91838C3
+FB7C5C9BF4755594F97A5A99F778589730DBBB0525D4B40D2DD9B90828D7B710
+508FE4654584EC6D4D8CE7684887EF70AF1131C4A41D3DCCAC1333C7A72040CF
+F0715190FC7D5D9CF2735392FF80609F21D0B00929DCBC0323D2B20B2BDFBF01
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000
+pop pop
+/customdata3 28 28 mul string def
+currentfile customdata3 readhexstring
+011DC7F5E73D0421CBF3E43A021EC8F6E83E0522CCF2E43A2B648BC4A0762F68
+8AC39E732C658CC5A177306989C29D72D5B6521A6192D9B55219608FD6B6531B
+6193DAB451185F8FFCEE440C28D2FCED430B27D1FDEF450C29D3FBEC420A26D0
+BEA77D366F83BCA77C356E87BFA87E377082BBA67B346D86145B99E0AE4A1259
+98DFB14E155C9AE1AD4A115897DEB04D0623CDF4E63C0420CAF8EA400723CDF4
+E53B031FC9F7E93F316988C19F752E678EC6A378326A88C09F742D668DC6A278
+DBB350175E91D8B8551C6395DCB24F165D90D7B7541C6294FAEC420925CFFFF1
+470E2BD5F9EB410824CEFEF0460D2AD4BAA57A336C85BEAA80397180B9A47933
+6B84BDA97F387181105797DDAF4C145A9CE3AB480F5696DDAE4B13599BE2AC49
+021EC8F6E83E0522CCF2E43A011DC7F5E73D0421CBF3E43A2C658CC5A1773069
+89C29D722B648BC4A0762F688AC39E73D6B6531B6193DAB451185F8FD5B6521A
+6192D9B55219608FFDEF450C29D3FBEC420A26D0FCEE440C28D2FCED430B27D1
+BFA87E377082BBA67B346D86BEA77D366F83BCA77C356E87155C9AE1AD4A1158
+97DEB04D145B99E0AE4A125998DFB14E0723CDF4E53B031FC9F7E93F0623CDF4
+E63C0420CAF8EA40326A88C09F742D668DC6A278316988C19F752E678EC6A378
+DCB24F165D90D7B7541C6294DBB350175E91D8B8551C6395F9EB410824CEFEF0
+460D2AD4FAEC420925CFFFF1470E2BD5B9A479336B84BDA97F387181BAA57A33
+6C85BEAA803971800F5696DDAE4B13599BE2AC49105797DDAF4C145A9CE3AB48
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000
+pop pop
+/customdata4 28 28 mul string def
+currentfile customdata4 readhexstring
+1139B8E0FAD2531B133BBAE2F8D05119417180A6AE9A7B4B437382A5AD987949
+C08867272F6F92CAC28A66262E6E90C8E8DE5F070F37B6F2EADD5E060E36B5F0
+FED6571F173FBEE6FDD5561E163EBDE5AB9E7F4F477786A1A99D7E4E467685A3
+2C6C96CEC68E62222A6A95CDC58D64240C34B3F6EED95A020A32B1F5EDDB5C04
+143CBBE3F9D1521A123AB9E1FBD3541C447483A4AC997A4A427281A7AF9B7C4C
+C38B65252D6D91C9C1896828307093CBEBDC5D050D35B4F1E9DF60081038B7F3
+FCD4551D153DBCE4FFD758201840BFE7A89C7D4D457584A2AA9F8050487887A0
+296994CCC48C63232B6B97CFC78F61210931B0F4ECDA5B030B33B2F7EFD85901
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000
+pop pop
+/customdata5 28 28 mul string def
+currentfile customdata5 readhexstring
+010B34C3EBFCF7CE3F16020C35C4EDFBF6CD3E15102552A4D6EADDB5632B1126
+54A5D5EADCB3622A3958768499C19E8C7C5E3A59778498C19D8B7B5DC8A99370
+47334C7587AFC9AA936F46324B7485AEF1E5BC6B1E0A2351A3D8F2E4BC6A1E09
+2351A2D7FFF9D14219050F38C6EFFEF9D04118040E37C6EFE8E0B7662D142856
+A8D3E7DFB7652D132856A7D4BF9C8E7F603D5B7A8195BE9A8E7E603C5B798297
+314A7389B2CCAD906D442F497289B1CBAC926E4508214FA1DBF4E2B9671B0720
+4EA0DAF4E3BA691C030D36C5EDFBF6CD3F16010C34C3ECFDF8CF4017122654A6
+D4E9DDB4622A112553A5D6EBDEB5642C3B59788397C09C8B7C5D3A58778599C2
+9E8C7D5FCAAB926E46314B7486AFC8AA947048334D7587B0F2E4BB691D082250
+A1D8F1E6BD6B1F0A2452A3D9FDF8CF4118030E36C5EEFFFAD1421A050F38C7F0
+E6DFB6642C132755A7D3E8E1B8662E152957A8D2BE9A8D7E5F3B5A798296BF9B
+8F80613D5C7B80952F487188B1CAAC916D443049728AB3CCAE906C43061F4D9F
+DAF3E2BA681C07214FA0DBF5E1B8671A00000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000
+pop pop
+/customdata6 28 28 mul string def
+currentfile customdata6 readhexstring
+081A44B6E0F2FDECC150250C091B45B6E1F3FCEBC04F240C1D336199C7D8DCD3
+A56C37221E33619AC8D7DBD2A46B36214864798091AEB1958C7E694C49657A81
+90ADB0948B7D684BB99D8475593C405C7888A1BEBA9E8574583B3F5B7888A0BD
+E4CBAA712E1215326098CFE8E4CCA9712D1114315F97CEE7F5F1C6552B040719
+43B5DFFAF6F0C6542A03061842B4DEF9FFEDC352270E0B1C47B8E3F4FEECC251
+260D0A1C46B7E2F4DAD5A76E39232035639CCAD5D9D4A66D38231F34629BC9D6
+AF938E806A4E4A677C838FABAE928D7F694D4A667B828FAC3E5A778AA3BFBC9F
+8772563A3D597689A2BEBB9F8673573A14305E97D1EAE6CDA76F2B0F132F5D96
+D0E9E5CDA8702C10051742B3DDFCF8EEC4522801041641B2DDFBF7EFC5532902
+091B45B6E1F3FCEBC04F240C081A44B6E0F2FDECC150250C1E33619AC8D7DBD2
+A46B36211D336199C7D8DCD3A56C372249657A8190ADB0948B7D684B48647980
+91AEB1958C7E694CBA9E8574583B3F5B7888A0BDB99D8475593C405C7888A1BE
+E4CCA9712D1114315F97CEE7E4CBAA712E1215326098CFE8F6F0C6542A030618
+42B4DEF9F5F1C6552B04071943B5DFFAFEECC251260D0A1C46B7E2F4FFEDC352
+270E0B1C47B8E3F4D9D4A66D38231F34629BC9D6DAD5A76E39232035639CCAD5
+AE928D7F694D4A667B828FACAF938E806A4E4A677C838FAB3D597689A2BEBB9F
+8673573A3E5A778AA3BFBC9F8772563A132F5D96D0E9E5CDA8702C1014305E97
+D1EAE6CDA76F2B0F041641B2DDFBF7EFC5532902051742B3DDFCF8EEC4522801
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000
+pop pop
+/customdata7 28 28 mul string def
+currentfile customdata7 readhexstring
+01061B44B7E1F5FEFBE6BD4A210C01071B45B8E1F6FDFBE6BC4A200B09132A54
+A7D1EAF5EED9B05D331609142B55A8D2EAF4EED9AF5C32161D2D3D6993C1CBE0
+CEC59B7140301E2E3D6A93C0CADFCDC49A713F3047576C7B828DA2B6A48F867E
+6F5A48576C7C828CA1B6A38F867E6E59BAAA958A78634E4451667A8498ADBAAB
+968977624E4350657A8398ADE3D4C99F7539251A273C6892C2D7E4D4C89E7539
+241A273B6891C1D6F8F2DDB460371005122A53A7D0ECF9F2DDB360360F051229
+53A6D0EBFFFDE8BE4C220D03081D46B9E3F7FFFCE7BD4B210D02071C46B8E2F7
+F3F0DBB15E34180B152C56A9D3E8F3EFDAB05D34170A142C55A9D2E9DFCCC69C
+7341321F2F3F6B94BFC9DECCC59C7241311F2E3E6A94BFCAB5A38E8780705B49
+596D7D808BA0B4A28D877F6F5B48586D7C818BA043506479859AAFBCAC978876
+614C424F64798499AEBBAB968977624D19263B6791C3D8E5D6C79D7337231825
+3A6690C3D7E5D5C79E74382304112952A5CFEDFAF0DBB25E350E03102851A5CE
+ECF9F1DCB25F360E01071B45B8E1F6FDFBE6BC4A200B01061B44B7E1F5FEFBE6
+BD4A210C09142B55A8D2EAF4EED9AF5C321609132A54A7D1EAF5EED9B05D3316
+1E2E3D6A93C0CADFCDC49A713F301D2D3D6993C1CBE0CEC59B71403048576C7C
+828CA1B6A38F867E6E5947576C7B828DA2B6A48F867E6F5ABAAB968977624E43
+50657A8398ADBAAA958A78634E4451667A8498ADE4D4C89E7539241A273B6891
+C1D6E3D4C99F7539251A273C6892C2D7F9F2DDB360360F05122953A6D0EBF8F2
+DDB460371005122A53A7D0ECFFFCE7BD4B210D02071C46B8E2F7FFFDE8BE4C22
+0D03081D46B9E3F7F3EFDAB05D34170A142C55A9D2E9F3F0DBB15E34180B152C
+56A9D3E8DECCC59C7241311F2E3E6A94BFCADFCCC69C7341321F2F3F6B94BFC9
+B4A28D877F6F5B48586D7C818BA0B5A38E8780705B49596D7D808BA0424F6479
+8499AEBBAB968977624D43506479859AAFBCAC978876614C18253A6690C3D7E5
+D5C79E74382319263B6791C3D8E5D6C79D73372303102851A5CEECF9F1DCB25F
+360E04112952A5CFEDFAF0DBB25E350E
+pop pop
+/customdata8 28 28 mul string def
+currentfile customdata8 readhexstring
+050F2747B6D6EEF8FEF4DCBC4D2D1507111D375F9EC6E0E9EBE6CCA4653D1F13
+2939556F8EA8C1D1D3C3AE9475573B2B4961717D808999B1B39B8B867F73634B
+B8A090827A6A5A42445C6C7C8492A2BAD8C8AA97785232222434546E8DACCADA
+F0E2CFA768401A0A0C1C365E9DC5E4F2FAF7DFBF50301802040E2646B5D5EDFC
+FFF5DDBD4E2E160806102848B7D7EFF9EAE7CDA5663E2014121E38609FC7E1E8
+D2C2AF9576583C2C2A3A56708FA9C0D0B29A8A878074644C4A62727E818898B0
+435B6B7B8593A3BBB9A19183796959412333536D8CADCBDBD9C9AB9677513121
+0B1B355D9CC4E5F3F1E3CEA6673F1909030D2545B4D4ECFDFBF6DEBE4F2F1701
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000
+pop pop
+end
+end
+defaultpacking setpacking
+%%EndResource
+%%BeginResource: procset AGM_Gradient_Sep 1.0 0
+%%Title: (AGM Gradient Procset)
+%%Version: 1.0 0
+%%CreationDate: (4/26/96) ()
+%%Copyright: ((C) 1987-1996 Adobe Systems Incorporated All Rights Reserved)
+userdict /defaultpacking currentpacking put true setpacking
+userdict /AGM_Gradient_Sep 5 dict dup begin put
+/AGM_Gradient_Sep_private 100 dict def
+/initialize{
+	AGM_Gradient_Sep begin
+	AGM_Gradient_Sep_private begin
+	_compositeJob{
+		initializeSinglePassSeps
+	}{
+		initializeMultiPassSeps
+	}ifelse
+	initializeSeps
+	AGM_Gradient_private begin
+		/_fillSD newSpotDict def
+		/_rampSD newSpotDict def
+		/_nCustomColorSD nd
+ end
+	AGM_Gradient_Sep_private 
+	{
+		dup xcheck 1 index type /arraytype eq and
+		{
+			bind
+		}if
+		pop pop
+	}forall
+	AGM_Gradient_Sep
+	{
+		dup xcheck 1 index type /arraytype eq and
+		{
+			bind
+		}if
+		pop pop
+	}forall
+ end
+	
+	currentdict readonly pop	
+ end
+}def
+/terminate{
+	currentdict AGM_Gradient_Sep eq{
+	 end
+	}if
+}def
+ 
+AGM_Gradient_Sep_private begin
+/initializeSeps{
+	_noImage not _level2PS not and{
+		/_whiteBytes 1 makeByte8 pt
+		/knockOut{
+			8 setImageParms _whiteBytes /_image load 5 execImage
+		}def
+		/linealFill{
+			mySave
+			8 setImageParms
+			_color{
+				_nCustomColorSD begin
+					cyan magenta yellow black
+					_spotColor{
+						spot1 begin
+							/tintImage tintValue 1 exch sub makeByte8 def
+					 end
+						spot2 begin
+							/tintImage tintValue 1 exch sub makeByte8 def
+					 end
+					}if
+			 end
+				4{
+					makeByte8 4 1 roll
+				}repeat
+				true 4 _nCustomColorSD ncolorimage
+			}{
+				_nCustomColorSD/black get 1 exch sub makeByte8 
+				_nCustomColorSD bwImage
+			}ifelse
+			myRestore
+		}def
+	}{
+		 /knockOut{
+			gsave
+			false setoverprint
+			1 setgray 
+			0 0 1 1 rectfill
+			grestore
+		}def
+	}ifelse
+	/newSpotDict{
+		11 dict dup begin
+			/nSpots 2 def
+			/spot1 7 dict def
+			/spot2 7 dict def
+	 end
+	}def
+	/initSpotData
+	{
+	 begin
+			/name nd
+			/tintImage nd
+			/tintValue nd
+			/spot_C nd
+			/spot_M nd
+			/spot_Y nd
+			/spot_K nd
+	 end
+	}def
+	/initSpotDict{
+	 begin
+			/cyanInk false def
+			/magentaInk false def
+			/yellowInk false def
+			/blackInk false def
+			/cyan nd
+			/magenta nd
+			/yellow nd
+			/black nd
+			spot1 initSpotData
+			spot2 initSpotData
+	 end
+	}def
+	/copySpotDict{
+		/_dst xp
+	 begin
+			cyanInk magentaInk yellowInk blackInk
+			cyan magenta yellow black
+			spot1 spot2
+	 end
+		_dst begin
+			/spot1 spot1 maxlength dict def
+			/spot2 spot2 maxlength dict def
+			spot2 copy pop
+			spot1 copy pop
+			/black xd
+			/yellow xd
+			/magenta xd
+			/cyan xd
+			/blackInk xd
+			/yellowInk xd
+			/magentaInk xd
+			/cyanInk xd
+	 end
+	}def
+	/setCustomColor
+	{
+		1 index /Black eq{
+			6 1 roll 5 npop
+			1 exch sub
+			setgray
+		}{
+			6 1 roll _ccAry1 astore exch
+			dup null eq{
+				pop 0
+			}if
+			setcustomcolor
+		}ifelse
+	}def
+	/setCStop{
+		/_colorStyle exch pt
+		
+		_colorStyle 0 eq{
+			0 0 0
+			4 -1 roll
+			1 exch sub
+			_spotColor{
+				/_colorStyle 3 pt
+				/Black
+				1 index
+				1 exch sub
+			}if
+		}if
+		_colorStyle 2 eq{
+			3 npop
+		}if
+		_rampSD _fillSD copySpotDict
+		
+		_colorStyle 4 eq{ 
+			pop
+			9 2 roll 3 npop 6 -2 roll
+		} if
+		
+		_colorStyle 3 eq _colorStyle 4 eq or{
+				
+			_fillSD begin
+				exch
+				dup spot1/name get eq{
+					spot1 spot2
+				}{
+					spot2 spot1
+				}ifelse
+			 begin
+				 begin
+						/name xd
+						1 exch sub /tintValue xd
+						4{
+							tintValue mul 4 1 roll
+						}repeat
+						_spotColor not{
+							/tintValue null def
+						}if
+				 end
+					/tintValue 0 def
+			 end
+		 end
+		}if
+		_fillSD nsetcustomcolor
+	}def
+	/renderCMYK{
+		spot1/name get null eq
+		spot2/name get null eq and
+		dup not{
+			pop
+			spot1 spotConverted
+		}if
+		dup not{
+			pop
+			spot2 spotConverted
+		}if
+	}def
+	/fill_ /fill load def
+	/fillOvp{
+		currentoverprint{
+			_inRipSep{
+				currentcolorspace 0 get
+				dup /DeviceGray eq
+				1 index /DeviceCMYK eq or{
+					pop
+					currentcmykcolor add add add 0 eq{
+						newpath
+					}if
+				}{
+					/Separation eq{
+						currentcolor 0 eq{
+							newpath
+						}if
+					}if
+				}ifelse
+			}{
+				currentgray 1 eq{
+					newpath
+				}if
+			}ifelse
+		}if
+		fill_
+	}def
+	/fill{
+		_nCustomColorSD begin
+			renderCMYK
+			{
+				fillOvp
+			}{
+				spot1 begin
+					gsave
+					name null ne{
+						spot_C spot_M spot_Y spot_K name tintValue setCustomColor
+					}{
+						1 setgray
+					}ifelse
+					fillOvp 
+					grestore
+			 end
+				spot2 begin
+					name null ne{
+						gsave
+						true setoverprint
+						spot_C spot_M spot_Y spot_K name tintValue setCustomColor
+						fillOvp
+						grestore
+					}if
+			 end
+				newpath
+			}ifelse
+	 end
+	}def
+	/expandSpot{
+		_spotColor{
+			/_len xp
+			_rampSD begin
+				spot1 begin
+					tintImage null ne{
+						tintImage _len expandOne /tintImage xd
+					}if
+			 end
+				spot2 begin
+					tintImage null ne{
+						tintImage _len expandOne /tintImage xd
+					}if
+			 end
+		 end
+		}{
+			pop
+		}ifelse
+	}def
+	/rampImage{
+		_rampSD begin
+			_color{
+				/cyanInk _cyanData 0 ne def
+				/magentaInk _magentaData 0 ne def
+				/yellowInk _yellowData 0 ne def
+				/blackInk _blackData 0 ne def
+				_nSamples setImageParms
+				_nSamples expandSpot
+				_cyanData _magentaData _yellowData _blackData _nSamples 4 expandColor
+				true 4 _rampSD ncolorimage
+			}{
+				/cyanInk false def
+				/magentaInk false def
+				/yellowInk false def
+				/blackInk true def
+				_nSamples setImageParms 
+				_blackData _rampSD bwImage
+			}ifelse
+	 end
+	}def
+	/nsetcustomcolor where{
+		pop
+	}{
+		/nsetcustomcolor
+		{
+			/_nCustomColorSD xp
+			_nCustomColorSD begin
+				4 copy
+				/black xd
+				/yellow xd
+				/magenta xd
+				/cyan xd
+				4 copy
+				0 ne /blackInk xd
+				0 ne /yellowInk xd
+				0 ne /magentaInk xd
+				0 ne /cyanInk xd
+		 end
+			setcmykcolor
+		}def
+	}ifelse
+	/nsetcustomcolorend where{
+		pop
+	}{
+		/nsetcustomcolorend
+		{
+			/_nCustomColorSD null pt
+		}def
+	}ifelse
+}def
+/initializeSinglePassSeps{
+	/_decodeNorm	[0 1] pt
+	/_decodeInvert 	[1 0] pt
+	/spotConverted
+	{
+	 begin
+			name null eq{
+				false
+			}{
+				tintValue null eq tintImage null eq and{
+					true
+				}{
+					false
+					currentpagedevice/SeparationOrder get{name eq or}forall
+					not
+				}ifelse
+			}ifelse
+	 end
+	}def
+	/dictImage
+	{
+		20 dict dup begin
+			/Dict xd
+			/Decode xd
+			/DataSource xd
+			/ImageMatrix xd
+			/BitsPerComponent xd
+			/Height xd
+			/Width xd
+			/ImageType 1 def
+			Dict
+	 end
+		/_image load 1 execImage
+	}def
+	/bwImage{
+	 begin
+			gsave
+			currentoverprint{
+				blackInk{
+					[/Separation /Black /DeviceGray{}] setcolorspace
+					_decodeInvert dictImage
+				}{
+					5 npop
+				}ifelse
+			}{
+				/DeviceGray setcolorspace
+				_decodeNorm dictImage
+			}ifelse
+			grestore
+	 end
+	}def
+	/ncolorimage where{
+		pop
+	}{
+		/ncolorimage{
+		 begin
+				renderCMYK
+				{
+					cyanInk 
+					magentaInk and
+					yellowInk and
+					blackInk and
+					not
+					currentoverprint 
+					and
+					{
+						pop pop
+						gsave
+						cyanInk{
+							8 copy
+							[/Separation /Cyan /DeviceGray{}] setcolorspace
+							3 npop
+							_decodeNorm dictImage
+						}if
+						magentaInk{
+							8 copy
+							[/Separation /Magenta /DeviceGray{}] setcolorspace
+							4 -1 roll
+							3 npop
+							_decodeNorm dictImage
+						}if
+						yellowInk{
+							8 copy
+							[/Separation /Yellow /DeviceGray{}] setcolorspace
+							4 -2 roll
+							3 npop
+							_decodeNorm dictImage
+						}if
+						blackInk{
+							4 -3 roll
+							[/Separation /Black /DeviceGray{}] setcolorspace
+							3 npop
+							_decodeNorm dictImage
+						}{
+							8 npop
+						}ifelse
+						grestore
+					}{
+						/_colorimage load 10 execImage
+					}ifelse
+				}{
+					6 npop
+					gsave
+					spot1 begin
+						name null ne tintImage null ne and{
+							[/Separation name /DeviceGray{}] setcolorspace
+							4 copy
+							tintImage 
+							name /Black eq{
+								_decodeNorm
+							}{
+								_decodeInvert
+							}ifelse 
+							dictImage
+						}{
+							1 setgray fill
+						}ifelse
+				 end
+					spot2 begin
+						true setoverprint
+						name null ne tintImage null ne and{
+							[/Separation name /DeviceGray{}] setcolorspace
+							tintImage 
+							name /Black eq{
+								_decodeNorm
+							}{
+								_decodeInvert
+							}ifelse 
+							dictImage
+						}{
+							4 npop
+							1 setgray fill
+						}ifelse
+				 end
+					grestore
+				}ifelse
+		 end
+		}def
+	}ifelse
+}def
+/initializeMultiPassSeps{
+	/_isCMYKSep
+		_cyanPlate _magentaPlate or _yellowPlate or _blackPlate or
+	pt
+	/invertXfer{
+		[
+		{
+			1 exch sub
+		}/exec load systemdict /currenttransfer get exec /exec load
+		] cvx systemdict /settransfer get exec
+	}def
+	/ccThrough{
+		gsave
+		1 setCustomColor
+		currentcmykcolor
+		grestore
+		add add add 0 ne
+	}def
+	/spotConverted
+	{
+	 begin
+			_isCMYKSep not{
+				false
+			}{
+				name null eq{
+					false
+				}{
+					tintValue null eq tintImage null eq and{
+						true
+					}{
+						spot_C spot_M spot_Y spot_K name ccThrough
+					}ifelse
+				}ifelse
+			}ifelse
+	 end
+	}def
+	/spotChannel
+	{
+		_isCMYKSep{
+			pop false
+		}{
+		 begin
+				name null eq{
+					false
+				}{
+					spot_C spot_M spot_Y spot_K name ccThrough 
+				}ifelse
+		 end
+		}ifelse
+	}def
+	/getChannelData
+	{
+		_isCMYKSep dup{
+			pop renderCMYK
+		}if
+		{
+			_blackPlate{
+				4 1 roll 3 npop blackInk
+			}{
+				_yellowPlate{
+					4 2 roll 3 npop yellowInk
+				}{
+					_magentaPlate{
+						4 3 roll 3 npop magentaInk
+					}{
+						3 npop cyanInk
+					}ifelse
+				}ifelse
+			}ifelse
+			{
+				true /nonZeroData
+			}{
+				true /zeroData
+			}ifelse
+		}{
+			4 npop
+			spot1/name get null ne 
+			spot1 spotChannel and{
+				spot1/tintImage get dup null ne{
+					false /nonZeroData
+				}{
+					pop false /noData
+				}ifelse
+			}{
+				spot2/name get null ne 
+				spot2 spotChannel and{
+					spot2/tintImage get dup null ne{
+						false /nonZeroData
+					}{
+						pop false /noData
+					}ifelse
+				}{
+					false /noData
+				}ifelse
+			}ifelse
+		}ifelse
+	}def
+	/renderChannelData
+	{
+		/_tmp xp
+		_tmp /nonZeroData ne currentoverprint and{
+			pop
+			_tmp /zeroData eq{pop}if
+			4 npop
+		}{
+			_tmp /nonZeroData eq{
+				{
+					invertXfer
+				}if
+					systemdict/image
+				get 5 execImage
+			}{
+				pop
+				_tmp /zeroData eq{pop}if
+				4 npop
+				knockOut
+			}ifelse
+		}ifelse
+	}def
+	/bwImage{
+	 begin
+			gsave
+			dup dup dup
+			getChannelData
+			exch pop false exch
+			renderChannelData
+			grestore
+	 end
+	}def
+	/ncolorimage{
+	 begin
+			pop pop
+			gsave
+			spot2/name get null ne spot2 spotChannel and{
+				true setoverprint
+			}if
+			getChannelData 
+			renderChannelData
+			grestore
+	 end
+	}def
+}def
+end
+end
+defaultpacking setpacking
+%%EndResource
+%%BeginResource: procset AGM_Gradient 1.0 0
+%%Title: (AGM Gradient Procset)
+%%Version: 1.0 0
+%%CreationDate: (4/26/96) ()
+%%Copyright: ((C) 1987-1996 Adobe Systems Incorporated All Rights Reserved)
+userdict /defaultpacking currentpacking put true setpacking
+userdict /AGM_Gradient 20 dict dup begin put
+/AGM_Gradient_private 200 dict def
+/initialize
+{
+	AGM_Gradient begin
+	AGM_Gradient_private begin
+	initializeVars
+	
+	/bd systemdict/mark get def
+	/ed
+		_level2PS 
+		{
+			(>>)
+		}{
+			(counttomark 2 idiv dup dict begin {def} repeat pop currentdict end)
+		} ifelse
+	cvx def
+	
+	_level2PS{
+		initializeLev2
+	}{
+		initializeLev1
+	}ifelse
+	
+	queryDevice
+	
+	initializeShading
+	initializeOps
+	_producingSeps{
+		AGM_Gradient_Sep/initialize get exec
+	}{
+		initializeComposite
+	}ifelse
+	_illustrator{
+		/f{}def
+		/F{}def
+		/s{}def
+		/S{}def
+		/b{}def
+		/B{}def
+	}if
+	/image where{
+		/image get /_image xd
+	}if
+	/colorimage where{
+		/colorimage get /_colorimage xd
+	}if
+	/rectfill where dup{
+		exch pop not _producingSeps or
+	}{
+		not
+	}ifelse
+	{
+		/rectfill{
+			gsave
+			newpath
+			4 2 roll moveto
+			1 index 0 rlineto
+			0 1 index rlineto
+			1 index neg 0 rlineto
+			pop pop
+			closepath
+			fill
+			grestore
+		}def
+	}if
+	/linealImage _noImage{
+		/rectImage load
+	}{
+		_producingSeps{
+			AGM_Gradient_Sep/AGM_Gradient_Sep_private get begin
+			/rampImage load
+		 end
+		}{
+			/rampImage load
+		}ifelse
+	}ifelse
+	def
+	AGM_Gradient_private
+	{
+		dup xcheck 1 index type /arraytype eq and
+		{
+			bind
+		}if
+		pop pop
+	}forall
+	AGM_Gradient
+	{
+		dup xcheck 1 index type /arraytype eq and
+		{
+			bind
+		}if
+		pop pop
+	}forall
+ end
+	
+	currentdict readonly pop
+ end
+}def
+/initializeAI
+{
+	pop pop 
+	AGM_Gradient/AGM_Gradient_private get /_illustrator true put
+	AGM_Gradient/initialize get exec
+		AGM_Gradient begin
+}def
+/unload{
+	systemdict/languagelevel known{
+		systemdict/languagelevel get 2 ge{
+			userdict/AGM_Gradient_Sep 2 copy known{
+				undef
+			}{
+				pop pop
+			}ifelse
+			userdict/AGM_Gradient 2 copy known{
+				undef
+			}{
+				pop pop
+			}ifelse
+		}if
+	}if
+}def
+/terminate{
+	currentdict AGM_Gradient eq{
+	 end
+	}if
+}def
+ 
+AGM_Gradient_private begin
+/initializeVars{
+	/_d255 256 array def
+	0 1 255{
+		_d255 exch dup 255 div put
+	}bind for
+	/_d255- 256 array def
+	0 1 255{
+		_d255- exch 1 _d255 2 index get sub put
+	}bind for
+	/_sSave nd
+	/_dUserSpace matrix defaultmatrix def
+	/_bUMatrix matrix def
+	/_imageMatrix matrix def
+	/_saveMatrix matrix def
+	/_xm matrix def
+	/_ccAry1 5 array def
+	/_level2PS 
+		systemdict/languagelevel known dup{
+			pop systemdict/languagelevel get 2 ge
+		}if
+	def
+	/_level3PS
+		_level2PS systemdict/shfill known and
+	def
+	currentdict /_illustrator known not{
+		/_illustrator false def
+	}if
+	
+}def
+/initializeOps
+{
+	AGM_Gradient begin
+	currentdict/Bc known not{
+		/Bc{
+		
+			_renderFlag 2 eq{
+				6 npop
+			}{
+				pushBSpace
+				_rampIndex 0 eq{
+					pop pop
+					setCStop
+				}if
+				linealFill
+				popBSpace
+			}ifelse
+		
+		}def
+	}if
+	
+	currentdict/Bg known not{
+		/Bg{
+			10 npop
+			/_gradName xp
+			/_renderFlag xp
+		
+			_renderFlag 2 ne{
+		
+				_illustrator{
+					_of setoverprint
+				}if
+		
+				_illustrator _eo and _renderFlag 3 eq or{
+					eoclip
+				}{
+					clip
+				}ifelse
+		
+				_gradNames _gradName 2 copy known{
+					get
+					mark exch aload pop
+					/_gradType xp
+					1 sub dup /_rampIndex xp
+					/_maxRampIndex xp
+					mark exch aload pop
+					0 0
+				}if
+				pop pop
+				getRampData
+			}{
+				mark mark
+			}ifelse
+		}def
+	}if
+	
+	currentdict/Bm known not{
+		/Bm{
+			_renderFlag 2 ne{
+				_gradType 0 eq{
+					linealRamp
+				}{
+					radialGrad
+				}ifelse
+			}{
+				6 npop
+			}ifelse
+		}def
+	}if
+	
+	currentdict/Bh known not{
+		/Bh{
+			2 npop
+			/_yHi xp
+			/_xHi xp
+			/_radHilite _xHi 0 ne _yHi 0 ne or pt
+		}def
+	}if
+	
+	currentdict/Bn known not{
+		/Bn{
+			AGM_Gradient_private begin
+				dict /_gradNames xp
+		 end
+		}def
+	}if
+	
+	currentdict/Bd known not{
+		/Bd{
+			AGM_Gradient begin
+			AGM_Gradient_private begin
+				/_nColorsBd xp
+				/_gradType xp
+				/_gradName xp
+		}def
+	}if
+	
+	currentdict/BD known not{
+		/BD{
+				currentdict/_gradNames known not{
+					/_gradNames 20 dict def
+				}if
+				] _nColorsBd _gradType
+				]  _gradName exch /_gradNames xput
+		 end
+		 end
+		}def
+	}if
+	
+	currentdict/Bb known not{
+		/Bb{
+		
+			AGM_Gradient begin
+			AGM_Gradient_private begin
+			_producingSeps{
+				AGM_Gradient_Sep/AGM_Gradient_Sep_private get begin
+			}if
+			mySave
+		}def
+	}if
+	
+	currentdict/BB known not{
+		/BB{
+		
+			/_tmp xp
+			cleartomark cleartomark
+		
+			_tmp dup
+			_renderFlag
+		
+			myRestore
+		
+			_producingSeps{
+			 end
+			}if
+		
+			_illustrator
+		 end
+		 end
+		
+			{
+				2 ne exch 0 gt and{
+					2 eq{
+						s
+					}{
+						S
+					}ifelse
+				}{
+					pop newpath
+				}ifelse
+			}{
+				pop newpath
+			}ifelse
+		
+		
+		}def
+	}if
+	
+	currentdict/Xm known not{
+		/Xm{
+			_xm astore pop
+		}def
+	}if
+	
+ end
+}def
+/queryDevice{
+	/_inRipSep
+		_level2PS{
+			currentpagedevice/Separations 2 copy known{
+				get
+			}{
+				pop pop false
+			}ifelse
+		}{
+			false
+		}ifelse
+	def
+	/_noImage /lv1Fix where{
+		pop lv1Fix
+	}{
+		false
+	}ifelse
+	def
+	/_useShells where{
+		pop
+	}{
+		/_useShells true def
+	}ifelse
+	
+	/_useSmoothShade where{
+		pop
+	}{
+		/_useSmoothShade false def 
+	}ifelse
+	/_cyanPlate 1 0 0 0 testCMYKColorThrough def
+	/_magentaPlate 0 1 0 0 testCMYKColorThrough def
+	/_yellowPlate 0 0 1 0 testCMYKColorThrough def
+	/_blackPlate 0 0 0 1 testCMYKColorThrough def
+	/_compositeJob
+		_cyanPlate _magentaPlate and _yellowPlate and _blackPlate and
+	def
+	/_compositeSpotDevice where{
+		pop
+	}{
+		/_compositeSpotDevice _compositeJob not _inRipSep or{
+			1
+		}{
+			0
+		}ifelse
+		def
+	}ifelse
+	/_producingSeps _compositeSpotDevice 0 ne def
+	/_deviceDPI 72 0 matrix defaultmatrix dtransform dup mul exch dup mul add sqrt def
+	/_dpiThreshold where{
+		pop
+	}{
+		/_dpiThreshold 600 def
+	}ifelse
+	/_screenFreqThreshold where{
+		pop
+	}{
+		/_screenFreqThreshold 150 def
+	}ifelse
+	/_contoneDevice where{
+		pop
+	}{
+		/_contoneDevice false def
+	}ifelse
+	/_subSampleOK 
+		_deviceDPI _dpiThreshold le 
+		currentScreenFreq _screenFreqThreshold le and 
+		_contoneDevice not and 
+		_producingSeps not and
+	def
+}def
+/initializeLev1{
+	/makeByte8{
+		/_tmp 0 pt
+		255 mul cvi
+		8 string 8{
+			dup _tmp 3 index put 
+			/_tmp _tmp 1 add pt
+		}repeat
+		exch pop
+	}def
+	/currentScreenFreq{
+		currentscreen pop pop
+	}def
+	/_byte 1 string def
+	/colorimage where{
+		pop
+	}{
+		/colorimage{
+			pop pop
+			/_blackTmp xp
+			/_yellowTmp xp
+			/_magentaTmp xp
+			/_cyanTmp xp
+			/_cnt 0 pt
+			[
+			_byte dup 0
+			_cyanTmp 
+				/_cnt cvx /get cvx _d255 /exch cvx /get cvx .3 /mul cvx
+			_magentaTmp
+				/_cnt cvx /get cvx _d255 /exch cvx /get cvx .59 /mul cvx
+			_yellowTmp
+				/_cnt cvx /get cvx _d255 /exch cvx /get cvx .11 /mul cvx
+			_blackTmp 
+				/_cnt cvx /get cvx _d255 /exch cvx /get cvx
+			/add cvx /add cvx /add cvx 1 /exch cvx /sub cvx
+			/dup cvx 0 /lt cvx{
+				pop 0
+			}/if cvx
+			/dup cvx 1 /gt cvx{
+				pop 1
+			}/if cvx
+			255 /mul cvx /cvi cvx
+			256 /mod cvx
+			/dup cvx 0 /lt cvx{
+				pop 0
+			}/if cvx
+			/put cvx
+			/_cnt dup cvx 1 /add cvx /pt cvx
+			] cvx
+			bind
+			/_image load 5 execImage
+		}def
+	}ifelse
+}def
+/initializeLev2{
+	/level2ScreenFreq{
+	 begin
+		60
+		HalftoneType 1 eq{
+			pop Frequency
+		}if
+		HalftoneType 2 eq{
+			pop GrayFrequency
+		}if
+		HalftoneType 5 eq{
+			pop Default level2ScreenFreq
+		}if
+		 end
+	}def
+	/currentScreenFreq{
+		currenthalftone level2ScreenFreq
+	}def
+}def
+/initializeShading{
+	_useSmoothShade _level3PS and{
+		/_usingSmoothShade true pt
+		initializeLev3_Ops
+	}{
+		/_usingSmoothShade false pt
+	}ifelse
+}def
+/initializeLev3_Ops
+{
+	/initShFill{
+		/_index _gradType 0 eq {0}{_maxRampIndex 1 sub} ifelse pt
+		/_rampFuncsArray _maxRampIndex array pt
+		/_boundsArray _maxRampIndex 1 sub array pt
+		/_encodeArray _maxRampIndex 2 mul array pt
+		/_beginCoord _rampPoint pt
+		/_colorSpace null pt
+		/_firstFill _rampIndex _maxRampIndex eq pt
+		/_lastFill false pt
+	}def
+	/getRampColorSpace{
+		_nSamples 1 gt{ 
+			/_ndx 0 pt
+			[blendColor] cvx exec
+		}if
+		/_C0 [currentcolor] pt
+		/_C0_Space currentcolorspace pt
+		
+		_nSamples 1 gt{ 
+			/_ndx _nSamples 1 sub pt
+			[blendColor] cvx exec
+		}if
+		/_C1 [currentcolor] pt
+		/_C1_Space currentcolorspace pt
+		
+		_C0_Space _C1_Space eq{
+			/_rampColorSpace _C0_Space pt
+		}{
+			(colorspace conflict!) ==
+			showpage
+			stop
+		}ifelse
+		
+		_spotColor{
+			nsetcustomcolorend
+		}if
+	}def
+	/linealShFill{
+		popBSpace
+		_xm aload pop pushBSpace
+		
+		/_size _index 1 add pt
+		_size _maxRampIndex lt {
+			/_rampFuncsArray _rampFuncsArray 0 _size getinterval pt
+			/_boundsArray _boundsArray 0 _size 1 sub getinterval pt
+			/_encodeArray _encodeArray 0 _size 2 mul getinterval pt
+		}if
+		
+		bd
+			/ShadingType 2
+			/ColorSpace _colorSpace
+			/Function 
+				bd
+					/FunctionType 3
+					/Domain [0 1]
+					/Functions _rampFuncsArray
+					/Bounds _boundsArray
+					/Encode _encodeArray
+				ed
+			/Extend [_firstFill _lastFill]
+			/Domain [0 1] 
+			/Coords [_beginCoord 0 _endCoord 0]
+		ed
+		shfill
+	}def
+	
+	/radialShFill{
+		/_size _maxRampIndex _index sub pt
+		_size _maxRampIndex lt {
+			/_rampFuncsArray _rampFuncsArray _index _size getinterval pt
+			/_boundsArray _boundsArray _index _size 1 sub getinterval pt
+			/_encodeArray _encodeArray _index 2 mul _size 2 mul getinterval pt
+		}if
+		
+		/_rampLen _beginCoord _endCoord sub pt
+		bd
+			/ShadingType 3
+			/ColorSpace _colorSpace
+			/Function 
+				bd
+					/FunctionType 3
+					/Domain [0 1]
+					/Functions _rampFuncsArray
+					/Bounds _boundsArray
+					/Encode _encodeArray
+				ed
+			/Extend [_lastFill _firstFill]
+			/Domain [0 1] 
+			/Coords [_xHi _rampLen mul _yHi _rampLen mul _endCoord 0 0 _beginCoord] 
+		ed
+		shfill
+		
+		_radHilite{
+			_xHi _rampLen mul _yHi _rampLen mul translate
+		}if
+	}def
+	
+	/fillRamp{ 
+	
+	
+		/_invert _midPoint 0.5 lt pt
+		_rampIndex _maxRampIndex eq {
+			initShFill
+		}if
+		
+		getRampColorSpace
+		
+		_colorSpace null eq{
+			/_colorSpace _rampColorSpace pt
+		}{
+			_colorSpace _rampColorSpace ne{
+				/_index _index 1 
+				_gradType 0 eq{
+					sub pt
+					linealShFill
+				}{
+					add pt
+					radialShFill
+				}ifelse
+				initShFill
+				/_colorSpace _rampColorSpace pt
+			} if
+		}ifelse
+		/_endCoord _endPoint pt	
+		_rampFuncsArray _index
+		bd
+			/FunctionType 2
+			/Domain [0 1]
+			/N 0.5 log _invert{1 _midPoint sub}{_midPoint}ifelse log div
+			_gradType 0 eq{
+				_invert{/C1}{/C0}ifelse _C0
+				_invert{/C0}{/C1}ifelse _C1
+			}{
+				_invert{/C0}{/C1}ifelse _C1
+				_invert{/C1}{/C0}ifelse _C0
+			}ifelse
+		ed
+		put
+		
+		_rampIndex 1 ne{
+			_boundsArray _index _gradType 1 eq{1 sub}if _endCoord put
+		} if
+		
+		0 1 _invert {exch}if
+		_encodeArray _index 2 mul 1 add 3 -1 roll put
+		_encodeArray _index 2 mul 3 -1 roll put
+		_rampIndex 1 eq {
+			/_lastFill true pt
+			_gradType 0 eq{
+				linealShFill
+			}{
+				radialShFill
+			}ifelse
+		}if
+		/_index _index 1 
+		_gradType 0 eq{
+			add pt
+		}{
+			sub pt
+		}ifelse
+	}def
+	
+	/radialRamp
+		/fillRamp load def
+	
+	/rampImage
+		/fillRamp load def
+	
+	AGM_Gradient begin
+	/Bc{
+		6 npop
+	}def
+	
+ end
+	
+	
+}def
+/initializeComposite{
+	/bwImage{
+		pop /_image load 5 execImage 
+	}def
+	currentdict/rampImage known not{
+		/rampImage{
+			_color{
+				_nSamples setImageParms
+	
+				
+				_rgbRamp{
+					_redData _greenData _blueData _nSamples 3 expandColor
+					true 3 null ncolorimage
+				}{
+					_cyanData _magentaData _yellowData _blackData _nSamples 4 expandColor
+					true 4 null ncolorimage
+				}ifelse
+			}{
+				_nSamples setImageParms _blackData null bwImage
+			}ifelse
+		}def
+	}if
+	/setCStop{
+		/_colorStyle exch pt
+		_colorStyle 0 eq{
+			1 exch sub
+			0 0 0
+			4 -1 roll
+		}if
+		
+		_colorStyle 2 eq{
+			setrgbcolor 4 npop
+		}if
+		
+		_colorStyle 3 eq{
+			1 exch sub /_tmp xp
+			pop
+			4{
+				_tmp mul 4 1 roll
+			}repeat
+		}if
+		
+		_colorStyle 4 eq{
+			3 -1 roll pop pop
+			1 exch sub /_tmp xp
+			3{
+				1 exch sub _tmp mul 1 exch sub 3 1 roll
+			}repeat
+			setrgbcolor 
+			4 npop
+		}if
+		_colorStyle 2 ne _colorStyle 4 ne and{
+			null nsetcustomcolor
+		}if
+	}def
+	/nsetcustomcolor
+	{
+		pop setcmykcolor
+	}def
+	/nsetcustomcolorend
+	{
+	}def
+	/ncolorimage{
+		pop 
+		/_colorimage load 10 execImage
+	}def
+	_noImage not _level2PS not and{
+		/linealFill{
+			8 setImageParms
+			_color{
+				currentcmykcolor
+				4{
+					makeByte8 4 1 roll
+				}repeat
+				true 4 null ncolorimage
+			}{
+				currentgray makeByte8 null bwImage
+			}ifelse
+		}def
+	}if
+}def
+/npop{
+	{pop}repeat
+}def
+/xd{
+	exch def
+}def
+/nd{
+	null def
+}def
+/pt{
+	AGM_Gradient_private 3 1 roll put
+}def
+/xp{
+	exch pt
+}def
+/xput{
+	dup load dup length exch maxlength eq{
+		dup dup load dup
+		length 2 mul dict copy def
+	}if
+	load begin
+		def
+  end
+}def
+/mySave{
+	save /_sSave xp
+}def
+/myRestore{
+	_sSave type /savetype eq{
+		_sSave restore
+	}if
+}def
+/gMark{
+	counttomark 2 add -1 roll
+}def
+/execImage{
+	/_tmp xp
+	{
+		exec
+	}stopped{
+		$error /errorname get /undefinedresult ne{
+			stop
+		}{
+			_tmp npop
+		}ifelse
+	}if
+}def
+/pushBSpace{
+	newpath gsave
+	_bUMatrix astore concat 
+}def
+/popBSpace{
+	grestore
+}def
+/setImageParms{
+	1 8 2 index 0 0 1 0 0 _imageMatrix astore
+}def
+/linealFill{
+	0 0 1 1 rectfill
+}def
+/testCMYKColorThrough{
+	gsave
+	setcmykcolor currentcmykcolor
+	grestore
+	add add add 0 ne
+}def
+/expandOne	{
+	/_tmp xp
+	dup type /stringtype ne{
+		_tmp string
+		exch
+		dup 0 ne{
+			255 mul cvi
+			0 1 _tmp 1 sub{
+				3 copy
+				exch put pop
+			}for
+		}if
+		pop
+	}if
+}def
+/expandColor{
+	/_channels xp
+	/_len xp
+	_channels{
+		_len expandOne _channels 1 roll
+	}repeat
+}def
+/blendColor{
+	
+	_color{
+		_rgbRamp _producingSeps not and{
+			_redData dup type /stringtype eq{
+				/_ndx cvx /get cvx _d255 /exch cvx /get cvx
+			}if
+			_greenData dup type /stringtype eq{
+				/_ndx cvx /get cvx _d255 /exch cvx /get cvx
+			}if
+			_blueData dup type /stringtype eq{
+				/_ndx cvx /get cvx _d255 /exch cvx /get cvx
+			}if
+			/setrgbcolor cvx
+		}{
+			_cyanData dup type /stringtype eq{
+				/_ndx cvx /get cvx _d255 /exch cvx /get cvx
+			}if
+			_magentaData dup type /stringtype eq{
+				/_ndx cvx /get cvx _d255 /exch cvx /get cvx
+			}if
+			_yellowData dup type /stringtype eq{
+				/_ndx cvx /get cvx _d255 /exch cvx /get cvx
+			}if
+			_blackData dup type /stringtype eq{
+				/_ndx cvx /get cvx _d255 /exch cvx /get cvx
+			}if
+	
+			_spotColor{
+				_rampSD begin
+					/_rampSD cvx /begin cvx
+	
+					spot1 begin
+						tintImage dup type /stringtype eq{
+							/_ndx cvx /get cvx _d255- /exch cvx /get cvx
+						}{
+							dup null ne{
+								name type /nametype ne{
+									1 exch sub
+								}if
+							}if
+						}ifelse
+				 end
+					/spot1 cvx /tintValue 3 -1 /roll cvx /put cvx
+	
+					spot2 begin
+						tintImage dup type /stringtype eq{
+							/_ndx cvx /get cvx _d255- /exch cvx /get cvx
+						}{
+							dup null ne{
+								name type /nametype ne{
+									1 exch sub
+								}if
+							}if
+						}ifelse
+				 end
+					/spot2 cvx /tintValue 3 -1 /roll cvx /put cvx
+					/end cvx
+			 end
+				/_rampSD cvx
+				/nsetcustomcolor cvx
+			}{
+				/setcmykcolor cvx
+			}ifelse
+		}ifelse
+	}{
+		_blackData /_ndx cvx /get cvx
+		_d255 /exch cvx /get cvx
+		
+		_usingSmoothShade{
+			1 /exch cvx /sub cvx 0 0 0 4 -1 /roll cvx /setcmykcolor cvx
+		}{
+			 /setgray cvx
+		}ifelse
+	}ifelse
+}def
+/linealRamp{
+	pushBSpace
+	_ramp{
+		linealImage
+	}{
+		linealFill
+	}ifelse
+	popBSpace
+	/_rampIndex _rampIndex 1 sub pt
+	_rampIndex 0 gt{
+		getRampData
+	}if
+}def
+/radialGrad{
+	/_firstShell true pt
+	_usingSmoothShade not{
+		fill
+	}if
+	pushBSpace
+	
+	_radHilite{
+		_xHi _yHi _bUMatrix idtransform /_yHi xp /_xHi xp
+		_rampPoint 1 lt{
+			1 _rampPoint sub dup _xHi mul exch _yHi mul translate
+		}if
+	}if
+	_rampIndex{
+			radialRamp
+		/_rampIndex _rampIndex 1 sub pt
+		_rampIndex 0 gt{
+			getRampData
+		}if
+	}repeat
+	
+	popBSpace
+	
+}def
+/getNSamples{
+	0 exch
+	{
+		dup type /stringtype eq{
+			length exch pop exit
+		}if
+		pop
+	}forall
+	dup 0 eq{
+		pop 1
+	}if
+}def
+/getRampData{
+	/_rampType gMark pt
+	/_color _rampType 0 gt pt
+	/_ccRGB _rampType 5 eq _rampType 6 eq or pt
+	/_rgbRamp _rampType 4 eq _ccRGB or pt
+	/_ccProcess _rampType 2 eq _rampType 3 eq or pt
+	_producingSeps{
+		_rampSD initSpotDict
+		/_spotColor _ccProcess _ccRGB or pt
+	}{
+		/_spotColor false pt
+	}ifelse
+	/_ramp true pt
+	100 div /_rampPoint xp
+	100 div /_midPoint xp
+	
+	dup /_colorStyle xp
+	_colorStyle 0 eq{ 
+		2
+	}{
+		_colorStyle 1 eq{ 
+			5
+		}{
+			_colorStyle 2 eq{
+				8
+			}{
+				_colorStyle 3 eq{
+					_producingSeps{
+						_rampSD begin
+							spot1 begin
+								/name 3 index def
+								/spot_K 4 index def
+								/spot_Y 5 index def
+								/spot_M 6 index def
+								/spot_C 7 index def
+						 end
+					 end
+					}if
+					7
+				}{
+					_producingSeps{
+						_rampSD begin
+							spot1 begin
+								/name 4 index def
+								/spot_K 8 index def
+								/spot_Y 9 index def
+								/spot_M 10 index def
+								/spot_C 11 index def
+						 end
+					 end
+					}if
+					11
+				} ifelse
+			}ifelse
+		}ifelse
+	}ifelse
+	/_tmp xp
+	_tmp index 100 div /_endPoint xp
+	
+	_gradType 1 eq{
+		_tmp 1 add index 100 div /_midPoint xp
+	}if
+	
+	_producingSeps{
+		_tmp 2 add index /_nextColorStyle xp
+		_nextColorStyle 3 eq{
+			/_tmp _tmp 4 add pt
+			_tmp index dup
+			_rampSD begin
+				spot1 /name get ne{
+					spot2 begin
+						/name xd
+						/spot_K _tmp 2 add index def
+						/spot_Y _tmp 3 add index def
+						/spot_M _tmp 4 add index def
+						/spot_C _tmp 5 add index def
+				 end
+				}{
+					pop
+				}ifelse
+		 end
+		}if
+		_nextColorStyle 4 eq{
+			/_tmp _tmp 5 add pt
+			_tmp index dup
+			_rampSD begin
+				spot1 /name get ne{
+					spot2 begin
+						/name xd
+						/spot_K _tmp 5 add index def
+						/spot_Y _tmp 6 add index def
+						/spot_M _tmp 7 add index def
+						/spot_C _tmp 8 add index def
+				 end
+				}{
+					pop
+				}ifelse
+		 end
+		}if
+	}if
+	_rampType 3 eq _rampType 6 eq or{
+		/_tint2Data gMark pt
+	}if
+	_ccProcess _ccRGB or{
+		/_tint1Data gMark pt
+	}if
+	_rgbRamp{
+		/_blueData gMark pt
+		/_greenData gMark pt
+		/_redData gMark pt
+	}if
+	
+	_producingSeps{
+		_rampSD begin
+			_ccProcess _ccRGB or{
+				_rampType 3 eq _rampType 6 eq or{
+					spot2 begin
+						/tintImage _gradType 0 eq{
+							_tint2Data
+						}{
+							_tint1Data
+						}ifelse
+						def
+						name null eq{
+							/name /Black def
+						}if
+				 end
+				}if
+				spot1 begin
+					/tintImage _gradType 0 eq _rampType 2 eq or _rampType 5 eq or{
+						_tint1Data
+					}{
+						_tint2Data
+					}ifelse
+					def
+					_rampType 2 eq _rampType 5 eq or{
+						name null eq{
+							/name spot2 /name get def
+							spot2 /name null put
+						}if
+					}{
+						name null eq{
+							/name /Black def
+						}if
+					}ifelse
+			 end
+			}if
+	 end
+	}if
+	/_blackData gMark pt
+	_rampType 0 gt{
+		counttomark 4 add -3 roll
+		/_yellowData xp
+		/_magentaData xp
+		/_cyanData xp
+	}if
+	_ramp{
+		/_nSamples
+			[
+			_rampType 0 eq {_blackData}if
+			_rampType 1 eq {_cyanData _magentaData _yellowData _blackData}if
+			_rampType 2 eq {_cyanData _magentaData _yellowData _blackData _tint1Data}if
+			_rampType 3 eq {_cyanData _magentaData _yellowData _blackData _tint1Data _tint2Data}if
+			_rampType 4 eq {_cyanData _magentaData _yellowData _blackData _redData _greenData _blueData}if
+			_rampType 5 eq {_cyanData _magentaData _yellowData _blackData _redData _greenData _blueData _tint1Data}if
+			_rampType 6 eq {_cyanData _magentaData _yellowData _blackData _redData _greenData _blueData _tint1Data _tint2Data}if
+			] getNSamples pt
+		_usingSmoothShade not {/_ramp _nSamples 1 gt pt} if
+	} if
+	
+	setCStop
+}def
+/rectImage{
+	gsave
+	/_sInc 1 pt
+	/_bInc 1 _nSamples div pt
+	/_uRampLen 1 0 dtransform _dUserSpace idtransform dup mul exch dup mul add sqrt pt
+	/_pChange _uRampLen 0 eq{0}{_nSamples _uRampLen div}ifelse pt
+	0
+	_nSamples
+	[
+	/dup cvx
+	/_ndx /exch cvx /pt cvx
+	blendColor
+	0 0 _bInc 1 /rectfill cvx
+	_bInc 0 /translate cvx
+	_sInc /add cvx
+	] cvx
+	bind
+	repeat
+	pop
+	_spotColor{
+		nsetcustomcolorend
+	}if
+	grestore
+}def
+/radialInit{
+	/_nRadSamples _nSamples dup 0 eq{pop 1}if pt
+	/_sInc -1 pt
+	/_rampLen _rampPoint _endPoint sub pt
+	/_bInc _rampLen _nSamples div neg pt
+	/_optimize false pt
+	_subSampleOK{
+		/_uRampLen
+			_rampLen 0 dtransform _dUserSpace idtransform dup mul exch dup mul add sqrt
+			0 _rampLen dtransform _dUserSpace idtransform dup mul exch dup mul add sqrt
+			2 copy lt{
+				exch
+			}if pop
+		pt
+		/_pChange 
+			_uRampLen 0 eq{
+				0
+			}{
+				_nSamples _uRampLen div
+			}ifelse
+		pt
+		_pChange .5 gt dup /_optimize xp{
+			/_nRadSamples _uRampLen 2 div round cvi dup 1 le{pop 2}if pt
+			/_bInc _rampLen _nRadSamples div neg pt
+			/_sInc _nSamples 1 sub _nRadSamples 1 sub div neg pt
+		}if
+	}if
+	_radHilite{
+		/_xBCInc _xHi _rampLen mul _nRadSamples div pt
+		/_yBCInc _yHi _rampLen mul _nRadSamples div pt
+	}if
+}def
+currentdict/radialRamp known not{
+	/radialRamp{
+	
+		/_saveMatrix _saveMatrix currentmatrix def
+		
+		radialInit
+	
+		_rampPoint
+	
+		_nSamples 1 sub
+	
+		_nRadSamples 
+		[
+			/dup cvx
+	
+			_optimize{
+				/round cvx /cvi cvx
+			}if
+	
+			/_ndx /exch cvx /pt cvx
+			
+			_useShells{
+				/_firstShell cvx{
+					/_firstShell false pt
+				}{
+					0 0 3 index 360 0 arcn fill
+				}/ifelse cvx
+			}if
+	
+			blendColor
+	
+			_useShells{
+				0 0 3 /index cvx 0 360 /arc cvx 
+			}{
+				0 0 3 /index cvx 0 360 /arc cvx /fill cvx
+			}ifelse
+	
+			/exch cvx _bInc /add cvx /exch cvx
+	
+			_sInc /add cvx
+	
+			_radHilite{
+				_xBCInc _yBCInc /translate cvx
+			}if
+		] cvx bind
+		repeat
+	
+		pop pop
+	
+		_saveMatrix setmatrix
+	
+		_radHilite{
+			_xHi _rampLen mul _yHi _rampLen mul translate
+		}if
+		
+		_useShells _rampIndex 1 eq and{
+			fill
+		}if
+		_spotColor{
+			nsetcustomcolorend
+		}if
+	
+		
+	}def
+}if
+end
+end
+defaultpacking setpacking
+%%EndResource
+%%BeginProcSet: Adobe_ColorImage_AI6 1.1 0
+userdict /Adobe_ColorImage_AI6 known not
+{
+	userdict /Adobe_ColorImage_AI6 24 dict put 
+} if
+userdict /Adobe_ColorImage_AI6 get begin
+/initialize
+{ 
+	Adobe_ColorImage_AI6 begin
+	Adobe_ColorImage_AI6
+	{
+		dup type /arraytype eq
+		{
+			dup xcheck
+			{
+				bind
+			} if
+		} if
+		pop pop
+	} forall
+} def
+/terminate { end } def
+currentdict /Adobe_ColorImage_AI6_Vars known not
+{
+	/Adobe_ColorImage_AI6_Vars 15 dict def
+} if
+Adobe_ColorImage_AI6_Vars begin
+	/channelcount 0 def
+	/sourcecount 0 def
+	/sourcearray 4 array def
+	/plateindex -1 def
+	/XIMask 0 def
+	/XIBinary 0 def
+	/XIChannelCount 0 def
+	/XIBitsPerPixel 0 def
+	/XIImageHeight 0 def
+	/XIImageWidth 0 def
+	/XIImageMatrix null def
+	/XIBuffer null def
+	/XIDataProc null def
+	/XIVersion 6 def
+end
+/WalkRGBString null def
+/WalkCMYKString null def
+/StuffRGBIntoGrayString null def
+/RGBToGrayImageProc null def
+/StuffCMYKIntoGrayString null def
+/CMYKToGrayImageProc null def
+/ColorImageCompositeEmulator null def
+/SeparateCMYKImageProc null def
+/FourEqual null def
+/TestPlateIndex null def
+currentdict /_colorimage known not
+{
+	/colorimage where
+	{
+		/colorimage get /_colorimage exch def
+	}
+	{
+		/_colorimage null def
+	} ifelse
+} if
+/_currenttransfer systemdict /currenttransfer get def
+/colorimage null def
+/XI null def
+/WalkRGBString
+{
+	0 3 index
+	dup length 1 sub 0 3 3 -1 roll
+	{
+		3 getinterval { } forall
+		5 index exec
+		3 index
+	} for
+	
+	 5 { pop } repeat
+} def
+/WalkCMYKString
+{
+	0 3 index
+	dup length 1 sub 0 4 3 -1 roll
+	{
+		4 getinterval { } forall
+		
+		6 index exec
+		
+		3 index
+		
+	} for
+	
+	5 { pop } repeat
+	
+} def
+/StuffRGBIntoGrayString
+{
+	.11 mul exch
+	
+	.59 mul add exch
+	
+	.3 mul add
+	
+	cvi 3 copy put
+	
+	pop 1 add
+} def
+/RGBToGrayImageProc
+{	
+	Adobe_ColorImage_AI6_Vars begin 
+		sourcearray 0 get exec
+		dup length 3 idiv string
+		dup 3 1 roll 
+		
+		/StuffRGBIntoGrayString load exch
+		WalkRGBString
+ end
+} def
+/StuffCMYKIntoGrayString
+{
+	exch .11 mul add
+	
+	exch .59 mul add
+	
+	exch .3 mul add
+	
+	dup 255 gt { pop 255 } if
+	
+	255 exch sub cvi 3 copy put
+	
+	pop 1 add
+} def
+/CMYKToGrayImageProc
+{	
+	Adobe_ColorImage_AI6_Vars begin
+		sourcearray 0 get exec
+		dup length 4 idiv string
+		dup 3 1 roll 
+		
+		/StuffCMYKIntoGrayString load exch
+		WalkCMYKString
+ end
+} def
+/ColorImageCompositeEmulator
+{
+	pop true eq
+	{
+		Adobe_ColorImage_AI6_Vars /sourcecount get 5 add { pop } repeat
+	}
+	{
+		Adobe_ColorImage_AI6_Vars /channelcount get 1 ne
+		{
+			Adobe_ColorImage_AI6_Vars begin
+				sourcearray 0 3 -1 roll put
+			
+				channelcount 3 eq 
+				{ 
+					/RGBToGrayImageProc 
+				}
+				{ 
+					/CMYKToGrayImageProc
+				} ifelse
+				load
+		 end
+		} if
+		image
+	} ifelse
+} def
+/SeparateCMYKImageProc
+{	
+	Adobe_ColorImage_AI6_Vars begin
+		sourcecount 0 ne
+		{
+			sourcearray plateindex get exec
+		}
+		{			
+			sourcearray 0 get exec
+			
+			dup length 4 idiv string
+			
+			0 2 index
+			
+			plateindex 4 2 index length 1 sub
+			{
+				get 255 exch sub
+				
+				3 copy put pop 1 add
+				
+				2 index
+			} for
+			pop pop exch pop
+		} ifelse
+ end
+} def
+	
+/FourEqual
+{
+	4 index ne
+	{
+		pop pop pop false
+	}
+	{
+		4 index ne
+		{
+			pop pop false
+		}
+		{
+			4 index ne
+			{
+				pop false
+			}
+			{
+				4 index eq
+			} ifelse
+		} ifelse
+	} ifelse
+} def
+/TestPlateIndex
+{
+	Adobe_ColorImage_AI6_Vars begin
+		/plateindex -1 def
+		/setcmykcolor where
+		{
+			pop
+			gsave
+			1 0 0 0 setcmykcolor systemdict /currentgray get exec 1 exch sub
+			0 1 0 0 setcmykcolor systemdict /currentgray get exec 1 exch sub
+			0 0 1 0 setcmykcolor systemdict /currentgray get exec 1 exch sub
+			0 0 0 1 setcmykcolor systemdict /currentgray get exec 1 exch sub
+			grestore
+			1 0 0 0 FourEqual 
+			{ 
+				/plateindex 0 def
+			}
+			{
+				0 1 0 0 FourEqual
+				{ 
+					/plateindex 1 def
+				}
+				{
+					0 0 1 0 FourEqual
+					{
+						/plateindex 2 def
+					}
+					{
+						0 0 0 1 FourEqual
+						{ 
+							/plateindex 3 def
+						}
+						{
+							0 0 0 0 FourEqual
+							{
+								/plateindex 5 def
+							} if
+						} ifelse
+					} ifelse
+				} ifelse
+			} ifelse
+			pop pop pop pop
+		} if
+		plateindex
+ end
+} def
+/colorimage
+{
+	Adobe_ColorImage_AI6_Vars begin
+		/channelcount 1 index def
+		/sourcecount 2 index 1 eq { channelcount 1 sub } { 0 } ifelse def
+		4 sourcecount add index dup 
+		8 eq exch 1 eq or not
+ end
+	
+	{
+		/_colorimage load null ne
+		{
+			_colorimage
+		}
+		{
+			Adobe_ColorImage_AI6_Vars /sourcecount get
+			7 add { pop } repeat
+		} ifelse
+	}
+	{
+		dup 3 eq
+		TestPlateIndex
+		dup -1 eq exch 5 eq or or
+		{
+			/_colorimage load null eq
+			{
+				ColorImageCompositeEmulator
+			}
+			{
+				dup 1 eq
+				{
+					pop pop image
+				}
+				{
+					Adobe_ColorImage_AI6_Vars /plateindex get 5 eq
+					{
+						gsave
+						
+						0 _currenttransfer exec
+						1 _currenttransfer exec
+						eq
+						{ 0 _currenttransfer exec 0.5 lt }
+						{ 0 _currenttransfer exec 1 _currenttransfer exec gt } ifelse
+						
+						{ { pop 0 } } { { pop 1 } } ifelse
+						systemdict /settransfer get exec
+					} if
+					
+					_colorimage
+					
+					Adobe_ColorImage_AI6_Vars /plateindex get 5 eq
+					{
+						grestore
+					} if
+				} ifelse
+			} ifelse
+		}
+		{
+			dup 1 eq
+			{
+				pop pop
+				image
+			}
+			{
+				pop pop
+				Adobe_ColorImage_AI6_Vars begin
+					sourcecount -1 0
+					{			
+						exch sourcearray 3 1 roll put
+					} for
+					/SeparateCMYKImageProc load
+			 end
+				systemdict /image get exec
+			} ifelse
+		} ifelse
+	} ifelse
+} def
+/XG
+{
+	pop pop
+} def
+/XF
+{
+	13 {pop} repeat
+} def
+/Xh
+{
+	Adobe_ColorImage_AI6_Vars begin
+		gsave
+		/XIMask exch 0 ne def
+		/XIImageHeight exch def
+		/XIImageWidth exch def
+		/XIImageMatrix exch def
+		0 0 moveto
+		XIImageMatrix concat
+		XIImageWidth XIImageHeight scale
+		
+		XIMask
+		{
+			/_lp /null ddef
+			_fc
+			/_lp /imagemask ddef
+		}
+		if
+		/XIVersion 7 def
+ end
+} def
+/XH
+{
+	Adobe_ColorImage_AI6_Vars begin
+		/XIVersion 6 def
+		grestore
+ end
+} def
+/XI
+{
+	Adobe_ColorImage_AI6_Vars begin
+		gsave
+		/XIMask exch 0 ne def
+		/XIBinary exch 0 ne def
+		pop
+		pop
+		/XIChannelCount exch def
+		/XIBitsPerPixel exch def
+		/XIImageHeight exch def
+		/XIImageWidth exch def
+		pop pop pop pop
+		/XIImageMatrix exch def
+		XIBitsPerPixel 1 eq
+		{
+			XIImageWidth 8 div ceiling cvi
+		}
+		{
+			XIImageWidth XIChannelCount mul
+		} ifelse
+		/XIBuffer exch string def
+		XIBinary
+		{
+			/XIDataProc { currentfile XIBuffer readstring pop } def
+			XIVersion 6 le
+			{
+				currentfile 128 string readline pop pop
+			}
+			if
+		}
+		{
+			/XIDataProc { currentfile XIBuffer readhexstring pop } def
+		} ifelse
+		
+		XIVersion 6 le
+		{
+			0 0 moveto
+			XIImageMatrix concat
+			XIImageWidth XIImageHeight scale
+			XIMask
+			{
+				/_lp /null ddef
+				_fc
+				/_lp /imagemask ddef
+			} if
+		} if
+		
+		XIMask
+		{
+			XIImageWidth XIImageHeight
+			false
+			[ XIImageWidth 0 0 XIImageHeight neg 0 0 ]
+			/XIDataProc load
+			imagemask
+		}
+		{
+			XIImageWidth XIImageHeight
+			XIBitsPerPixel
+			[ XIImageWidth 0 0 XIImageHeight neg 0 0 ]
+			/XIDataProc load
+			
+			XIChannelCount 1 eq
+			{
+				gsave
+				0 setgray
+				image
+				grestore
+			}
+			{
+				false
+				XIChannelCount
+				colorimage
+			} ifelse
+		} ifelse
+		grestore
+ end
+} def
+end
+%%EndProcSet
+%%BeginResource: procset Adobe_Illustrator_AI5 1.1 0
+%%Title: (Adobe Illustrator (R) Version 5.0 Full Prolog)
+%%Version: 1.1 0
+%%CreationDate: (3/7/1994) ()
+%%Copyright: ((C) 1987-1996 Adobe Systems Incorporated All Rights Reserved)
+currentpacking true setpacking
+userdict /Adobe_Illustrator_AI5_vars 81 dict dup begin
+put
+/_eo false def
+/_lp /none def
+/_pf
+{
+} def
+/_ps
+{
+} def
+/_psf
+{
+} def
+/_pss
+{
+} def
+/_pjsf
+{
+} def
+/_pjss
+{
+} def
+/_pola 0 def
+/_doClip 0 def
+/cf currentflat def
+/_tm matrix def
+/_renderStart
+[
+/e0 /r0 /a0 /o0 /e1 /r1 /a1 /i0
+] def
+/_renderEnd
+[
+null null null null /i1 /i1 /i1 /i1
+] def
+/_render -1 def
+/_rise 0 def
+/_ax 0 def
+/_ay 0 def
+/_cx 0 def
+/_cy 0 def
+/_leading
+[
+0 0
+] def
+/_ctm matrix def
+/_mtx matrix def
+/_sp 16#020 def
+/_hyphen (-) def
+/_fScl 0 def
+/_cnt 0 def
+/_hs 1 def
+/_nativeEncoding 0 def
+/_useNativeEncoding 0 def
+/_tempEncode 0 def
+/_pntr 0 def
+/_tDict 2 dict def
+/_wv 0 def
+/Tx
+{
+} def
+/Tj
+{
+} def
+/CRender
+{
+} def
+/_AI3_savepage
+{
+} def
+/_gf null def
+/_cf 4 array def
+/_if null def
+/_of false def
+/_fc
+{
+} def
+/_gs null def
+/_cs 4 array def
+/_is null def
+/_os false def
+/_sc
+{
+} def
+/_pd 1 dict def
+/_ed 15 dict def
+/_pm matrix def
+/_fm null def
+/_fd null def
+/_fdd null def
+/_sm null def
+/_sd null def
+/_sdd null def
+/_i null def
+/discardSave null def
+/buffer 256 string def
+/beginString null def
+/endString null def
+/endStringLength null def
+/layerCnt 1 def
+/layerCount 1 def
+/perCent (%) 0 get def
+/perCentSeen? false def
+/newBuff null def
+/newBuffButFirst null def
+/newBuffLast null def
+/clipForward? false def
+end
+userdict /Adobe_Illustrator_AI5 known not {
+	userdict /Adobe_Illustrator_AI5 91 dict put
+} if
+userdict /Adobe_Illustrator_AI5 get begin
+/initialize
+{
+	Adobe_Illustrator_AI5 dup begin
+	Adobe_Illustrator_AI5_vars begin
+	discardDict
+	{
+		bind pop pop
+	} forall
+	dup /nc get begin
+	{
+		dup xcheck 1 index type /operatortype ne and
+		{
+			bind
+		} if
+		pop pop
+	} forall
+ end
+	newpath
+} def
+/terminate
+{
+ end
+ end
+} def
+/_
+null def
+/ddef
+{
+	Adobe_Illustrator_AI5_vars 3 1 roll put
+} def
+/xput
+{
+	dup load dup length exch maxlength eq
+	{
+		dup dup load dup
+		length 2 mul dict copy def
+	} if
+	load begin
+	def
+ end
+} def
+/npop
+{
+	{
+		pop
+	} repeat
+} def
+/sw
+{
+	dup length exch stringwidth
+	exch 5 -1 roll 3 index mul add
+	4 1 roll 3 1 roll mul add
+} def
+/swj
+{
+	dup 4 1 roll
+	dup length exch stringwidth
+	exch 5 -1 roll 3 index mul add
+	4 1 roll 3 1 roll mul add
+	6 2 roll /_cnt 0 ddef
+	{
+		1 index eq
+		{
+			/_cnt _cnt 1 add ddef
+		} if
+	} forall
+	pop
+	exch _cnt mul exch _cnt mul 2 index add 4 1 roll 2 index add 4 1 roll pop pop
+} def
+/ss
+{
+	4 1 roll
+	{
+		2 npop
+		(0) exch 2 copy 0 exch put pop
+		gsave
+		false charpath currentpoint
+		4 index setmatrix
+		stroke
+		grestore
+		moveto
+		2 copy rmoveto
+	} exch cshow
+	3 npop
+} def
+/jss
+{
+	4 1 roll
+	{
+		2 npop
+		(0) exch 2 copy 0 exch put
+		gsave
+		_sp eq
+		{
+			exch 6 index 6 index 6 index 5 -1 roll widthshow
+			currentpoint
+		}
+		{
+			false charpath currentpoint
+			4 index setmatrix stroke
+		} ifelse
+		grestore
+		moveto
+		2 copy rmoveto
+	} exch cshow
+	6 npop
+} def
+/sp
+{
+	{
+		2 npop (0) exch
+		2 copy 0 exch put pop
+		false charpath
+		2 copy rmoveto
+	} exch cshow
+	2 npop
+} def
+/jsp
+{
+	{
+		2 npop
+		(0) exch 2 copy 0 exch put
+		_sp eq
+		{
+			exch 5 index 5 index 5 index 5 -1 roll widthshow
+		}
+		{
+			false charpath
+		} ifelse
+		2 copy rmoveto
+	} exch cshow
+	5 npop
+} def
+/pl
+{
+	transform
+	0.25 sub round 0.25 add exch
+	0.25 sub round 0.25 add exch
+	itransform
+} def
+/setstrokeadjust where
+{
+	pop true setstrokeadjust
+	/c
+	{
+		curveto
+	} def
+	/C
+	/c load def
+	/v
+	{
+		currentpoint 6 2 roll curveto
+	} def
+	/V
+	/v load def
+	/y
+	{
+		2 copy curveto
+	} def
+	/Y
+	/y load def
+	/l
+	{
+		lineto
+	} def
+	/L
+	/l load def
+	/m
+	{
+		moveto
+	} def
+}
+{
+	/c
+	{
+		pl curveto
+	} def
+	/C
+	/c load def
+	/v
+	{
+		currentpoint 6 2 roll pl curveto
+	} def
+	/V
+	/v load def
+	/y
+	{
+		pl 2 copy curveto
+	} def
+	/Y
+	/y load def
+	/l
+	{
+		pl lineto
+	} def
+	/L
+	/l load def
+	/m
+	{
+		pl moveto
+	} def
+} ifelse
+/d
+{
+	setdash
+} def
+/cf
+{
+} def
+/i
+{
+	dup 0 eq
+	{
+		pop cf
+	} if
+	setflat
+} def
+/j
+{
+	setlinejoin
+} def
+/J
+{
+	setlinecap
+} def
+/M
+{
+	setmiterlimit
+} def
+/w
+{
+	setlinewidth
+} def
+/XR
+{
+	0 ne
+	/_eo exch ddef
+} def
+/H
+{
+} def
+/h
+{
+	closepath
+} def
+/N
+{
+	_pola 0 eq
+	{
+		_doClip 1 eq
+		{
+			_eo {eoclip} {clip} ifelse /_doClip 0 ddef
+		} if
+		newpath
+	}
+	{
+		/CRender
+		{
+			N
+		} ddef
+	} ifelse
+} def
+/n
+{
+	N
+} def
+/F
+{
+	_pola 0 eq
+	{
+		_doClip 1 eq
+		{
+			gsave _pf grestore _eo {eoclip} {clip} ifelse newpath /_lp /none ddef _fc
+			/_doClip 0 ddef
+		}
+		{
+			_pf
+		} ifelse
+	}
+	{
+		/CRender
+		{
+			F
+		} ddef
+	} ifelse
+} def
+/f
+{
+	closepath
+	F
+} def
+/S
+{
+	_pola 0 eq
+	{
+		_doClip 1 eq
+		{
+			gsave _ps grestore _eo {eoclip} {clip} ifelse newpath /_lp /none ddef _sc
+			/_doClip 0 ddef
+		}
+		{
+			_ps
+		} ifelse
+	}
+	{
+		/CRender
+		{
+			S
+		} ddef
+	} ifelse
+} def
+/s
+{
+	closepath
+	S
+} def
+/B
+{
+	_pola 0 eq
+	{
+		_doClip 1 eq
+		gsave F grestore
+		{
+			gsave S grestore _eo {eoclip} {clip} ifelse newpath /_lp /none ddef _sc
+			/_doClip 0 ddef
+		}
+		{
+			S
+		} ifelse
+	}
+	{
+		/CRender
+		{
+			B
+		} ddef
+	} ifelse
+} def
+/b
+{
+	closepath
+	B
+} def
+/W
+{
+	/_doClip 1 ddef
+} def
+/*
+{
+	count 0 ne
+	{
+		dup type /stringtype eq
+		{
+			pop
+		} if
+	} if
+	newpath
+} def
+/u
+{
+} def
+/U
+{
+} def
+/q
+{
+	_pola 0 eq
+	{
+		gsave
+	} if
+} def
+/Q
+{
+	_pola 0 eq
+	{
+		grestore
+	} if
+} def
+/*u
+{
+	_pola 1 add /_pola exch ddef
+} def
+/*U
+{
+	_pola 1 sub /_pola exch ddef
+	_pola 0 eq
+	{
+		CRender
+	} if
+} def
+/D
+{
+	pop
+} def
+/*w
+{
+} def
+/*W
+{
+} def
+/`
+{
+	/_i save ddef
+	clipForward?
+	{
+		nulldevice
+	} if
+	6 1 roll 4 npop
+	concat pop
+	userdict begin
+	/showpage
+	{
+	} def
+	0 setgray
+	0 setlinecap
+	1 setlinewidth
+	0 setlinejoin
+	10 setmiterlimit
+	[] 0 setdash
+	/setstrokeadjust where {pop false setstrokeadjust} if
+	newpath
+	0 setgray
+	false setoverprint
+} def
+/~
+{
+ end
+	_i restore
+} def
+/O
+{
+	0 ne
+	/_of exch ddef
+	/_lp /none ddef
+} def
+/R
+{
+	0 ne
+	/_os exch ddef
+	/_lp /none ddef
+} def
+/g
+{
+	/_gf exch ddef
+	/_fc
+	{
+		_lp /fill ne
+		{
+			_of setoverprint
+			_gf setgray
+			/_lp /fill ddef
+		} if
+	} ddef
+	/_pf
+	{
+		_fc
+		_eo {eofill} {fill} ifelse
+	} ddef
+	/_psf
+	{
+		_fc
+		ashow
+	} ddef
+	/_pjsf
+	{
+		_fc
+		awidthshow
+	} ddef
+	/_lp /none ddef
+} def
+/G
+{
+	/_gs exch ddef
+	/_sc
+	{
+		_lp /stroke ne
+		{
+			_os setoverprint
+			_gs setgray
+			/_lp /stroke ddef
+		} if
+	} ddef
+	/_ps
+	{
+		_sc
+		stroke
+	} ddef
+	/_pss
+	{
+		_sc
+		ss
+	} ddef
+	/_pjss
+	{
+		_sc
+		jss
+	} ddef
+	/_lp /none ddef
+} def
+/k
+{
+	_cf astore pop
+	/_fc
+	{
+		_lp /fill ne
+		{
+			_of setoverprint
+			_cf aload pop setcmykcolor
+			/_lp /fill ddef
+		} if
+	} ddef
+	/_pf
+	{
+		_fc
+		_eo {eofill} {fill} ifelse
+	} ddef
+	/_psf
+	{
+		_fc
+		ashow
+	} ddef
+	/_pjsf
+	{
+		_fc
+		awidthshow
+	} ddef
+	/_lp /none ddef
+} def
+/K
+{
+	_cs astore pop
+	/_sc
+	{
+		_lp /stroke ne
+		{
+			_os setoverprint
+			_cs aload pop setcmykcolor
+			/_lp /stroke ddef
+		} if
+	} ddef
+	/_ps
+	{
+		_sc
+		stroke
+	} ddef
+	/_pss
+	{
+		_sc
+		ss
+	} ddef
+	/_pjss
+	{
+		_sc
+		jss
+	} ddef
+	/_lp /none ddef
+} def
+/x
+{
+	/_gf exch ddef
+	findcmykcustomcolor
+	/_if exch ddef
+	/_fc
+	{
+		_lp /fill ne
+		{
+			_of setoverprint
+			_if _gf 1 exch sub setcustomcolor
+			/_lp /fill ddef
+		} if
+	} ddef
+	/_pf
+	{
+		_fc
+		_eo {eofill} {fill} ifelse
+	} ddef
+	/_psf
+	{
+		_fc
+		ashow
+	} ddef
+	/_pjsf
+	{
+		_fc
+		awidthshow
+	} ddef
+	/_lp /none ddef
+} def
+/X
+{
+	/_gs exch ddef
+	findcmykcustomcolor
+	/_is exch ddef
+	/_sc
+	{
+		_lp /stroke ne
+		{
+			_os setoverprint
+			_is _gs 1 exch sub setcustomcolor
+			/_lp /stroke ddef
+		} if
+	} ddef
+	/_ps
+	{
+		_sc
+		stroke
+	} ddef
+	/_pss
+	{
+		_sc
+		ss
+	} ddef
+	/_pjss
+	{
+		_sc
+		jss
+	} ddef
+	/_lp /none ddef
+} def
+/A
+{
+	pop
+} def
+/annotatepage
+{
+userdict /annotatepage 2 copy known {get exec} {pop pop} ifelse
+} def
+/XT {
+	pop pop
+} def
+/discard
+{
+	save /discardSave exch store
+	discardDict begin
+	/endString exch store
+	gt38?
+	{
+		2 add
+	} if
+	load
+	stopped
+	pop
+ end
+	discardSave restore
+} bind def
+userdict /discardDict 7 dict dup begin
+put
+/pre38Initialize
+{
+	/endStringLength endString length store
+	/newBuff buffer 0 endStringLength getinterval store
+	/newBuffButFirst newBuff 1 endStringLength 1 sub getinterval store
+	/newBuffLast newBuff endStringLength 1 sub 1 getinterval store
+} def
+/shiftBuffer
+{
+	newBuff 0 newBuffButFirst putinterval
+	newBuffLast 0
+	currentfile read not
+	{
+	stop
+	} if
+	put
+} def
+0
+{
+	pre38Initialize
+	mark
+	currentfile newBuff readstring exch pop
+	{
+		{
+			newBuff endString eq
+			{
+				cleartomark stop
+			} if
+			shiftBuffer
+		} loop
+	}
+	{
+	stop
+	} ifelse
+} def
+1
+{
+	pre38Initialize
+	/beginString exch store
+	mark
+	currentfile newBuff readstring exch pop
+	{
+		{
+			newBuff beginString eq
+			{
+				/layerCount dup load 1 add store
+			}
+			{
+				newBuff endString eq
+				{
+					/layerCount dup load 1 sub store
+					layerCount 0 eq
+					{
+						cleartomark stop
+					} if
+				} if
+			} ifelse
+			shiftBuffer
+		} loop
+	} if
+} def
+2
+{
+	mark
+	{
+		currentfile buffer readline not
+		{
+		stop
+		} if
+		endString eq
+		{
+			cleartomark stop
+		} if
+	} loop
+} def
+3
+{
+	/beginString exch store
+	/layerCnt 1 store
+	mark
+	{
+		currentfile buffer readline not
+		{
+		stop
+		} if
+		dup beginString eq
+		{
+			pop /layerCnt dup load 1 add store
+		}
+		{
+			endString eq
+			{
+				layerCnt 1 eq
+				{
+					cleartomark stop
+				}
+				{
+					/layerCnt dup load 1 sub store
+				} ifelse
+			} if
+		} ifelse
+	} loop
+} def
+end
+userdict /clipRenderOff 15 dict dup begin
+put
+{
+	/n /N /s /S /f /F /b /B
+}
+{
+	{
+		_doClip 1 eq
+		{
+			/_doClip 0 ddef _eo {eoclip} {clip} ifelse
+		} if
+		newpath
+	} def
+} forall
+/Tr /pop load def
+/Bb {} def
+/BB /pop load def
+/Bg {12 npop} def
+/Bm {6 npop} def
+/Bc /Bm load def
+/Bh {4 npop} def
+end
+/Lb
+{
+	4 npop
+	6 1 roll
+	pop
+	4 1 roll
+	pop pop pop
+	0 eq
+	{
+		0 eq
+		{
+			(%AI5_BeginLayer) 1 (%AI5_EndLayer--) discard
+		}
+		{
+			
+			/clipForward? true def
+			
+			/Tx /pop load def
+			/Tj /pop load def
+			
+			currentdict end clipRenderOff begin begin
+		} ifelse
+	}
+	{
+		0 eq
+		{
+			save /discardSave exch store
+		} if
+	} ifelse
+} bind def
+/LB
+{
+	discardSave dup null ne
+	{
+		restore
+	}
+	{
+		pop
+		clipForward?
+		{
+			currentdict
+		 end
+		 end
+		 begin
+					
+			/clipForward? false ddef
+		} if
+	} ifelse
+} bind def
+/Pb
+{
+	pop pop
+	0 (%AI5_EndPalette) discard
+} bind def
+/Np
+{
+	0 (%AI5_End_NonPrinting--) discard
+} bind def
+/Ln /pop load def
+/Ap
+/pop load def
+/Ar
+{
+	72 exch div
+	0 dtransform dup mul exch dup mul add sqrt
+	dup 1 lt
+	{
+		pop 1
+	} if
+	setflat
+} def
+/Mb
+{
+	q
+} def
+/Md
+{
+} def
+/MB
+{
+	Q
+} def
+/nc 3 dict def
+nc begin
+/setgray
+{
+	pop
+} bind def
+/setcmykcolor
+{
+	4 npop
+} bind def
+/setcustomcolor
+{
+	2 npop
+} bind def
+currentdict readonly pop
+end
+end
+setpacking
+%%EndResource
+%%BeginResource: procset Adobe_blend_AI5 1.4 0
+%%Title: (Adobe Illustrator (R) Version 5.0 Blend ProcSet)
+%%Version: 1.4 0
+%%CreationDate: (11/19/93) ()
+%%Copyright: ((C) 1987-1996 Adobe Systems Incorporated All Rights Reserved)
+userdict /defaultpacking currentpacking put true setpacking
+userdict /Adobe_blend_AI5 70 dict dup begin
+put
+/bd
+{
+	bind def
+} bind def
+/xs
+{
+	exch store
+} bd
+/nullProc
+{
+	{
+	}
+} def
+/initialize
+{
+	pop pop
+	Adobe_blend_AI5 begin
+		Adobe_blend_AI5_vars begin
+			/_contoneDevice where
+			{
+				pop
+			}
+			{
+				/_contoneDevice false def	
+			} ifelse
+					
+			/_dpiThreshold where
+			{
+				pop
+			}
+			{	
+				/_dpiThreshold 600 def
+			} ifelse
+			
+			/_screenFreqThreshold where
+			{
+				pop
+			}
+			{	
+				/_screenFreqThreshold 150 def
+			} ifelse
+			
+			/tRectOK? deviceDPI _dpiThreshold le currentScreenFreq _screenFreqThreshold le and _contoneDevice not and def
+	/invertXfer
+	{
+		[
+		{
+			1 exch sub
+				} /exec load systemdict/currenttransfer get exec /exec load
+				] cvx systemdict/settransfer get exec
+			} bd
+			/spotDict 3 dict dup begin
+				/nSpots 2 def
+				/spot1 7 dict def
+				/spot2 7 dict def
+		 end
+			def
+			composite?
+			{
+				/_setgray_ /setgray load def
+				/_fill_ /fill load def
+				/_image_ /image load def
+			}
+			{
+				/_setgray_ systemdict/setgray get def
+				/_fill_ systemdict/fill get def
+				/_image_ systemdict/image get def
+			} ifelse
+		} bd
+		/terminate
+		{
+			currentdict Adobe_blend_AI5_vars eq
+			{
+		 end
+			currentdict Adobe_blend_AI5 eq
+			{
+		 end
+		} if
+	} if
+} bd
+/_compositeSpotDevice where
+{
+ begin
+		_compositeSpotDevice 0 ne {userdict /composite? true put} if
+ end
+}
+{
+	/_compositeSpotDevice 0 def	
+} ifelse
+	
+/nullString () def
+/d255 256 array def
+0 1 255
+{
+	d255 exch dup 255 div put
+} bind for
+/d255- 256 array def
+0 1 255
+{
+	d255- exch 1 d255 2 index get sub put
+} bind for
+/dUserSpace matrix defaultmatrix def
+currentdict /Adobe_blend_AI5_vars 89 dict dup begin
+put
+{
+	/f /F /s /S /b /B
+}
+{
+	null def
+} bind forall
+/byte 1 string def
+/sSave null def
+/setSSave
+{
+	save /sSave exch store
+} bind def
+/Bm null def
+/doBlend null def
+/startC? false def
+/endC? false def
+/fCMYK? null def
+/startTint 0 def
+/endTint 0 def
+/bSMatrix matrix def
+/bUMatrix matrix def
+/dMatrix matrix def
+/inLine? true def
+/pTState? false def
+/bHi? false def
+/yHi 0 def
+/xHi 0 def
+/noImg /lv1Fix where
+{
+	pop lv1Fix
+}
+{
+	false
+} ifelse
+def
+/ccAry1 5 array def
+/ccTint 0 def
+/spotColor? false def
+/colorimage? true def
+[
+/tint1Data
+/tint2Data
+/spotDict
+/bAxis
+/ubAxis
+/pChange
+/optimize?
+/nSamples
+/sInc
+/blendProc
+/_bn
+/xBCInc
+/yBCInc
+/bInc
+/bRender
+/cBName
+/cBType
+/nColors
+/color?
+/blend?
+/colorType
+/cData
+/cDataLen
+/bDataLen
+/rampPoint
+/midPoint
+/endPoint
+/blendLength
+/blackData
+/yeData
+/mgData
+/cyData
+/cnt1
+/ndx
+/_fill
+/tmp
+counttomark
+{
+	null def
+} bind
+repeat
+pop
+currentdict
+end
+currentdict
+end
+exch
+begin
+begin
+/unitSq
+{
+	0 0 moveto 0 1 lineto 1 1 lineto 1 0 lineto closepath
+} bd
+/gMark
+{
+	counttomark 2 add -1 roll
+} bd
+/setCustomColor
+{
+	dup /ccTint exch store
+	1 exch sub 6 1 roll
+	ccAry1 astore
+	exch setcustomcolor
+} bd
+/currentCustomColor
+{
+	ccAry1 aload pop ccTint
+} bd
+/nsetcustomcolor where 
+{
+	pop
+}
+{
+	/nsetcustomcolor
+	{
+		pop setcmykcolor	
+	} bd
+} ifelse
+/nsetcustomcolorend where 
+{
+	pop
+}
+{
+	/nsetcustomcolorend
+	{
+	} bd
+} ifelse
+/setBSpace
+{
+	newpath bUMatrix astore concat unitSq
+} bd
+/setCStop
+{
+	dup 0 eq
+	{
+		pop
+		
+		spotColor?
+			{
+			dup 1 exch sub /ccTint exch def
+			ccAry1 4 /Black put
+			} if
+		setgray
+	}
+	{
+		1 eq
+		{
+			setcmykcolor
+		}
+		{
+			composite? not colorType 2 lt and
+			{
+				forceCMYK
+			}
+			{
+				setCustomColor
+			} ifelse
+		} ifelse
+	} ifelse
+} bd
+/makeByte
+{
+	/tmp 0 store
+	255 mul cvi
+	8 string 8
+	{
+		dup tmp 3 index put /tmp tmp 1 add store
+	} repeat
+	exch pop
+} bd
+/setImgSpace
+{
+	cDataLen 1 8
+	2 index 0 0 1 0 0 dMatrix astore
+} bd
+/bwImage
+{
+	setImgSpace cData /_image_ load
+	{
+		exec
+	} stopped
+	{
+		$error /errorname get /undefinedresult ne
+		{
+			stop
+		}
+		{
+			pop pop pop pop pop
+		} ifelse
+	} if
+} bd
+level2?
+{
+	/bFill
+	{
+		_fill
+	} def
+	/bCImg
+	{
+		/cDataLen bDataLen store
+		setImgSpace
+		setSSave
+		expandSpot
+		cyData mgData yeData cData
+		expandCMYK
+		true 4 spotDict
+		{
+			ncolorimage
+		} stopped
+		{
+			$error /errorname get /undefinedresult ne
+			{
+				stop
+			}
+			{
+				10
+				{
+					pop
+				} repeat
+			} ifelse
+		} if
+		sSave restore
+	} bd
+} if
+/expandOne
+{
+			dup type /stringtype ne
+			{
+				cDataLen string
+				exch
+				dup 0 ne
+				{
+					255 mul cvi
+					0 1 cDataLen 1 sub
+					{
+						3 copy
+						exch put pop
+					} for
+				} if
+				pop
+			} if
+} bd
+/expandSpot
+{
+	spotColor?
+	{
+		spotDict begin
+			spot1 begin
+				tintImage type /nulltype ne
+				{
+					tintImage expandOne /tintImage exch def
+				} if
+		  end
+			spot2 begin
+				tintImage type /nulltype ne
+				{
+					tintImage expandOne /tintImage exch def
+				} if
+		  end
+	 end
+	} if
+} bd
+/expandCMYK
+{
+	4
+	{
+		expandOne 4 1 roll
+	} repeat
+} bd
+/colorimage where dup
+{
+	exch pop
+	
+	/ncolorimage where
+	{
+		pop
+	}
+	{
+		/ncolorimage {pop colorimage} bd
+	} ifelse
+} if
+not
+{
+	/ncolorimage where 
+	{
+		pop
+	}
+	{
+		/colorimage? false store
+		/ncolorimage
+		{
+			pop pop pop
+	
+		setSSave
+		/blackData xs
+		/yeData xs
+		/mgData xs
+		/cyData xs
+		/cnt1 0 store
+		[
+		byte dup 0
+		cyData dup type /stringtype eq
+		{
+			/cnt1 cvx /get cvx d255 /exch cvx /get cvx .3 /mul cvx
+		}
+		{
+			.3 mul
+		} ifelse
+		mgData dup type /stringtype eq
+		{
+			/cnt1 cvx /get cvx d255 /exch cvx /get cvx .59 /mul cvx
+		}
+		{
+			.59 mul
+		} ifelse
+		yeData dup type /stringtype eq
+		{
+			/cnt1 cvx /get cvx d255 /exch cvx /get cvx .11 /mul cvx
+		}
+		{
+			.11 mul
+		} ifelse
+		blackData dup type /stringtype eq
+		{
+			/cnt1 cvx /get cvx d255 /exch cvx /get cvx
+		} if
+		/add cvx /add cvx /add cvx 1 /exch cvx /sub cvx
+		/dup cvx 0 /lt cvx
+		{
+			pop 0
+		} /if cvx
+		/dup cvx 1 /gt cvx
+		{
+			pop 1
+		} /if cvx
+		255 /mul cvx /cvi cvx
+		256 /mod cvx
+		/dup cvx 0 /lt cvx
+		{
+			pop 0
+		} /if cvx
+		/put cvx
+		/cnt1 dup cvx 1 /add cvx /store cvx
+		] cvx
+		bind
+			_image_ 
+		sSave restore
+	} bd
+	} ifelse
+} if
+level2? not
+{
+	/bCImg
+	{
+		/cDataLen bDataLen store
+		setImgSpace
+		setSSave
+		expandSpot
+		cyData mgData yeData cData
+		colorimage? 
+		{
+			expandCMYK
+		} if
+		true 4 spotDict
+		{
+			ncolorimage
+		} stopped
+		{
+			$error /errorname get /undefinedresult ne
+			{
+				stop
+			}
+			{
+				10
+				{
+					pop
+				} repeat
+			} ifelse
+		} if
+		sSave restore
+	} bd
+	/bwFill
+	{
+		setSSave
+		/cDataLen 8 store
+		/cData currentgray makeByte store
+		bwImage
+		sSave restore
+	} bd
+	/c1ImgFill
+	{
+		setSSave
+		/cDataLen 8 store
+		setImgSpace
+		spotColor?
+		{
+			spotDict begin
+				spot1 begin
+					currentCustomColor makeByte /tintImage exch def
+					/name exch def
+					/spot_K exch def
+					/spot_Y exch def
+					/spot_M exch def
+					/spot_C exch def
+			 end
+				spot2 initSpotData
+		 end
+		} if
+		currentcmykcolor
+		4
+		{
+			makeByte 4 1 roll
+		} repeat
+		true 4 spotDict
+		{
+			ncolorimage
+		} stopped
+		{
+			$error /errorname get /undefinedresult ne
+			{
+				stop
+			}
+			{
+				10
+				{
+					pop
+				} repeat
+			} ifelse
+		} if
+		sSave restore
+	} bd
+	/bFill
+	noImg
+	{
+		{
+			_fill
+		}
+	}
+	{
+		{
+			color?
+			{
+				c1ImgFill
+			}
+			{
+				bwFill
+			} ifelse
+		}
+	} ifelse
+	bd
+} if
+composite?
+{
+	/bCFun
+	{
+		color?
+		{
+			cyData dup type /stringtype eq
+			{
+				/ndx cvx /get cvx d255 /exch cvx /get cvx
+			} if
+			mgData dup type /stringtype eq
+			{
+				/ndx cvx /get cvx d255 /exch cvx /get cvx
+			} if
+			yeData dup type /stringtype eq
+			{
+				/ndx cvx /get cvx d255 /exch cvx /get cvx
+			} if
+			cData dup type /stringtype eq
+			{
+				/ndx cvx /get cvx d255 /exch cvx /get cvx
+			} if
+			spotColor?
+			{
+				spotDict begin
+					/spotDict cvx /begin cvx
+					spot1 begin
+						tintImage dup type /stringtype eq
+						{
+							/ndx cvx /get cvx d255- /exch cvx /get cvx
+						}
+						{
+							dup type /nulltype ne 
+							{
+								name type /nametype ne {1 exch sub} if
+							} if
+						} ifelse
+				 end
+					/spot1 cvx /tintValue 3 -1 /roll cvx /put cvx
+					spot2 begin
+						tintImage dup type /stringtype eq
+						{
+							/ndx cvx /get cvx d255- /exch cvx /get cvx
+						}
+						{
+							dup type /nulltype ne 
+							{
+								name type /nametype ne {1 exch sub} if
+							} if
+						} ifelse
+				 end
+					/spot2 cvx /tintValue 3 -1 /roll cvx /put cvx
+					/end cvx
+			 end
+				/spotDict cvx
+				/nsetcustomcolor cvx
+			}
+			{
+				/setcmykcolor cvx
+			} ifelse
+		}
+		{
+			cData /ndx cvx /get cvx
+			d255 /exch cvx /get cvx
+			/setgray cvx
+		} ifelse
+	} bd
+	/Bc
+	{
+		newpath
+		gsave
+		setBSpace
+		nColors 1 eq
+		{
+			pop pop
+			setCStop
+		} if
+		bFill
+		grestore
+	} bd
+	/linealBm
+	{
+		/nColors dup load 1 sub store
+		newpath
+		gsave
+		setBSpace
+		blend?
+		{
+			linImg
+		}
+		{
+			bFill
+		} ifelse
+		grestore
+		nColors 1 gt
+		{
+			getRData
+		} if
+	} bd
+	/rdBm
+	{
+		/nColors dup load 1 sub store
+		_fill
+		gsave
+		bUMatrix astore concat
+		bHi?
+		{
+			xHi yHi bUMatrix idtransform /yHi exch store /xHi exch store
+			rampPoint 1 lt
+			{
+				1 rampPoint sub dup xHi mul exch yHi mul translate
+			} if
+		} if
+		nColors
+		{
+			0 0 rampPoint 0 360 arc
+			_fill
+			blend? bHi? or
+			{
+				rdBlend
+			} if
+			nColors 1 gt
+			{
+				getRData
+			} if
+			/nColors dup load 1 sub store
+		} repeat
+		/nColors 1 store
+		grestore
+	} bd
+	/cGetRData
+	{
+		setCStop
+		/blend?
+		cData type /stringtype eq
+		dup not color? and
+		{
+			pop
+			cyData type /stringtype eq
+			mgData type /stringtype eq
+			yeData type /stringtype eq
+			or or
+		} if
+		store
+	} def
+	/cGetRData
+} if
+/eCStop
+{
+	mark
+	1 index 3 mul 3 add dup 8 gt
+	{
+		pop 8
+	} if
+	1 roll
+	cleartomark
+} bd
+composite? not
+{
+	/knockOut
+	level2?
+	{
+		{
+			0 0 0 0 setcmykcolor _fill
+		}
+	}
+	{
+		/bFill noImg
+		{
+			{
+				_fill
+			}
+		}
+		{
+			{
+				_of true eq
+				{
+					currentgray 1 ne
+					{
+						bwFill
+					} if
+				}
+				{
+					bwFill
+				} ifelse
+			}
+		} ifelse
+		def
+		/whiteByte 1 makeByte def
+		noImg
+		{
+			{
+				0 0 0 0 setcmykcolor _fill
+			}
+		}
+		{
+			{
+				cBType 0 eq
+				{
+					setSSave
+					/cData whiteByte store
+					/cDataLen 8 store
+					bwImage
+					sSave restore
+				}
+				{
+					_fill
+				} ifelse
+			}
+		} ifelse
+	} ifelse
+	bd
+	/bCFun
+	{
+		cData dup type /stringtype ne
+		{
+			color?
+			{
+				1 exch sub
+			} if
+		}
+		{
+			/ndx cvx /get cvx
+			color? customColor? not and
+			{
+				d255-
+			}
+			{
+				d255
+			} ifelse
+			/exch cvx /get cvx
+		} ifelse
+		/_setgray_ cvx
+	} bd
+	/eCCBlend
+	{
+		dup 3 eq
+		{
+			pop
+			mark 7 1 roll
+			6 copy ccThrough? dup /blend? xs
+			{
+				/startC? true store
+				setCustomColor
+				customColor?
+				{
+					/cData tint1Data store
+					setCDataLen
+				} if
+				/endC?
+				3 index 3 eq
+				{
+					4 index 1 ne
+				}
+				{
+					false
+				} ifelse
+				store
+			} if
+			cleartomark
+			stop
+		} if
+		1 eq
+		{
+			pop pop pop
+		} if
+		pop
+		/startC? false store
+		6
+		{
+			8 index
+		} repeat
+		ccThrough? dup /blend? xs
+		{
+			/endC? true store
+			blend? not
+			{
+				stop
+			} if
+			customColor?
+			{
+				/cData tint1Data store
+				setCDataLen
+			} if
+		} if
+	} bd
+	/handleOP
+	{
+		_of not
+		{
+			knockOut
+		} if
+	} bd
+	/handleROP
+	{
+		_of not
+		{
+			0 0 0 0 setcmykcolor _fill
+		}
+		{
+			newpath	
+		} ifelse
+	} bd
+	/rdBm
+	{
+		/nColors dup load 1 sub store
+		blend? 
+		{
+			_fill
+		}
+		{
+			handleROP
+		} ifelse
+		gsave
+		bUMatrix astore concat
+		bHi?
+		{
+			xHi yHi bUMatrix idtransform /yHi exch store /xHi exch store
+			rampPoint 1 lt
+			{
+				1 rampPoint sub dup xHi mul exch yHi mul translate
+			} if
+		} if
+		nColors
+		{
+			0 0 rampPoint 0 360 arc
+			blend?
+			{
+				cData type /stringtype ne bHi? not and
+				{
+					cData color?
+					{
+						1 exch sub
+					} if
+					_setgray_ 
+					_fill_ 
+				}
+				{
+					cData type /stringtype ne
+					{
+						/cDataLen 1 store
+						/bDataLen 1 store
+					} if
+					rdBlend
+				} ifelse
+			}
+			{
+				
+				handleROP
+				
+				pTState?
+				{
+					/bAxis rampPoint endPoint sub store
+					xHi bAxis mul yHi bAxis mul translate
+				} if
+			} ifelse
+				
+			nColors 1 gt
+			{
+				getRData
+			} if
+			/nColors dup load 1 sub store
+		} repeat
+		/nColors 1 store
+		grestore
+	} bd
+	/ccThrough?
+	{
+		gsave
+		pop 0 setCustomColor
+		currentcmykcolor
+		grestore
+		anyColor?
+	} bd
+	/forceCMYK
+	{
+		exch pop
+		1 exch sub 5 1 roll
+		4
+		{
+			4 index mul 4 1 roll
+		} repeat
+		0
+		cCMYKData dup /cData ne
+		{
+			dup /yeData eq
+			{
+				pop 1 add
+			}
+			{
+				/mgData eq
+				{
+					2
+				}
+				{
+					3
+				} ifelse
+				add
+			} ifelse
+			0
+		} if
+		pop
+		index
+		0 eq
+		{
+			pop pop pop pop 0 0 0 0
+		} if
+		setcmykcolor
+		pop
+		/fCMYK? true store
+	} bd
+	/endCapSepBc
+	{
+		pop pop
+		dup 0 eq
+		{
+			pop
+			setgray
+		}
+		{
+			1 eq
+			{
+				setcmykcolor
+			}
+			{
+				colorType 1 eq
+				{
+					forceCMYK
+				}
+				{
+					fCMYK?
+					{
+						forceCMYK
+					}
+					{
+						setCustomColor
+					} ifelse
+				} ifelse
+			} ifelse
+		} ifelse
+		currentcmykcolor anyColor? 
+		blend? and
+		{
+			bFill
+		}
+		{
+			handleOP
+		} ifelse
+		
+	} bd
+} if
+/cCMYKData 0 def
+composite? dup not
+{
+	pop customColor?
+} if
+not
+{
+	/cCMYKData
+	/cyData /mgData /yeData /cData
+	black? not
+	{
+		yellow?
+		{
+			exch
+		}
+		{
+			magenta?
+			{
+				3
+			}
+			{
+				4
+			} ifelse
+			-1 roll
+		} ifelse
+	} if
+	4 1 roll pop pop pop
+	store
+	/Bc
+	{
+		gsave
+		setBSpace
+		nColors 1 gt
+		{
+			
+			blend? currentcmykcolor anyColor? and
+			{
+				bFill
+			}
+			{
+				handleOP
+			} ifelse
+		}
+		{
+			endCapSepBc
+		} ifelse
+		grestore
+		newpath
+	} bd
+	/linealBm
+	{
+		/nColors dup load 1 sub store
+		newpath
+		gsave
+		setBSpace
+		blend?
+		{
+			cCMYKData load dup type /stringtype eq
+			{
+				dup length /cDataLen xs
+				/cData xs
+				gsave
+				colorType 0 ne noImg not and
+				{
+					invertXfer
+				} if
+				linImg
+				grestore
+			}
+			{
+				pop bFill
+			} ifelse
+		}
+		{
+			handleOP
+		} ifelse
+		grestore
+		nColors 1 gt
+		{
+			getRData
+		} if
+	} bd
+	/cmykGetRData
+	{
+		/fCMYK? false store
+		blend?
+		{
+			{
+				cmykDataProcs colorType get exec
+			} stopped
+			pop
+			blend?
+			{
+				/cData cCMYKData load store
+				setCDataLen
+			} if
+		} if
+	} def
+	/cmykDataProcs
+	[
+	{
+		pop
+		black? dup /blend? xs
+		{
+			setgray
+			0
+		} if
+		pop
+	}
+	{
+		cCMYKData load dup type /stringtype ne
+		{
+			0 0 0
+			cyan? not
+			{
+				4 magenta?
+				{
+					1
+				}
+				{
+					yellow?
+					{
+						2
+					}
+					{
+						3
+					} ifelse
+				} ifelse
+				roll
+			} if
+			4 copy add add add 0 eq
+			{
+				/blend? false store
+			} if
+			
+			setcmykcolor
+			/startC? true store
+			/endC? true store
+			eCStop
+			stop
+		} if
+		pop
+		dup 0 eq
+		{
+			pop
+			setgray
+		}
+		{
+			1 eq
+			{
+				setcmykcolor
+			}
+			{
+				forceCMYK
+			} ifelse
+		} ifelse
+	} bind
+	/eCCBlend load
+	{
+		cBType 1 eq
+		{
+			tint1Data tint2Data
+			/tint1Data xs
+			/tint2Data xs
+		} if
+		0 eq
+		{
+			black?
+			{
+				setgray
+			}
+			{
+				0 0 0 4 -1 roll 1 exch sub setcmykcolor
+			} ifelse
+			black?
+			{
+				/blend? true store
+			} if
+			6
+			{
+				8 index
+			} repeat
+			ccThrough?
+			{
+				/blend? true store
+			}
+			{
+				black?
+				{
+					/cData tint1Data store
+					setCDataLen
+				}
+				{
+					/blend? false store
+				} ifelse
+			} ifelse
+		}
+		{
+			mark 7 1 roll
+			6 copy ccThrough?
+			{
+				forceCMYK
+				pop
+				stop
+			} if
+			9 index 0 eq
+			{
+				black? dup /blend? xs
+				{
+					pop 1 setgray
+					/cData tint2Data store
+					setCDataLen
+					0
+				} if
+				pop
+			}
+			{
+				/blend?
+				6
+				{
+					16 index
+				} repeat
+				ccThrough?
+				store
+				blend?
+				{
+					forceCMYK
+				} if
+			} ifelse
+			cleartomark
+		} ifelse
+	} bind
+	] def
+	/cmykGetRData
+} if
+composite? dup not
+{
+	pop isCMYKSep?
+} if
+not
+{
+	/endCapSepBc
+	{
+		/white? false store
+		pop pop
+		dup 0 eq
+		{
+			pop
+			/white? 1 index 1 eq store
+			setgray
+		}
+		{
+			1 eq
+			{
+				setcmykcolor
+			}
+			{
+				setCustomColor
+			} ifelse
+		} ifelse
+%
+		currentcmykcolor anyColor?
+		endC? or
+		blend? and
+		{
+			bFill
+		}
+		{
+			handleOP
+		} ifelse
+	} bd
+	/Bc
+	{
+		gsave
+		setBSpace
+		nColors 1 gt
+		{
+			blend? startC? and
+			{
+				bFill
+			}
+			{
+				handleOP
+			} ifelse
+		}
+		{
+			endCapSepBc
+		} ifelse
+		grestore
+		newpath
+	} bd
+	/linealBm
+	{
+		/nColors dup load 1 sub store
+		newpath
+		gsave
+		setBSpace
+		blend?
+		{
+			cData type /stringtype eq
+			{
+				linImg
+			}
+			{
+				bFill
+			} ifelse
+		}
+		{
+			handleOP
+		} ifelse
+		grestore
+		nColors 1 gt
+		{
+			getRData
+		} if
+	} bd
+	/discardCMY
+	{
+		counttomark 4 add -3 roll pop pop pop
+	} bd
+	/testTopCC
+	{
+		6 copy ccThrough?
+	} bd
+	/getCRamp
+	{
+		{
+			ccDataProcs colorType 2 sub get exec
+		} stopped pop
+		blend? cDataLen 0 eq and
+		{
+			/cDataLen bDataLen store
+		} if
+	} bd
+	/ccGetRData
+	{
+		/fCMYK? false store
+		/startC? false store
+		/endC? false store
+		colorType 2 lt
+		{
+			/blend? false def
+		} if
+		blend?
+		{
+			getCRamp
+		}
+		{
+			setCStop
+		} ifelse
+		blend?
+		{
+			/blend? cData 1 ne store
+			blend?
+			{
+				cData dup type /stringtype ne
+				{
+					1 exch sub /cData xs 0
+				} if
+				pop
+			} if
+		} if
+	} def
+	/ccDataProcs
+	[
+	/eCCBlend load
+	{
+		cBType 1 eq
+		{
+			tint1Data tint2Data
+			/tint1Data xs
+			/tint2Data xs
+		} if
+		0 eq
+		{
+			/blend? false store
+			pop
+		}
+		{
+			mark 7 1 roll
+			testTopCC
+			{
+				/blend? 1 index 1 ne store
+				/startC? blend? store
+				/endC? false store
+				blend? not
+				{
+					cleartomark stop
+				} if
+				/cData tint1Data store
+				setCDataLen
+				setCustomColor
+				pop
+				stop
+			} if
+			cleartomark
+		} ifelse
+		2 index 0 eq
+		{
+			/blend? false store
+		}
+		{
+			mark 6
+			{
+				9 index
+			} repeat
+			testTopCC dup /blend? xs
+			{
+				/blend? 1 index 1 ne store
+				/endC? blend? store
+				/startC? false store
+				blend? not
+				{
+					cleartomark stop
+				} if
+				/cData tint2Data store
+				setCDataLen
+			} if
+			cleartomark
+		} ifelse
+	} bind
+	] def
+	/ccGetRData
+} if
+load Adobe_blend_AI5_vars /getData 3 -1 roll put
+/setCDataLen
+{
+	/cDataLen 0 cData dup type /stringtype eq
+	{
+		length exch
+	} if
+	pop store
+} bd
+/initSpotData
+{
+ begin
+		/name null def
+		/tintImage null def
+		/tintValue null def
+		/spot_C  null def
+		/spot_M  null def
+		/spot_Y  null def
+		/spot_K  null def
+ end
+} bd
+/getRData
+{
+	/colorType gMark store
+	_compositeSpotDevice 0 ne
+	{
+		spotDict begin
+			spot1 initSpotData
+			spot2 initSpotData
+	 end
+		/spotColor? colorType 2 eq colorType 3 eq or def
+	} 
+	{
+		/spotColor? false store
+	} ifelse
+	/blend? true store
+	0 0 0 0 setcmykcolor
+	100 div /rampPoint xs
+% (between 13 and 87%) 
+	100 div /midPoint xs
+	dup 0 eq
+	{
+		2
+	}
+	{
+		dup 1 eq
+		{
+			5
+		}
+		{
+			_compositeSpotDevice 0 ne
+			{
+				spotDict begin
+					spot1 begin
+						/name 3 index def
+						/spot_K 4 index def
+						/spot_Y 5 index def
+						/spot_M 6 index def
+						/spot_C 7 index def
+				 end
+			 end
+			} if
+			7
+		} ifelse
+	} ifelse
+	/tmp exch def
+	tmp index 100 div /endPoint xs
+	_compositeSpotDevice 0 ne
+	{
+		tmp 2 add index 3 eq
+		{
+			/tmp tmp 4 add def
+			tmp index dup 
+			spotDict begin
+				spot1/name get ne
+				{
+					spot2 begin
+						/name exch def
+						/spot_K tmp 2 add index def
+						/spot_Y tmp 3 add index def
+						/spot_M tmp 4 add index def
+						/spot_C tmp 5 add index def
+				 end
+				}
+				{
+					pop
+				} ifelse
+		 end
+		} if
+	} if
+	/color? colorType 0 gt store
+	
+	colorType 3 eq
+	{
+		/tint2Data gMark store
+	} if
+	
+	colorType 2 ge
+	{
+		/tint1Data gMark store
+	} if
+	_compositeSpotDevice 0 ne
+	{
+		spotDict begin
+		
+			colorType 2 ge
+			{
+				colorType 3 eq
+				{
+					spot2 begin
+						/tintImage cBType 0 eq {tint2Data} {tint1Data} ifelse def
+						name null eq {/name /Black def} if
+				 end
+				} if
+				spot1 begin
+					/tintImage cBType 0 eq colorType 2 eq or {tint1Data} {tint2Data} ifelse def
+					colorType 2 eq 
+					{
+						name null eq 
+						{
+							/name spot2/name get def
+							spot2/name null put
+						} if
+					}
+					{
+						name null eq {/name /Black def} if
+					} ifelse
+			 end
+			} if
+	 end
+	} if
+	
+	/cData gMark store
+	setCDataLen
+	colorType 0 gt
+	{
+		counttomark 4 add -3 roll
+		/yeData xs
+		/mgData xs
+		/cyData xs
+	} if
+	blend?
+	{
+		/bDataLen
+		cDataLen dup 0 eq color? and
+		{
+			[
+			cyData mgData yeData
+			]
+			{
+				dup type /stringtype eq
+				{
+					length exch pop exit
+				} if
+				pop
+			} forall
+		} if
+		store
+		bDataLen 0 eq
+		{
+			/bDataLen 1 store
+		} if
+		getData
+		blend?
+		{
+			composite? cDataLen 0 eq and
+			{
+				/cDataLen bDataLen store
+			} if
+		} if
+	}
+	{
+		setCStop
+	} ifelse
+} bd
+/Bg
+{
+	0 0 0 0 setcmykcolor
+	6
+	{
+		pop
+	} repeat
+	/blendLength xs
+	pop pop pop
+	/cBName xs
+	/bRender xs
+	bRender 2 ne
+	{
+		composite? not
+		{
+			_of setoverprint
+		} if
+		_eo {eoclip} {clip} ifelse
+		_bn cBName 2 copy known
+		{
+			get
+			mark exch aload pop
+			/cBType xs
+			/nColors xs
+			mark exch aload pop
+			0 0
+		} if
+		pop pop
+		getRData
+		cBType 0 eq
+		{
+			/linealBm
+		}
+		{
+			bHi?
+			{
+				/pTState? nColors 2 gt store
+			} if
+			/doBlend /rdBlend load store
+			/rdBm
+		} ifelse
+	}
+	{
+		inLine? not
+		{
+			mark mark
+		} if
+		/Bc dup
+		{
+			cleartomark mark
+		} bd
+		/nullProc
+	} ifelse
+	load /Bm xs
+} bd
+/linImg
+noImg
+{
+	{
+		newpath doRctBlend
+	}
+}
+{
+	{
+		/doBlend
+		color? composite? and
+		{
+			/bCImg
+		}
+		{
+			/bwImage
+		} ifelse
+		load
+		store
+	
+		0 0 moveto
+		tRectOK? composite? and
+		{
+			{
+				mark
+				0 1 dtransform atan cvi 90 mod 0 eq
+				1 0 dtransform atan cvi 90 mod 0 eq
+			} stopped
+			{
+				cleartomark
+			}
+			{
+				and exch pop
+				{
+					newpath
+					doRctBlend
+				}
+				{
+					doBlend
+				} ifelse
+			} ifelse
+		}
+		{
+			doBlend
+		} ifelse
+	} 
+} ifelse
+bd
+/doRctBlend
+{
+	gsave
+	/sInc 1 store
+	/nSamples bDataLen store
+	/bInc 1 bDataLen div store
+	/ubAxis 1 0 dtransform dUserSpace idtransform dup mul exch dup mul add sqrt store
+	/pChange ubAxis 0 eq
+	{
+		0
+	}
+	{
+		bDataLen ubAxis div
+	} ifelse
+	store
+	pChange .5 gt noImg not and dup /optimize? xs
+	{
+		/nSamples ubAxis 2 div round cvi dup 1 le
+		{
+			pop 2
+		} if
+		store
+		/bInc 1 nSamples div store
+		/sInc bDataLen 1 sub nSamples 1 sub div store
+	} if
+	0
+	nSamples
+	[
+	/dup cvx
+	optimize?
+	{
+		/round cvx /cvi cvx
+	} if
+	/ndx /exch cvx /store cvx
+	bCFun
+	/rectfill where dup
+	{
+		exch pop _compositeSpotDevice 1 ne and
+	} if
+	{
+		0 0 bInc 1 /rectfill cvx	
+	}
+	{
+		0 0 /moveto cvx
+		bInc 0 /lineto cvx
+		bInc 1 /lineto cvx
+		0 1 /lineto cvx
+		/closepath cvx
+		/_fill_ cvx
+	} ifelse
+	bInc 0 /translate cvx
+	sInc /add cvx
+	] cvx
+	bind
+	repeat
+	pop
+	spotColor? {nsetcustomcolorend} if
+	
+	grestore
+} bd
+/rdPrep
+{
+	/nSamples bDataLen dup 0 eq
+	{
+		pop 1
+	} if
+	store
+	/sInc -1 store
+	/bAxis rampPoint endPoint sub store
+	/bInc bAxis bDataLen div neg store
+	/optimize? false store
+	tRectOK?
+	{
+		/ubAxis
+		bAxis 0 dtransform dUserSpace idtransform dup mul exch dup mul add sqrt
+		0 bAxis dtransform dUserSpace idtransform dup mul exch dup mul add sqrt
+		2 copy lt
+		{
+			exch
+		} if
+		pop store
+		/pChange ubAxis 0 eq
+		{
+			0
+		}
+		{
+			bDataLen ubAxis div
+		} ifelse
+		store
+		pChange .5 gt noImg not and dup /optimize? xs
+		{
+			/nSamples ubAxis 2 div round cvi dup 1 le
+			{
+				pop 2
+			} if
+			store
+			/bInc bAxis nSamples div neg store
+			/sInc bDataLen 1 sub nSamples 1 sub div neg store
+		} if
+	} if
+	bHi?
+	{
+		/xBCInc xHi bAxis mul nSamples div store
+		/yBCInc yHi bAxis mul nSamples div store
+	} if
+} bd
+/rdBlend
+{
+	newpath
+	gsave
+	rdPrep
+	rampPoint
+	bDataLen 1 sub
+	nSamples
+	[
+	/dup cvx
+	optimize?
+	{
+		/round cvx /cvi cvx
+	} if
+	/ndx /exch cvx /store cvx
+	bCFun
+	0 0 3 /index cvx 0 360 /arc cvx /_fill_ cvx
+	/exch cvx bInc /add cvx /exch cvx
+	sInc /add cvx
+	bHi?
+	{
+		xBCInc yBCInc /translate cvx
+	} if
+	] cvx
+	bind
+	repeat
+	pop pop
+	spotColor? {nsetcustomcolorend} if
+	grestore
+	pTState?
+	{
+		xHi bAxis mul yHi bAxis mul translate
+	} if
+} bd
+/Bh
+{
+	pop pop
+	/pTState? false store
+	2 copy 0 ne exch 0 ne or dup /bHi? xs
+	{
+		/yHi xs
+		/xHi xs
+		0 0
+	} if
+	pop pop
+} bd
+/BD
+{
+	inLine? not
+	{
+		] nColors cBType
+		] _bn cBName 3 -1 roll put
+ end
+} if
+} bd
+/Bn
+{
+1 add dict
+dup nullString null put
+/_bn xs
+} bd
+/Bd
+{
+Adobe_blend_AI5_vars begin
+	3 -1 roll dup nullString eq dup
+	{
+		setSSave
+	} if
+	/inLine? exch def
+	/cBName exch def
+	/nColors exch def
+	/cBType exch def
+} bd
+/Bb
+{
+	sSave null eq
+	{
+		Adobe_blend_AI5_vars begin
+		setSSave
+	} if
+	composite?
+	{
+		/_fill /fill load store
+	}
+	{
+		/__fill /fill load store
+			/_fill
+			{
+				_of true eq
+				{
+					currentgray 1 ne
+					{
+						__fill
+					} if
+				}
+				{
+					__fill
+				} ifelse
+			} def
+	} ifelse
+	/fill
+	{
+	} def
+	} bd
+	/BB
+	{
+	/cBType xs
+	cleartomark cleartomark
+	cBType dup
+	bRender
+	sSave dup type /savetype eq
+	{
+		restore 0
+	} if
+	pop
+	currentdict Adobe_blend_AI5_vars eq
+	{
+	 end
+	} if
+	2 ne exch 0 gt and
+	{
+		2 eq
+		{
+			s
+		}
+		{
+			S
+		} ifelse
+	}
+	{
+		pop newpath
+	} ifelse
+} bd
+currentdict readonly pop
+end
+end
+defaultpacking setpacking
+%%EndResource
+%%BeginResource: procset Adobe_pattern_AI5 1.1 0
+%%Title: (Adobe Illustrator (R) Version 5.0 Pattern Operators)
+%%Version: 1.1 0
+%%CreationDate: (03/26/93) ()
+%%Copyright: ((C) 1987-1996 Adobe Systems Incorporated All Rights Reserved)
+currentpacking true setpacking
+userdict /Adobe_Illustrator_AI5 known not {
+	userdict /Adobe_Illustrator_AI5 95 dict put
+} if
+userdict /Adobe_Illustrator_AI5 get begin
+/@
+{
+} def
+/&
+{
+} def
+/dp
+{
+	dup null eq
+	{
+		pop
+		_dp 0 ne
+		{
+			0 1 _dp 1 sub _dl mod
+			{
+				_da exch get 3 get
+			} for
+			_dp 1 sub _dl mod 1 add packedarray
+			_da 0 get aload pop 8 -1 roll 5 -1 roll pop 4 1 roll
+			definepattern pop
+		} if
+	}
+	{
+		_dp 0 ne _dp _dl mod 0 eq and
+		{
+			null dp
+		} if
+		7 packedarray _da exch _dp _dl mod exch put
+		_dp _dl mod _da 0 get 4 get 2 packedarray
+		/_dp _dp 1 add def
+	} ifelse
+} def
+/E
+{
+	_ed begin
+	dup 0 get type /arraytype ne
+	{
+		0
+		{
+			dup 1 add index type /arraytype eq
+			{
+				1 add
+			}
+			{
+				exit
+			} ifelse
+		} loop
+		array astore
+	} if
+	/_dd exch def
+	/_ury exch def
+	/_urx exch def
+	/_lly exch def
+	/_llx exch def
+	/_n exch def
+	/_y 0 def
+	/_dl 4 def
+	/_dp 0 def
+	/_da _dl array def
+	0 1 _dd length 1 sub
+	{
+		/_d exch _dd exch get def
+		0 2 _d length 2 sub
+		{
+			/_x exch def
+			/_c _d _x get _ ne def
+			/_r _d _x 1 add get cvlit def
+			_r _ ne
+			{
+				_urx _llx sub _ury _lly sub
+				[
+				1 0 0 1 0 0
+				]
+				[
+				/save cvx
+				_llx neg _lly neg /translate cvx
+				_c
+				{
+					nc /begin cvx
+				} if
+				_r dup type /stringtype eq
+				{
+					cvx
+				}
+				{
+					{
+						exec
+					} /forall cvx
+				} ifelse
+				_c
+				{
+					/end cvx
+				} if
+				/restore cvx
+				] cvx
+				/_fn 12 _n length add string def
+				_y _fn cvs pop
+				/_y _y 1 add def
+				_fn 12 _n putinterval
+				_fn _c false dp
+				_d exch _x 1 add exch put
+			} if
+		} for
+	} for
+	null dp
+	_n _dd /_pd
+ end
+	xput
+} def
+/fc
+{
+	_fm dup concatmatrix pop
+} def
+/p
+{
+	/_fm exch ddef
+	9 -2 roll _pm translate fc
+	7 -2 roll _pm scale fc
+	5 -1 roll _pm rotate fc
+	4 -2 roll exch 0 ne
+	{
+		dup _pm rotate fc
+		1 -1 _pm scale fc
+		neg _pm rotate fc
+	}
+	{
+		pop
+	} ifelse
+	dup _pm rotate fc
+	exch dup sin exch cos div 1 0 0 1 0 6 2 roll
+	_pm astore fc
+	neg _pm rotate fc
+	_pd exch get /_fdd exch ddef
+	/_pf
+	{
+		save
+		/_doClip 0 ddef
+		0 1 _fdd length 1 sub
+		{
+			/_fd exch _fdd exch get ddef
+			_fd
+			0 2 _fd length 2 sub
+			{
+				gsave
+				2 copy get dup _ ne
+				{
+					cvx exec _fc
+				}
+				{
+					pop
+				} ifelse
+				2 copy 1 add get dup _ ne
+				{
+					aload pop findfont _fm
+					patternfill
+				}
+				{
+					pop
+					fill
+				} ifelse
+				grestore
+				pop
+			} for
+			pop
+		} for
+		restore
+		newpath
+	} ddef
+	/_psf
+	{
+		save
+		/_doClip 0 ddef
+		0 1 _fdd length 1 sub
+		{
+			/_fd exch _fdd exch get ddef
+			_fd
+			0 2 _fd length 2 sub
+			{
+				gsave
+				2 copy get dup _ ne
+				{
+					cvx exec _fc
+				}
+				{
+					pop
+				} ifelse
+				2 copy 1 add get dup _ ne
+				{
+					aload pop findfont _fm
+					9 copy 6 npop patternashow
+				}
+				{
+					pop
+					6 copy 3 npop hvashow
+				} ifelse
+				grestore
+				pop
+			} for
+			pop
+		} for
+		restore
+		sw rmoveto
+	} ddef
+	/_pjsf
+	{
+		save
+		/_doClip 0 ddef
+		0 1 _fdd length 1 sub
+		{
+			/_fd exch _fdd exch get ddef
+			_fd
+			0 2 _fd length 2 sub
+			{
+				gsave
+				2 copy get dup _ ne
+				{
+					cvx exec _fc
+				}
+				{
+					pop
+				} ifelse
+				2 copy 1 add get dup _ ne
+				{
+					aload pop findfont _fm
+					12 copy 6 npop patternawidthshow
+				}
+				{
+					pop 9 copy 3 npop hvawidthshow
+				} ifelse
+				grestore
+				pop
+			} for
+			pop
+		} for
+		restore
+		swj rmoveto
+	} ddef
+	/_lp /none ddef
+} def
+/sc
+{
+	_sm dup concatmatrix pop
+} def
+/P
+{
+	/_sm exch ddef
+	9 -2 roll _pm translate sc
+	7 -2 roll _pm scale sc
+	5 -1 roll _pm rotate sc
+	4 -2 roll exch 0 ne
+	{
+		dup _pm rotate sc
+		1 -1 _pm scale sc
+		neg _pm rotate sc
+	}
+	{
+		pop
+	} ifelse
+	dup _pm rotate sc
+	exch dup sin exch cos div 1 0 0 1 0 6 2 roll
+	_pm astore sc
+	neg _pm rotate sc
+	_pd exch get /_sdd exch ddef
+	/_ps
+	{
+		save
+		/_doClip 0 ddef
+		0 1 _sdd length 1 sub
+		{
+			/_sd exch _sdd exch get ddef
+			_sd
+			0 2 _sd length 2 sub
+			{
+				gsave
+				2 copy get dup _ ne
+				{
+					cvx exec _sc
+				}
+				{
+					pop
+				} ifelse
+				2 copy 1 add get dup _ ne
+				{
+					aload pop findfont _sm
+					patternstroke
+				}
+				{
+					pop stroke
+				} ifelse
+				grestore
+				pop
+			} for
+			pop
+		} for
+		restore
+		newpath
+	} ddef
+	/_pss
+	{
+		save
+		/_doClip 0 ddef
+		0 1 _sdd length 1 sub
+		{
+			/_sd exch _sdd exch get ddef
+			_sd
+			0 2 _sd length 2 sub
+			{
+				gsave
+				2 copy get dup _ ne
+				{
+					cvx exec _sc
+				}
+				{
+					pop
+				} ifelse
+				2 copy 1 add get dup _ ne
+				{
+					aload pop findfont _sm
+					10 copy 6 npop patternashowstroke
+				}
+				{
+					pop 7 copy 3 npop ss
+				} ifelse
+				grestore
+				pop
+			} for
+			pop
+		} for
+		restore
+		pop sw rmoveto
+	} ddef
+	/_pjss
+	{
+		save
+		/_doClip 0 ddef
+		0 1 _sdd length 1 sub
+		{
+			/_sd exch _sdd exch get ddef
+			_sd
+			0 2 _sd length 2 sub
+			{
+				gsave
+				2 copy get dup _ ne
+				{
+					cvx exec _sc
+				}
+				{
+					pop
+				} ifelse
+				2 copy 1 add get dup _ ne
+				{
+					aload pop findfont _sm
+					13 copy 6 npop patternawidthshowstroke
+				}
+				{
+					pop 10 copy 3 npop jss
+				} ifelse
+				grestore
+				pop
+			} for
+			pop
+		} for
+		restore
+		pop swj rmoveto
+	} ddef
+	/_lp /none ddef
+} def
+end
+userdict /Adobe_pattern_AI5 18 dict dup begin
+put
+/initialize
+{
+	/definepattern where
+	{
+		pop
+	}
+	{
+	 begin
+	 begin
+		Adobe_pattern_AI5 begin
+		Adobe_pattern_AI5
+		{
+			dup xcheck
+			{
+				bind
+			} if
+			pop pop
+		} forall
+		mark
+		cachestatus 7 1 roll pop pop pop pop exch pop exch
+		{
+			{
+				10000 add
+				dup 2 index gt
+				{
+					exit
+				} if
+				dup setcachelimit
+			} loop
+		} stopped
+		cleartomark
+	 end 	
+		
+	 end
+	 end
+		
+		Adobe_pattern_AI5 begin
+	} ifelse
+} def
+/terminate
+{
+	currentdict Adobe_pattern_AI5 eq
+	{
+	 end
+	} if
+} def
+errordict
+/nocurrentpoint
+{
+	pop
+	stop
+} put
+errordict
+/invalidaccess
+{
+	pop
+	stop
+} put
+/patternencoding
+256 array def
+0 1 255
+{
+	patternencoding exch ( ) 2 copy exch 0 exch put cvn put
+} for
+/definepattern
+{
+	17 dict begin
+	/uniform exch def
+	/cache exch def
+	/key exch def
+	/procarray exch def
+	/mtx exch matrix invertmatrix def
+	/height exch def
+	/width exch def
+	/ctm matrix currentmatrix def
+	/ptm matrix def
+	/str 32 string def
+	/slice 9 dict def
+	slice /s 1 put
+	slice /q 256 procarray length div sqrt floor cvi put
+	slice /b 0 put
+	/FontBBox
+	[
+	0 0 0 0
+	] def
+	/FontMatrix mtx matrix copy def
+	/Encoding patternencoding def
+	/FontType 3 def
+	/BuildChar
+	{
+		exch
+	 begin
+		/setstrokeadjust where {pop true setstrokeadjust} if
+		slice begin
+		dup q dup mul mod s idiv /i exch def
+		dup q dup mul mod s mod /j exch def
+		q dup mul idiv procarray exch get
+		/xl j width s div mul def
+		/xg j 1 add width s div mul def
+		/yl i height s div mul def
+		/yg i 1 add height s div mul def
+		uniform
+		{
+			1 1
+		}
+		{
+			width 0 dtransform
+			dup mul exch dup mul add sqrt dup 1 add exch div
+			0 height dtransform
+			dup mul exch dup mul add sqrt dup 1 add exch div
+		} ifelse
+		width 0 cache
+		{
+			xl 4 index mul yl 4 index mul xg 6 index mul yg 6 index mul
+			setcachedevice
+		}
+		{
+			setcharwidth
+		} ifelse
+		gsave
+		scale
+		newpath
+		xl yl moveto
+		xg yl lineto
+		xg yg lineto
+		xl yg lineto
+		closepath
+		clip
+		newpath
+	 end
+	 end
+		exec
+		grestore
+	} def
+	key currentdict definefont
+ end
+} def
+/patterncachesize
+{
+	gsave
+	newpath
+	0 0 moveto
+	width 0 lineto
+	width height lineto
+	0 height lineto
+	closepath
+	patternmatrix setmatrix
+	pathbbox
+	exch ceiling 4 -1 roll floor sub 3 1 roll
+	ceiling exch floor sub
+	mul 1 add
+	grestore
+} def
+/patterncachelimit
+{
+	cachestatus 7 1 roll 6 npop 8 mul
+} def
+/patternpath
+{
+	exch dup begin
+	setfont
+	ctm setmatrix
+	concat
+	slice exch /b exch slice /q get dup mul mul put
+	FontMatrix concat
+	uniform
+	{
+		width 0 dtransform round width div exch round width div exch
+		0 height dtransform round height div exch height div exch
+		0 0 transform round exch round exch
+		ptm astore setmatrix
+	}
+	{
+		ptm currentmatrix pop
+	} ifelse
+	{
+		currentpoint
+	} stopped not
+	{
+		2 npop
+		pathbbox
+		true
+		4 index 3 index eq
+		4 index 3 index eq
+		and
+		{
+			pop false
+			{
+				{
+					2 npop
+				}
+				{
+					3 npop true
+				}
+				{
+					7 npop true
+				}
+				{
+					pop true
+				} pathforall
+			} stopped
+			{
+				5 npop true
+			} if
+		} if
+		{
+			height div ceiling height mul 4 1 roll
+			width div ceiling width mul 4 1 roll
+			height div floor height mul 4 1 roll
+			width div floor width mul 4 1 roll
+			2 index sub height div ceiling cvi exch
+			3 index sub width div ceiling cvi exch
+			4 2 roll moveto
+			FontMatrix mtx invertmatrix
+			dup dup 4 get exch 5 get rmoveto
+			ptm ptm concatmatrix pop
+			slice /s
+			patterncachesize patterncachelimit div ceiling sqrt ceiling cvi
+			dup slice /q get gt
+			{
+				pop slice /q get
+			} if
+			put
+			0 1 slice /s get dup mul 1 sub
+			{
+				slice /b get add
+				gsave
+				0 1 str length 1 sub
+				{
+					str exch 2 index put
+				} for
+				pop
+				dup
+				{
+					gsave
+					ptm setmatrix
+					1 index str length idiv
+					{
+						str show
+					} repeat
+					1 index str length mod str exch 0 exch getinterval show
+					grestore
+					0 height rmoveto
+				} repeat
+				grestore
+			} for
+			2 npop
+		}
+		{
+			4 npop
+		} ifelse
+	} if
+ end
+} def
+/patternclip
+{
+	_eo {eoclip} {clip} ifelse
+} def
+/patternstrokepath
+{
+	strokepath
+} def
+/patternmatrix
+matrix def
+/patternfill
+{
+	dup type /dicttype eq
+	{
+		Adobe_pattern_AI5 /patternmatrix get
+	} if
+	gsave
+	patternclip
+	Adobe_pattern_AI5 /patternpath get exec
+	grestore
+	newpath
+} def
+/patternstroke
+{
+	dup type /dicttype eq
+	{
+		Adobe_pattern_AI5 /patternmatrix get
+	} if
+	gsave
+	patternstrokepath
+	true
+	{
+		{
+			{
+				newpath
+				moveto
+			}
+			{
+				lineto
+			}
+			{
+				curveto
+			}
+			{
+				closepath
+				3 copy
+				Adobe_pattern_AI5 /patternfill get exec
+			} pathforall
+			3 npop
+		} stopped
+		{
+			5 npop
+			patternclip
+			Adobe_pattern_AI5 /patternfill get exec
+		} if
+	}
+	{
+		patternclip
+		Adobe_pattern_AI5 /patternfill get exec
+	} ifelse
+	grestore
+	newpath
+} def
+/vpatternawidthshow
+{
+	6 1 roll
+	/_hvay exch ddef
+	/_hvax exch ddef
+	/_hvwb exch ddef
+	/_hvcy exch ddef
+	/_hvcx exch ddef
+	
+	{
+		dup cstring
+		dup length 1 eq
+		_charorientation 1 eq
+		and
+		{
+			-90 rotate
+			currentpoint
+			_fontRotateAdjust add
+			moveto
+			gsave
+			false charpath currentpoint
+			5 index 5 index 5 index Adobe_pattern_AI5 /patternfill get exec
+			grestore
+			_fontRotateAdjust sub
+			moveto
+			_hvwb eq { _hvcx _hvcy rmoveto } if
+			_hvax _hvay rmoveto
+			90 rotate
+		}
+		{
+			currentpoint
+			_fontHeight sub
+			_hvax sub
+			3 index _hvwb eq { _hvcx sub } if
+			currentpoint
+			exch 4 index stringwidth pop 2 div sub
+			exch _fontAscent sub
+			moveto
+			gsave
+			2 index false charpath
+			6 index 6 index 6 index Adobe_pattern_AI5 /patternfill get exec
+			grestore
+			newpath moveto pop pop
+		} ifelse
+	} cforall
+	3 npop
+} def
+/hpatternawidthshow
+{
+	{
+		dup cstring exch
+		gsave
+		3 index eq { 5 index 5 index rmoveto } if
+		false charpath currentpoint
+		9 index 9 index 9 index
+		Adobe_pattern_AI5 /patternfill get exec
+		grestore
+		newpath moveto
+		2 copy rmoveto
+	} cforall
+	8 npop
+} def
+/patternashow
+{
+0 0 0 6 3 roll
+patternawidthshow
+} def
+/patternawidthshow
+{
+	6 index type /dicttype eq
+	{
+		Adobe_pattern_AI5 /patternmatrix get 7 1 roll
+	} if
+	_lineorientation 0 eq { hpatternawidthshow } { vpatternawidthshow } ifelse
+} def
+/vpatternawidthshowstroke
+{
+	7 1 roll
+	6 1 roll
+	/_hvay exch ddef
+	/_hvax exch ddef
+	/_hvwb exch ddef
+	/_hvcy exch ddef
+	/_hvcx exch ddef
+	{
+		dup cstring
+		dup length 1 eq
+		_charorientation 1 eq
+		and
+		{
+			-90 rotate
+			currentpoint
+			_fontRotateAdjust add
+			moveto
+			gsave
+			false charpath currentpoint
+			3 index setmatrix
+			6 index 6 index 6 index Adobe_pattern_AI5 /patternstroke get exec
+			grestore
+			_fontRotateAdjust sub
+			moveto
+			_hvwb eq { _hvcx _hvcy rmoveto } if
+			_hvax _hvay rmoveto
+			90 rotate
+		}
+		{
+			currentpoint
+			_fontHeight sub
+			_hvax sub
+			3 index _hvwb eq { _hvcx sub } if
+			currentpoint
+			exch 4 index stringwidth pop 2 div sub
+			exch _fontAscent sub
+			moveto
+			gsave
+			2 index false charpath
+			4 index setmatrix
+			7 index 7 index 7 index Adobe_pattern_AI5 /patternstroke get exec
+			grestore
+			newpath moveto pop pop
+		} ifelse
+	} cforall
+	4 npop
+} def
+/hpatternawidthshowstroke
+{
+	7 1 roll
+	{
+		dup cstring exch
+		gsave
+		3 index eq { 5 index 5 index rmoveto } if
+		false charpath currentpoint
+		7 index setmatrix
+		10 index 10 index 10 index
+		Adobe_pattern_AI5 /patternstroke get exec
+		grestore
+		newpath moveto
+		2 copy rmoveto
+	} cforall
+	9 npop
+} def
+/patternashowstroke
+{
+	0 0 0 7 3 roll
+	patternawidthshowstroke
+} def
+/patternawidthshowstroke
+{
+	7 index type /dicttype eq
+	{
+		patternmatrix /patternmatrix get 8 1 roll
+	} if
+	_lineorientation 0 eq { hpatternawidthshowstroke } { vpatternawidthshowstroke } ifelse
+} def
+end
+setpacking
+%%EndResource
+%%EndProlog
+%%BeginSetup
+Adobe_level2_AI5 /initialize get exec
+Adobe_screens_AI5 /initialize get exec
+Adobe_Illustrator_AI5_vars Adobe_Illustrator_AI5 Adobe_typography_AI5 /initialize get exec
+Adobe_Illustrator_AI5_vars Adobe_Illustrator_AI5 Adobe_blend_AI5 /initialize get exec
+Adobe_Illustrator_AI5_vars Adobe_Illustrator_AI5 Adobe_pattern_AI5 /initialize get exec
+Adobe_ColorImage_AI6 /initialize get exec
+Adobe_Illustrator_AI5 /initialize get exec
+[
+39/quotesingle 96/grave 130/quotesinglbase 131/florin 132/quotedblbase
+133/ellipsis 134/dagger 135/daggerdbl 136/circumflex 137/perthousand 
+138/Scaron 139/guilsinglleft 140/OE 145/quoteleft 146/quoteright 
+147/quotedblleft 148/quotedblright 149/bullet 150/endash 151/emdash 
+152/tilde 153/trademark 154/scaron 155/guilsinglright 156/oe 157/dotlessi 
+159/Ydieresis 164/currency 166/brokenbar 168/dieresis 169/copyright 
+170/ordfeminine 172/logicalnot 174/registered 175/macron 176/ring 
+177/plusminus 178/twosuperior 179/threesuperior 180/acute 181/mu 
+183/periodcentered 184/cedilla 185/onesuperior 186/ordmasculine 
+188/onequarter 189/onehalf 190/threequarters 192/Agrave 193/Aacute 
+194/Acircumflex 195/Atilde 196/Adieresis 197/Aring 198/AE 199/Ccedilla 
+200/Egrave 201/Eacute 202/Ecircumflex 203/Edieresis 204/Igrave 205/Iacute 
+206/Icircumflex 207/Idieresis 208/Eth 209/Ntilde 210/Ograve 211/Oacute 
+212/Ocircumflex 213/Otilde 214/Odieresis 215/multiply 216/Oslash 
+217/Ugrave 218/Uacute 219/Ucircumflex 220/Udieresis 221/Yacute 222/Thorn 
+223/germandbls 224/agrave 225/aacute 226/acircumflex 227/atilde 228/adieresis 
+229/aring 230/ae 231/ccedilla 232/egrave 233/eacute 234/ecircumflex 
+235/edieresis 236/igrave 237/iacute 238/icircumflex 239/idieresis 
+240/eth 241/ntilde 242/ograve 243/oacute 244/ocircumflex 245/otilde 
+246/odieresis 247/divide 248/oslash 249/ugrave 250/uacute 251/ucircumflex 
+252/udieresis 253/yacute 254/thorn 255/ydieresis
+TE
+%AI3_BeginEncoding: _Helvetica Helvetica
+[
+/_Helvetica/Helvetica 0 0 1 TZ
+%AI3_EndEncoding AdobeType
+%AI3_BeginEncoding: _Helvetica-Bold Helvetica-Bold
+[
+/_Helvetica-Bold/Helvetica-Bold 0 0 1 TZ
+%AI3_EndEncoding AdobeType
+%AI3_BeginEncoding: _Helvetica-Oblique Helvetica-Oblique
+[
+/_Helvetica-Oblique/Helvetica-Oblique 0 0 1 TZ
+%AI3_EndEncoding AdobeType
+%AI3_BeginEncoding: _Helvetica-BoldOblique Helvetica-BoldOblique
+[
+/_Helvetica-BoldOblique/Helvetica-BoldOblique 0 0 1 TZ
+%AI3_EndEncoding AdobeType
+%AI3_BeginEncoding: _Times-Roman Times-Roman
+[
+/_Times-Roman/Times-Roman 0 0 1 TZ
+%AI3_EndEncoding AdobeType
+%AI3_BeginEncoding: _Times-Bold Times-Bold
+[
+/_Times-Bold/Times-Bold 0 0 1 TZ
+%AI3_EndEncoding AdobeType
+%AI3_BeginEncoding: _Times-Italic Times-Italic
+[
+/_Times-Italic/Times-Italic 0 0 1 TZ
+%AI3_EndEncoding AdobeType
+%AI3_BeginEncoding: _Times-BoldItalic Times-BoldItalic
+[
+/_Times-BoldItalic/Times-BoldItalic 0 0 1 TZ
+%AI3_EndEncoding AdobeType
+%AI3_BeginEncoding: _Courier Courier
+[
+/_Courier/Courier 0 0 1 TZ
+%AI3_EndEncoding AdobeType
+%AI3_BeginEncoding: _Courier-Bold Courier-Bold
+[
+/_Courier-Bold/Courier-Bold 0 0 1 TZ
+%AI3_EndEncoding AdobeType
+%AI3_BeginEncoding: _Courier-Oblique Courier-Oblique
+[
+/_Courier-Oblique/Courier-Oblique 0 0 1 TZ
+%AI3_EndEncoding AdobeType
+%AI3_BeginEncoding: _Courier-BoldOblique Courier-BoldOblique
+[
+/_Courier-BoldOblique/Courier-BoldOblique 0 0 1 TZ
+%AI3_EndEncoding AdobeType
+%AI3_BeginEncoding: _Symbol Symbol
+[
+/_Symbol/Symbol 0 0 1 TZ
+%AI3_EndEncoding AdobeType
+%%EndSetup
+
+1 XR
+
+u
+  0.000 0.000 0.000 0.000 k
+ [] 0 d
+1.2500 w
+  0.000 0.000 0.000 1.000 K
+1 j
+  398.0965 47.2013 m
+  566.2962 144.3594 L
+  566.2962 164.8453 L
+  398.0965 67.6872 L
+  398.0965 47.2013 L
+B
+U
+u
+  0.000 0.000 0.000 0.098 k
+  0.000 0.000 0.000 1.000 K
+  2.2762 275.7804 m
+  398.0965 47.2013 L
+  398.0965 67.6872 L
+  2.2762 296.1464 L
+  2.2762 275.7804 L
+B
+U
+u
+  0.000 0.000 0.000 0.000 k
+  0.000 0.000 0.000 1.000 K
+  2.2762 296.1464 m
+  398.0965 67.6872 L
+  566.2962 164.8453 L
+  170.4759 393.1847 L
+  2.2762 296.1464 L
+B
+U
+u
+  0.000 0.000 0.000 0.000 k
+  136.5724 309.5641 m
+  136.8120 311.0017 L
+  137.4110 312.3195 L
+  138.4892 313.6373 L
+  139.9268 314.8353 L
+  141.6040 315.7937 L
+  143.6406 316.6323 L
+  145.9168 317.2313 L
+  148.3128 317.5907 L
+  150.7088 317.7105 L
+  153.2246 317.5907 L
+  155.5008 317.2313 L
+  157.7770 316.6323 L
+  159.8136 315.7937 L
+  161.6106 314.8353 L
+  162.9285 313.6373 L
+  164.0067 312.3195 L
+  164.6057 311.0017 L
+  164.8453 309.5641 L
+  164.6057 308.1265 L
+  164.0067 306.8087 L
+  162.9285 305.4908 L
+  161.6106 304.2928 L
+  159.8136 303.3344 L
+  157.7770 302.4958 L
+  155.5008 301.8968 L
+  153.2246 301.5374 L
+  150.7088 301.4176 L
+  148.3128 301.5374 L
+  145.9168 301.8968 L
+  143.6406 302.4958 L
+  141.6040 303.3344 L
+  139.9268 304.2928 L
+  138.4892 305.4908 L
+  137.4110 306.8087 L
+  136.8120 308.1265 L
+  136.5724 309.5641 L
+B
+U
+u
+  0.000 0.000 0.000 0.000 k
+0.0000 w
+  164.8453 309.8037 m
+  136.5724 309.5641 L
+  136.5724 472.3727 L
+  164.8453 472.3727 L
+  164.8453 309.8037 L
+F
+U
+u
+1.2500 w
+1 J
+  164.8453 472.3727 m
+  164.8453 309.5641 L
+S
+U
+u
+  0.000 0.000 0.000 0.000 k
+  136.5724 472.3727 m
+  136.8120 473.8103 L
+  137.4110 475.2479 L
+  138.4892 476.5657 L
+  139.9268 477.6439 L
+  141.6040 478.7221 L
+  143.6406 479.5607 L
+  145.9168 480.1597 L
+  148.3128 480.5191 L
+  150.7088 480.6389 L
+  153.2246 480.5191 L
+  155.5008 480.1597 L
+  157.7770 479.5607 L
+  159.8136 478.7221 L
+  161.6106 477.6439 L
+  162.9285 476.5657 L
+  164.0067 475.2479 L
+  164.6057 473.8103 L
+  164.8453 472.3727 L
+  164.6057 471.0549 L
+  164.0067 469.6173 L
+  162.9285 468.2995 L
+  161.6106 467.2213 L
+  159.8136 466.1431 L
+  157.7770 465.3045 L
+  155.5008 464.7055 L
+  153.2246 464.3461 L
+  150.7088 464.2263 L
+  148.3128 464.3461 L
+  145.9168 464.7055 L
+  143.6406 465.3045 L
+  141.6040 466.1431 L
+  139.9268 467.2213 L
+  138.4892 468.2995 L
+  137.4110 469.6173 L
+  136.8120 471.0549 L
+  136.5724 472.3727 L
+B
+U
+u
+  136.5724 472.3727 m
+  136.5724 309.5641 L
+S
+U
+u
+  0.000 0.000 0.000 0.000 k
+  271.4676 232.8918 m
+  271.7072 234.3295 L
+  272.3062 235.6473 L
+  273.3844 236.9651 L
+  274.8220 238.1631 L
+  276.4992 239.1215 L
+  278.5358 239.9601 L
+  280.8120 240.5591 L
+  283.2080 240.9185 L
+  285.6040 241.0383 L
+  288.1198 240.9185 L
+  290.5158 240.5591 L
+  292.6722 239.9601 L
+  294.7088 239.1215 L
+  296.5058 238.1631 L
+  297.9434 236.9651 L
+  298.9018 235.6473 L
+  299.6206 234.3295 L
+  299.7404 232.8918 L
+  299.6206 231.4542 L
+  298.9018 230.1364 L
+  297.9434 228.8186 L
+  296.5058 227.6206 L
+  294.7088 226.6622 L
+  292.6722 225.8236 L
+  290.5158 225.2246 L
+  288.1198 224.8652 L
+  285.6040 224.7454 L
+  283.2080 224.8652 L
+  280.8120 225.2246 L
+  278.5358 225.8236 L
+  276.4992 226.6622 L
+  274.8220 227.6206 L
+  273.3844 228.8186 L
+  272.3062 230.1364 L
+  271.7072 231.4542 L
+  271.4676 232.8918 L
+B
+U
+u
+  0.000 0.000 0.000 0.000 k
+0.0000 w
+  299.7404 233.1314 m
+  271.4676 232.8918 L
+  271.4676 395.7005 L
+  299.7404 395.7005 L
+  299.7404 233.1314 L
+F
+U
+u
+1.2500 w
+  299.7404 395.7005 m
+  299.7404 232.8918 L
+S
+U
+u
+  0.000 0.000 0.000 0.000 k
+  271.4676 395.7005 m
+  271.7072 397.1381 L
+  272.3062 398.5757 L
+  273.3844 399.7737 L
+  274.8220 400.9717 L
+  276.4992 402.0499 L
+  278.5358 402.7687 L
+  280.8120 403.3677 L
+  283.2080 403.8469 L
+  285.6040 403.9667 L
+  288.1198 403.8469 L
+  290.5158 403.3677 L
+  292.6722 402.7687 L
+  294.7088 402.0499 L
+  296.5058 400.9717 L
+  297.9434 399.7737 L
+  298.9018 398.5757 L
+  299.6206 397.1381 L
+  299.7404 395.7005 L
+  299.6206 394.3827 L
+  298.9018 392.9451 L
+  297.9434 391.6273 L
+  296.5058 390.5491 L
+  294.7088 389.4709 L
+  292.6722 388.6323 L
+  290.5158 388.0333 L
+  288.1198 387.6739 L
+  285.6040 387.5541 L
+  283.2080 387.6739 L
+  280.8120 388.0333 L
+  278.5358 388.6323 L
+  276.4992 389.4709 L
+  274.8220 390.5491 L
+  273.3844 391.6273 L
+  272.3062 392.9451 L
+  271.7072 394.3827 L
+  271.4676 395.7005 L
+B
+U
+u
+  271.4676 395.7005 m
+  271.4676 232.8918 L
+S
+U
+u
+  0.000 0.000 0.000 0.000 k
+  297.9434 161.0116 m
+  298.1830 165.0849 L
+  298.9018 169.1581 L
+  300.0998 173.1115 L
+  301.6572 177.0649 L
+  303.6938 181.0183 L
+  306.2097 184.8519 L
+  309.0849 188.5657 L
+  312.4393 192.1597 L
+  316.1531 195.6339 L
+  320.2263 198.8686 L
+  324.7787 201.9834 L
+  329.5707 204.9784 L
+  334.7221 207.8536 L
+  340.2329 210.3694 L
+  345.8636 212.7654 L
+  351.8536 214.9218 L
+  358.2030 216.8386 L
+  364.6722 218.5158 L
+  371.2612 219.9534 L
+  378.0899 221.1514 L
+  384.9185 222.1098 L
+  391.8669 222.7088 L
+  398.9351 223.0682 L
+  405.8835 223.3078 L
+  412.9517 223.0682 L
+  420.0200 222.7088 L
+  426.9684 222.1098 L
+  433.7970 221.1514 L
+  440.6256 219.9534 L
+  447.2146 218.5158 L
+  453.6839 216.8386 L
+  459.9135 214.9218 L
+  465.9035 212.7654 L
+  471.5341 210.3694 L
+  477.0449 207.8536 L
+  482.1963 204.9784 L
+  486.9884 201.9834 L
+  491.5408 198.8686 L
+  495.6140 195.6339 L
+  499.4476 192.1597 L
+  502.8020 188.5657 L
+  505.6772 184.8519 L
+  508.1930 181.0183 L
+  510.2296 177.0649 L
+  511.7870 173.1115 L
+  512.9850 169.1581 L
+  513.7038 165.0849 L
+  513.9434 161.0116 L
+  513.7038 156.9384 L
+  512.9850 152.8652 L
+  511.7870 148.7920 L
+  510.2296 144.8386 L
+  508.1930 141.0050 L
+  505.6772 137.1714 L
+  502.8020 133.4576 L
+  499.4476 129.8636 L
+  495.6140 126.2696 L
+  491.5408 122.9151 L
+  486.9884 119.8003 L
+  482.1963 116.8053 L
+  477.0449 114.0499 L
+  471.5341 111.5341 L
+  465.9035 109.1381 L
+  459.9135 106.9817 L
+  453.6839 105.0649 L
+  447.2146 103.3877 L
+  440.6256 101.9501 L
+  433.7970 100.7521 L
+  426.9684 99.7937 L
+  420.0200 99.1947 L
+  412.9517 98.7155 L
+  405.8835 98.5957 L
+  398.9351 98.7155 L
+  391.8669 99.1947 L
+  384.9185 99.7937 L
+  378.0899 100.7521 L
+  371.2612 101.9501 L
+  364.6722 103.3877 L
+  358.2030 105.0649 L
+  351.8536 106.9817 L
+  345.8636 109.1381 L
+  340.2329 111.5341 L
+  334.7221 114.0499 L
+  329.5707 116.8053 L
+  324.7787 119.8003 L
+  320.2263 122.9151 L
+  316.1531 126.2696 L
+  312.4393 129.8636 L
+  309.0849 133.4576 L
+  306.2097 137.1714 L
+  303.6938 141.0050 L
+  301.6572 144.8386 L
+  300.0998 148.7920 L
+  298.9018 152.8652 L
+  298.1830 156.9384 L
+  297.9434 161.0116 L
+B
+U
+u
+  0.000 0.000 0.000 0.000 k
+0.0000 w
+  513.9434 161.0116 m
+  297.9434 161.0116 L
+  297.9434 184.0133 L
+  513.9434 184.0133 L
+  513.9434 161.0116 L
+F
+U
+u
+1.2500 w
+  513.9434 184.0133 m
+  513.9434 161.0116 L
+S
+U
+u
+  0.000 0.000 0.000 0.000 k
+  297.9434 184.0133 m
+  298.1830 188.0865 L
+  298.9018 192.1597 L
+  300.0998 196.2329 L
+  301.6572 200.1864 L
+  303.6938 204.0200 L
+  306.2097 207.8536 L
+  309.0849 211.5674 L
+  312.4393 215.1614 L
+  316.1531 218.6356 L
+  320.2263 221.9900 L
+  324.7787 225.1048 L
+  329.5707 228.0998 L
+  334.7221 230.8552 L
+  340.2329 233.4908 L
+  345.8636 235.7671 L
+  351.8536 237.9235 L
+  358.2030 239.8403 L
+  364.6722 241.6373 L
+  371.2612 242.9551 L
+  378.0899 244.1531 L
+  384.9185 245.1115 L
+  391.8669 245.8303 L
+  398.9351 246.1897 L
+  405.8835 246.3095 L
+  412.9517 246.1897 L
+  420.0200 245.8303 L
+  426.9684 245.1115 L
+  433.7970 244.1531 L
+  440.6256 242.9551 L
+  447.2146 241.6373 L
+  453.6839 239.8403 L
+  459.9135 237.9235 L
+  465.9035 235.7671 L
+  471.5341 233.4908 L
+  477.0449 230.8552 L
+  482.1963 228.0998 L
+  486.9884 225.1048 L
+  491.5408 221.9900 L
+  495.6140 218.6356 L
+  499.4476 215.1614 L
+  502.8020 211.5674 L
+  505.6772 207.8536 L
+  508.1930 204.0200 L
+  510.2296 200.1864 L
+  511.7870 196.2329 L
+  512.9850 192.1597 L
+  513.7038 188.0865 L
+  513.9434 184.0133 L
+  513.7038 179.9401 L
+  512.9850 175.9867 L
+  511.7870 171.9135 L
+  510.2296 167.9601 L
+  508.1930 164.0067 L
+  505.6772 160.1730 L
+  502.8020 156.5790 L
+  499.4476 152.9850 L
+  495.6140 149.5108 L
+  491.5408 146.1564 L
+  486.9884 143.0416 L
+  482.1963 140.0466 L
+  477.0449 137.2912 L
+  471.5341 134.6556 L
+  465.9035 132.2596 L
+  459.9135 130.1032 L
+  453.6839 128.1864 L
+  447.2146 126.3894 L
+  440.6256 124.9517 L
+  433.7970 123.7537 L
+  426.9684 122.9151 L
+  420.0200 122.1963 L
+  412.9517 121.8369 L
+  405.8835 121.7171 L
+  398.9351 121.8369 L
+  391.8669 122.1963 L
+  384.9185 122.9151 L
+  378.0899 123.7537 L
+  371.2612 124.9517 L
+  364.6722 126.3894 L
+  358.2030 128.1864 L
+  351.8536 130.1032 L
+  345.8636 132.2596 L
+  340.2329 134.6556 L
+  334.7221 137.2912 L
+  329.5707 140.0466 L
+  324.7787 143.0416 L
+  320.2263 146.1564 L
+  316.1531 149.5108 L
+  312.4393 152.9850 L
+  309.0849 156.5790 L
+  306.2097 160.1730 L
+  303.6938 164.0067 L
+  301.6572 167.9601 L
+  300.0998 171.9135 L
+  298.9018 175.9867 L
+  298.1830 179.9401 L
+  297.9434 184.0133 L
+B
+U
+u
+  297.9434 184.0133 m
+  297.9434 161.0116 L
+S
+U
+u
+  0.000 0.000 0.000 0.000 k
+  319.3877 178.9817 m
+  319.5075 182.5757 L
+  320.2263 186.2895 L
+  321.4243 189.7637 L
+  322.9817 193.3577 L
+  325.0183 196.8319 L
+  327.5341 200.1864 L
+  330.4093 203.4210 L
+  333.6439 206.5358 L
+  337.3577 209.5308 L
+  341.4309 212.2862 L
+  345.7438 214.9218 L
+  350.5358 217.3178 L
+  355.5674 219.5940 L
+  360.8386 221.6306 L
+  366.3494 223.4276 L
+  372.0998 224.8652 L
+  377.9700 226.1830 L
+  384.0799 227.2612 L
+  390.1897 228.0998 L
+  396.5391 228.5790 L
+  402.7687 228.8186 L
+  409.1181 228.8186 L
+  415.3478 228.5790 L
+  421.6972 228.0998 L
+  427.8070 227.2612 L
+  433.9168 226.1830 L
+  439.7870 224.8652 L
+  445.5374 223.4276 L
+  451.0483 221.6306 L
+  456.3195 219.5940 L
+  461.2313 217.3178 L
+  466.0233 214.9218 L
+  470.3361 212.2862 L
+  474.4093 209.5308 L
+  478.1231 206.5358 L
+  481.3577 203.4210 L
+  484.2329 200.1864 L
+  486.7488 196.8319 L
+  488.7854 193.3577 L
+  490.3428 189.7637 L
+  491.5408 186.2895 L
+  492.2596 182.5757 L
+  492.3794 178.9817 L
+  492.2596 175.2679 L
+  491.5408 171.6739 L
+  490.3428 168.0799 L
+  488.7854 164.6057 L
+  486.7488 161.1314 L
+  484.2329 157.7770 L
+  481.3577 154.5424 L
+  478.1231 151.4276 L
+  474.4093 148.4326 L
+  470.3361 145.6772 L
+  466.0233 143.0416 L
+  461.2313 140.5258 L
+  456.3195 138.3694 L
+  451.0483 136.3328 L
+  445.5374 134.5358 L
+  439.7870 132.9784 L
+  433.9168 131.6606 L
+  427.8070 130.7022 L
+  421.6972 129.8636 L
+  415.3478 129.3844 L
+  409.1181 129.0250 L
+  402.7687 129.0250 L
+  396.5391 129.3844 L
+  390.1897 129.8636 L
+  384.0799 130.7022 L
+  377.9700 131.6606 L
+  372.0998 132.9784 L
+  366.3494 134.5358 L
+  360.8386 136.3328 L
+  355.5674 138.3694 L
+  350.5358 140.5258 L
+  345.7438 143.0416 L
+  341.4309 145.6772 L
+  337.3577 148.4326 L
+  333.6439 151.4276 L
+  330.4093 154.5424 L
+  327.5341 157.7770 L
+  325.0183 161.1314 L
+  322.9817 164.6057 L
+  321.4243 168.0799 L
+  320.2263 171.6739 L
+  319.5075 175.2679 L
+  319.3877 178.9817 L
+B
+U
+u
+  0.000 0.000 0.000 0.000 k
+0.0000 w
+  492.3794 178.9817 m
+  319.3877 178.9817 L
+  319.3877 201.9834 L
+  492.3794 201.9834 L
+  492.3794 178.9817 L
+F
+U
+u
+1.2500 w
+  492.3794 201.9834 m
+  492.3794 178.9817 L
+S
+U
+u
+  0.000 0.000 0.000 0.000 k
+  319.3877 201.9834 m
+  319.5075 205.6972 L
+  320.2263 209.2912 L
+  321.4243 212.8852 L
+  322.9817 216.3594 L
+  325.0183 219.8336 L
+  327.5341 223.1880 L
+  330.4093 226.4226 L
+  333.6439 229.5374 L
+  337.3577 232.5324 L
+  341.4309 235.4077 L
+  345.7438 237.9235 L
+  350.5358 240.4393 L
+  355.5674 242.5957 L
+  360.8386 244.6323 L
+  366.3494 246.4293 L
+  372.0998 247.9867 L
+  377.9700 249.3045 L
+  384.0799 250.3827 L
+  390.1897 251.1015 L
+  396.5391 251.7005 L
+  402.7687 251.9401 L
+  409.1181 251.9401 L
+  415.3478 251.7005 L
+  421.6972 251.1015 L
+  427.8070 250.3827 L
+  433.9168 249.3045 L
+  439.7870 247.9867 L
+  445.5374 246.4293 L
+  451.0483 244.6323 L
+  456.3195 242.5957 L
+  461.2313 240.4393 L
+  466.0233 237.9235 L
+  470.3361 235.4077 L
+  474.4093 232.5324 L
+  478.1231 229.5374 L
+  481.3577 226.4226 L
+  484.2329 223.1880 L
+  486.7488 219.8336 L
+  488.7854 216.3594 L
+  490.3428 212.8852 L
+  491.5408 209.2912 L
+  492.2596 205.6972 L
+  492.3794 201.9834 L
+  492.2596 198.3894 L
+  491.5408 194.7953 L
+  490.3428 191.2013 L
+  488.7854 187.6073 L
+  486.7488 184.1331 L
+  484.2329 180.7787 L
+  481.3577 177.5441 L
+  478.1231 174.4293 L
+  474.4093 171.5541 L
+  470.3361 168.6789 L
+  466.0233 166.0433 L
+  461.2313 163.6473 L
+  456.3195 161.3710 L
+  451.0483 159.4542 L
+  445.5374 157.6572 L
+  439.7870 156.0998 L
+  433.9168 154.7820 L
+  427.8070 153.7038 L
+  421.6972 152.8652 L
+  415.3478 152.3860 L
+  409.1181 152.1464 L
+  402.7687 152.1464 L
+  396.5391 152.3860 L
+  390.1897 152.8652 L
+  384.0799 153.7038 L
+  377.9700 154.7820 L
+  372.0998 156.0998 L
+  366.3494 157.6572 L
+  360.8386 159.4542 L
+  355.5674 161.3710 L
+  350.5358 163.6473 L
+  345.7438 166.0433 L
+  341.4309 168.6789 L
+  337.3577 171.5541 L
+  333.6439 174.4293 L
+  330.4093 177.5441 L
+  327.5341 180.7787 L
+  325.0183 184.1331 L
+  322.9817 187.6073 L
+  321.4243 191.2013 L
+  320.2263 194.7953 L
+  319.5075 198.3894 L
+  319.3877 201.9834 L
+B
+U
+u
+  319.3877 201.9834 m
+  319.3877 178.9817 L
+S
+U
+u
+  0.000 0.000 0.000 0.000 k
+  351.8536 190.2429 m
+  352.0932 193.1181 L
+  352.8120 195.9933 L
+  354.0100 198.7488 L
+  355.6872 201.5042 L
+  357.7238 204.1398 L
+  360.1198 206.6556 L
+  362.8752 209.0516 L
+  366.1098 211.2080 L
+  369.5840 213.2446 L
+  373.4176 215.1614 L
+  377.6106 216.7188 L
+  381.9235 218.1564 L
+  386.4759 219.3544 L
+  391.1481 220.1930 L
+  396.0599 220.9118 L
+  400.9717 221.2712 L
+  405.8835 221.3910 L
+  410.9151 221.2712 L
+  415.8270 220.9118 L
+  420.7388 220.1930 L
+  425.4110 219.3544 L
+  429.9634 218.1564 L
+  434.2762 216.7188 L
+  438.4692 215.1614 L
+  442.3028 213.2446 L
+  445.7770 211.2080 L
+  449.0116 209.0516 L
+  451.7671 206.6556 L
+  454.1631 204.1398 L
+  456.1997 201.5042 L
+  457.7571 198.7488 L
+  458.9551 195.9933 L
+  459.6739 193.1181 L
+  459.9135 190.2429 L
+  459.6739 187.3677 L
+  458.9551 184.6123 L
+  457.7571 181.7371 L
+  456.1997 178.9817 L
+  454.1631 176.4659 L
+  451.7671 173.9501 L
+  449.0116 171.5541 L
+  445.7770 169.2779 L
+  442.3028 167.2413 L
+  438.4692 165.4443 L
+  434.2762 163.7671 L
+  429.9634 162.4493 L
+  425.4110 161.2512 L
+  420.7388 160.2928 L
+  415.8270 159.6938 L
+  410.9151 159.3344 L
+  405.8835 159.2146 L
+  400.9717 159.3344 L
+  396.0599 159.6938 L
+  391.1481 160.2928 L
+  386.4759 161.2512 L
+  381.9235 162.4493 L
+  377.6106 163.7671 L
+  373.4176 165.4443 L
+  369.5840 167.2413 L
+  366.1098 169.2779 L
+  362.8752 171.5541 L
+  360.1198 173.9501 L
+  357.7238 176.4659 L
+  355.6872 178.9817 L
+  354.0100 181.7371 L
+  352.8120 184.6123 L
+  352.0932 187.3677 L
+  351.8536 190.2429 L
+B
+U
+u
+  0.000 0.000 0.000 0.000 k
+0.0000 w
+  459.9135 190.3627 m
+  351.8536 190.2429 L
+  351.8536 213.3644 L
+  459.9135 213.3644 L
+  459.9135 190.3627 L
+F
+U
+u
+1.2500 w
+  459.9135 213.3644 m
+  459.9135 190.2429 L
+S
+U
+u
+  0.000 0.000 0.000 0.000 k
+  351.8536 213.3644 m
+  352.0932 216.2396 L
+  352.8120 219.1148 L
+  354.0100 221.8702 L
+  355.6872 224.6256 L
+  357.7238 227.2612 L
+  360.1198 229.7770 L
+  362.8752 232.0532 L
+  366.1098 234.3295 L
+  369.5840 236.3661 L
+  373.4176 238.1631 L
+  377.6106 239.8403 L
+  381.9235 241.2779 L
+  386.4759 242.3561 L
+  391.1481 243.3145 L
+  396.0599 243.9135 L
+  400.9717 244.3927 L
+  405.8835 244.5125 L
+  410.9151 244.3927 L
+  415.8270 243.9135 L
+  420.7388 243.3145 L
+  425.4110 242.3561 L
+  429.9634 241.2779 L
+  434.2762 239.8403 L
+  438.4692 238.1631 L
+  442.3028 236.3661 L
+  445.7770 234.3295 L
+  449.0116 232.0532 L
+  451.7671 229.7770 L
+  454.1631 227.2612 L
+  456.1997 224.6256 L
+  457.7571 221.8702 L
+  458.9551 219.1148 L
+  459.6739 216.2396 L
+  459.9135 213.3644 L
+  459.6739 210.4892 L
+  458.9551 207.6140 L
+  457.7571 204.8586 L
+  456.1997 202.1032 L
+  454.1631 199.4676 L
+  451.7671 196.9517 L
+  449.0116 194.5557 L
+  445.7770 192.3993 L
+  442.3028 190.3627 L
+  438.4692 188.5657 L
+  434.2762 186.8885 L
+  429.9634 185.4509 L
+  425.4110 184.3727 L
+  420.7388 183.4143 L
+  415.8270 182.6955 L
+  410.9151 182.3361 L
+  405.8835 182.2163 L
+  400.9717 182.3361 L
+  396.0599 182.6955 L
+  391.1481 183.4143 L
+  386.4759 184.3727 L
+  381.9235 185.4509 L
+  377.6106 186.8885 L
+  373.4176 188.5657 L
+  369.5840 190.3627 L
+  366.1098 192.3993 L
+  362.8752 194.5557 L
+  360.1198 196.9517 L
+  357.7238 199.4676 L
+  355.6872 202.1032 L
+  354.0100 204.8586 L
+  352.8120 207.6140 L
+  352.0932 210.4892 L
+  351.8536 213.3644 L
+B
+U
+u
+  351.8536 213.3644 m
+  351.8536 190.2429 L
+S
+U
+u
+  0.000 0.000 0.000 0.000 k
+  374.2562 208.2130 m
+  374.4958 210.4892 L
+  375.2146 212.6456 L
+  376.4126 214.8020 L
+  377.9700 216.8386 L
+  380.0067 218.7554 L
+  382.4027 220.5524 L
+  385.0383 222.1098 L
+  388.1531 223.5474 L
+  391.5075 224.6256 L
+  394.9817 225.5840 L
+  398.6955 226.3028 L
+  402.5291 226.6622 L
+  406.3627 226.7820 L
+  410.3161 226.6622 L
+  414.0300 226.3028 L
+  417.7438 225.5840 L
+  421.3378 224.6256 L
+  424.6922 223.5474 L
+  427.6872 222.1098 L
+  430.4426 220.5524 L
+  432.8386 218.7554 L
+  434.8752 216.8386 L
+  436.4326 214.8020 L
+  437.6306 212.6456 L
+  438.2296 210.4892 L
+  438.4692 208.2130 L
+  438.2296 206.0566 L
+  437.6306 203.7804 L
+  436.4326 201.6240 L
+  434.8752 199.5874 L
+  432.8386 197.6705 L
+  430.4426 195.9933 L
+  427.6872 194.3161 L
+  424.6922 192.9983 L
+  421.3378 191.8003 L
+  417.7438 190.9617 L
+  414.0300 190.2429 L
+  410.3161 189.8835 L
+  406.3627 189.7637 L
+  402.5291 189.8835 L
+  398.6955 190.2429 L
+  394.9817 190.9617 L
+  391.5075 191.8003 L
+  388.1531 192.9983 L
+  385.0383 194.3161 L
+  382.4027 195.9933 L
+  380.0067 197.6705 L
+  377.9700 199.5874 L
+  376.4126 201.6240 L
+  375.2146 203.7804 L
+  374.4958 206.0566 L
+  374.2562 208.2130 L
+B
+U
+u
+  0.000 0.000 0.000 0.000 k
+0.0000 w
+  438.4692 208.3328 m
+  374.2562 208.2130 L
+  374.2562 231.3344 L
+  438.4692 231.3344 L
+  438.4692 208.3328 L
+F
+U
+u
+1.2500 w
+  438.4692 231.3344 m
+  438.4692 208.2130 L
+S
+U
+u
+  0.000 0.000 0.000 0.000 k
+  374.2562 231.3344 m
+  374.4958 233.6106 L
+  375.2146 235.7671 L
+  376.4126 237.9235 L
+  377.9700 239.9601 L
+  380.0067 241.8769 L
+  382.4027 243.6739 L
+  385.0383 245.2313 L
+  388.1531 246.5491 L
+  391.5075 247.7471 L
+  394.9817 248.7055 L
+  398.6955 249.3045 L
+  402.5291 249.7837 L
+  406.3627 249.9035 L
+  410.3161 249.7837 L
+  414.0300 249.3045 L
+  417.7438 248.7055 L
+  421.3378 247.7471 L
+  424.6922 246.5491 L
+  427.6872 245.2313 L
+  430.4426 243.6739 L
+  432.8386 241.8769 L
+  434.8752 239.9601 L
+  436.4326 237.9235 L
+  437.6306 235.7671 L
+  438.2296 233.6106 L
+  438.4692 231.3344 L
+  438.2296 229.0582 L
+  437.6306 226.9018 L
+  436.4326 224.7454 L
+  434.8752 222.7088 L
+  432.8386 220.7920 L
+  430.4426 218.9950 L
+  427.6872 217.4376 L
+  424.6922 216.1198 L
+  421.3378 214.9218 L
+  417.7438 213.9634 L
+  414.0300 213.3644 L
+  410.3161 212.8852 L
+  406.3627 212.7654 L
+  402.5291 212.8852 L
+  398.6955 213.3644 L
+  394.9817 213.9634 L
+  391.5075 214.9218 L
+  388.1531 216.1198 L
+  385.0383 217.4376 L
+  382.4027 218.9950 L
+  380.0067 220.7920 L
+  377.9700 222.7088 L
+  376.4126 224.7454 L
+  375.2146 226.9018 L
+  374.4958 229.0582 L
+  374.2562 231.3344 L
+B
+U
+u
+  374.2562 231.3344 m
+  374.2562 208.2130 L
+S
+U
+u
+  0.000 0.000 0.000 0.000 k
+  392.2263 229.5374 m
+  392.4659 230.9750 L
+  393.0649 232.2928 L
+  394.1431 233.6106 L
+  395.5807 234.8087 L
+  397.2579 235.7671 L
+  399.2945 236.6057 L
+  401.5707 237.2047 L
+  403.9667 237.5641 L
+  406.3627 237.6839 L
+  408.8785 237.5641 L
+  411.2745 237.2047 L
+  413.4309 236.6057 L
+  415.4676 235.7671 L
+  417.2646 234.8087 L
+  418.7022 233.6106 L
+  419.6606 232.2928 L
+  420.3794 230.9750 L
+  420.4992 229.5374 L
+  420.3794 228.0998 L
+  419.6606 226.7820 L
+  418.7022 225.4642 L
+  417.2646 224.2662 L
+  415.4676 223.3078 L
+  413.4309 222.4692 L
+  411.2745 221.8702 L
+  408.8785 221.5108 L
+  406.3627 221.3910 L
+  403.9667 221.5108 L
+  401.5707 221.8702 L
+  399.2945 222.4692 L
+  397.2579 223.3078 L
+  395.5807 224.2662 L
+  394.1431 225.4642 L
+  393.0649 226.7820 L
+  392.4659 228.0998 L
+  392.2263 229.5374 L
+B
+U
+u
+  0.000 0.000 0.000 0.000 k
+0.0000 w
+  420.4992 229.6572 m
+  392.2263 229.5374 L
+  392.2263 323.8203 L
+  420.4992 323.8203 L
+  420.4992 229.6572 L
+F
+U
+u
+1.2500 w
+  420.4992 323.8203 m
+  420.4992 229.5374 L
+S
+U
+u
+  0.000 0.000 0.000 0.000 k
+  392.2263 323.8203 m
+  392.4659 325.2579 L
+  393.0649 326.6955 L
+  394.1431 327.8935 L
+  395.5807 329.0915 L
+  397.2579 330.1697 L
+  399.2945 330.8885 L
+  401.5707 331.4875 L
+  403.9667 331.8469 L
+  406.3627 331.9667 L
+  408.8785 331.8469 L
+  411.2745 331.4875 L
+  413.4309 330.8885 L
+  415.4676 330.1697 L
+  417.2646 329.0915 L
+  418.7022 327.8935 L
+  419.6606 326.6955 L
+  420.3794 325.2579 L
+  420.4992 323.8203 L
+  420.3794 322.3827 L
+  419.6606 321.0649 L
+  418.7022 319.7471 L
+  417.2646 318.5491 L
+  415.4676 317.5907 L
+  413.4309 316.7521 L
+  411.2745 316.1531 L
+  408.8785 315.7937 L
+  406.3627 315.6739 L
+  403.9667 315.7937 L
+  401.5707 316.1531 L
+  399.2945 316.7521 L
+  397.2579 317.5907 L
+  395.5807 318.5491 L
+  394.1431 319.7471 L
+  393.0649 321.0649 L
+  392.4659 322.3827 L
+  392.2263 323.8203 L
+B
+U
+u
+  392.2263 323.8203 m
+  392.2263 229.5374 L
+S
+U
+%%PageTrailer
+gsave annotatepage grestore showpage
+%%Trailer
+Adobe_Illustrator_AI5 /terminate get exec
+Adobe_pattern_AI5 /terminate get exec
+Adobe_blend_AI5 /terminate get exec
+Adobe_ColorImage_AI6 /terminate get exec
+Adobe_typography_AI5 /terminate get exec
+Adobe_screens_AI5 /terminate get exec
+Adobe_level2_AI5 /terminate get exec
+%%EOF
+
+%%EndDocument
+ @endspecial 5535 20790 a
+ currentpoint currentpoint translate 1 0.28 div 1 0.28 div scale neg
+exch neg exch translate
+ 5535 20790 a Black Black eop
+end
+%%Trailer
+
+userdict /end-hook known{end-hook}if
+%%EOF

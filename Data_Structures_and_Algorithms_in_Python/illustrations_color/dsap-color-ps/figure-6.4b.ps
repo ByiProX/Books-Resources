@@ -1,0 +1,734 @@
+%!PS-Adobe-2.0 EPSF-2.0
+%%Creator: dvips(k) 5.95a Copyright 2005 Radical Eye Software
+%%Title: temp.dvi
+%%BoundingBox: 121 532 441 669
+%%EndComments
+%DVIPSWebPage: (www.radicaleye.com)
+%DVIPSCommandLine: dvips -E -Ppdf -G0 temp
+%DVIPSParameters: dpi=8000
+%DVIPSSource:  TeX output 2012.12.26:2240
+%%BeginProcSet: tex.pro 0 0
+%!
+/TeXDict 300 dict def TeXDict begin/N{def}def/B{bind def}N/S{exch}N/X{S
+N}B/A{dup}B/TR{translate}N/isls false N/vsize 11 72 mul N/hsize 8.5 72
+mul N/landplus90{false}def/@rigin{isls{[0 landplus90{1 -1}{-1 1}ifelse 0
+0 0]concat}if 72 Resolution div 72 VResolution div neg scale isls{
+landplus90{VResolution 72 div vsize mul 0 exch}{Resolution -72 div hsize
+mul 0}ifelse TR}if Resolution VResolution vsize -72 div 1 add mul TR[
+matrix currentmatrix{A A round sub abs 0.00001 lt{round}if}forall round
+exch round exch]setmatrix}N/@landscape{/isls true N}B/@manualfeed{
+statusdict/manualfeed true put}B/@copies{/#copies X}B/FMat[1 0 0 -1 0 0]
+N/FBB[0 0 0 0]N/nn 0 N/IEn 0 N/ctr 0 N/df-tail{/nn 8 dict N nn begin
+/FontType 3 N/FontMatrix fntrx N/FontBBox FBB N string/base X array
+/BitMaps X/BuildChar{CharBuilder}N/Encoding IEn N end A{/foo setfont}2
+array copy cvx N load 0 nn put/ctr 0 N[}B/sf 0 N/df{/sf 1 N/fntrx FMat N
+df-tail}B/dfs{div/sf X/fntrx[sf 0 0 sf neg 0 0]N df-tail}B/E{pop nn A
+definefont setfont}B/Cw{Cd A length 5 sub get}B/Ch{Cd A length 4 sub get
+}B/Cx{128 Cd A length 3 sub get sub}B/Cy{Cd A length 2 sub get 127 sub}
+B/Cdx{Cd A length 1 sub get}B/Ci{Cd A type/stringtype ne{ctr get/ctr ctr
+1 add N}if}B/CharBuilder{save 3 1 roll S A/base get 2 index get S
+/BitMaps get S get/Cd X pop/ctr 0 N Cdx 0 Cx Cy Ch sub Cx Cw add Cy
+setcachedevice Cw Ch true[1 0 0 -1 -.1 Cx sub Cy .1 sub]{Ci}imagemask
+restore}B/D{/cc X A type/stringtype ne{]}if nn/base get cc ctr put nn
+/BitMaps get S ctr S sf 1 ne{A A length 1 sub A 2 index S get sf div put
+}if put/ctr ctr 1 add N}B/I{cc 1 add D}B/bop{userdict/bop-hook known{
+bop-hook}if/SI save N @rigin 0 0 moveto/V matrix currentmatrix A 1 get A
+mul exch 0 get A mul add .99 lt{/QV}{/RV}ifelse load def pop pop}N/eop{
+SI restore userdict/eop-hook known{eop-hook}if showpage}N/@start{
+userdict/start-hook known{start-hook}if pop/VResolution X/Resolution X
+1000 div/DVImag X/IEn 256 array N 2 string 0 1 255{IEn S A 360 add 36 4
+index cvrs cvn put}for pop 65781.76 div/vsize X 65781.76 div/hsize X}N
+/p{show}N/RMat[1 0 0 -1 0 0]N/BDot 260 string N/Rx 0 N/Ry 0 N/V{}B/RV/v{
+/Ry X/Rx X V}B statusdict begin/product where{pop false[(Display)(NeXT)
+(LaserWriter 16/600)]{A length product length le{A length product exch 0
+exch getinterval eq{pop true exit}if}{pop}ifelse}forall}{false}ifelse
+end{{gsave TR -.1 .1 TR 1 1 scale Rx Ry false RMat{BDot}imagemask
+grestore}}{{gsave TR -.1 .1 TR Rx Ry scale 1 1 false RMat{BDot}
+imagemask grestore}}ifelse B/QV{gsave newpath transform round exch round
+exch itransform moveto Rx 0 rlineto 0 Ry neg rlineto Rx neg 0 rlineto
+fill grestore}B/a{moveto}B/delta 0 N/tail{A/delta X 0 rmoveto}B/M{S p
+delta add tail}B/b{S p tail}B/c{-4 M}B/d{-3 M}B/e{-2 M}B/f{-1 M}B/g{0 M}
+B/h{1 M}B/i{2 M}B/j{3 M}B/k{4 M}B/w{0 rmoveto}B/l{p -4 w}B/m{p -3 w}B/n{
+p -2 w}B/o{p -1 w}B/q{p 1 w}B/r{p 2 w}B/s{p 3 w}B/t{p 4 w}B/x{0 S
+rmoveto}B/y{3 2 roll p a}B/bos{/SS save N}B/eos{SS restore}B end
+
+%%EndProcSet
+%%BeginProcSet: alt-rule.pro 0 0
+%!
+% Patch by TVZ
+% Makes dvips files draw rules with stroke rather than fill.
+% Makes narrow rules more predictable at low resolutions
+% after distilling to PDF.
+% May have unknown consequences for very thick rules.
+% Tested only with dvips 5.85(k).
+TeXDict begin
+/QV {
+  gsave newpath /ruleY X /ruleX X
+  Rx Ry gt
+  { ruleX ruleY Ry 2 div sub moveto Rx 0 rlineto Ry }
+  { ruleX Rx 2 div add ruleY moveto 0 Ry neg rlineto Rx }
+  ifelse
+  setlinewidth 0 setlinecap stroke grestore
+} bind def
+end
+
+%%EndProcSet
+%%BeginProcSet: special.pro 0 0
+%!
+TeXDict begin/SDict 200 dict N SDict begin/@SpecialDefaults{/hs 612 N
+/vs 792 N/ho 0 N/vo 0 N/hsc 1 N/vsc 1 N/ang 0 N/CLIP 0 N/rwiSeen false N
+/rhiSeen false N/letter{}N/note{}N/a4{}N/legal{}N}B/@scaleunit 100 N
+/@hscale{@scaleunit div/hsc X}B/@vscale{@scaleunit div/vsc X}B/@hsize{
+/hs X/CLIP 1 N}B/@vsize{/vs X/CLIP 1 N}B/@clip{/CLIP 2 N}B/@hoffset{/ho
+X}B/@voffset{/vo X}B/@angle{/ang X}B/@rwi{10 div/rwi X/rwiSeen true N}B
+/@rhi{10 div/rhi X/rhiSeen true N}B/@llx{/llx X}B/@lly{/lly X}B/@urx{
+/urx X}B/@ury{/ury X}B/magscale true def end/@MacSetUp{userdict/md known
+{userdict/md get type/dicttype eq{userdict begin md length 10 add md
+maxlength ge{/md md dup length 20 add dict copy def}if end md begin
+/letter{}N/note{}N/legal{}N/od{txpose 1 0 mtx defaultmatrix dtransform S
+atan/pa X newpath clippath mark{transform{itransform moveto}}{transform{
+itransform lineto}}{6 -2 roll transform 6 -2 roll transform 6 -2 roll
+transform{itransform 6 2 roll itransform 6 2 roll itransform 6 2 roll
+curveto}}{{closepath}}pathforall newpath counttomark array astore/gc xdf
+pop ct 39 0 put 10 fz 0 fs 2 F/|______Courier fnt invertflag{PaintBlack}
+if}N/txpose{pxs pys scale ppr aload pop por{noflips{pop S neg S TR pop 1
+-1 scale}if xflip yflip and{pop S neg S TR 180 rotate 1 -1 scale ppr 3
+get ppr 1 get neg sub neg ppr 2 get ppr 0 get neg sub neg TR}if xflip
+yflip not and{pop S neg S TR pop 180 rotate ppr 3 get ppr 1 get neg sub
+neg 0 TR}if yflip xflip not and{ppr 1 get neg ppr 0 get neg TR}if}{
+noflips{TR pop pop 270 rotate 1 -1 scale}if xflip yflip and{TR pop pop
+90 rotate 1 -1 scale ppr 3 get ppr 1 get neg sub neg ppr 2 get ppr 0 get
+neg sub neg TR}if xflip yflip not and{TR pop pop 90 rotate ppr 3 get ppr
+1 get neg sub neg 0 TR}if yflip xflip not and{TR pop pop 270 rotate ppr
+2 get ppr 0 get neg sub neg 0 S TR}if}ifelse scaleby96{ppr aload pop 4
+-1 roll add 2 div 3 1 roll add 2 div 2 copy TR .96 dup scale neg S neg S
+TR}if}N/cp{pop pop showpage pm restore}N end}if}if}N/normalscale{
+Resolution 72 div VResolution 72 div neg scale magscale{DVImag dup scale
+}if 0 setgray}N/psfts{S 65781.76 div N}N/startTexFig{/psf$SavedState
+save N userdict maxlength dict begin/magscale true def normalscale
+currentpoint TR/psf$ury psfts/psf$urx psfts/psf$lly psfts/psf$llx psfts
+/psf$y psfts/psf$x psfts currentpoint/psf$cy X/psf$cx X/psf$sx psf$x
+psf$urx psf$llx sub div N/psf$sy psf$y psf$ury psf$lly sub div N psf$sx
+psf$sy scale psf$cx psf$sx div psf$llx sub psf$cy psf$sy div psf$ury sub
+TR/showpage{}N/erasepage{}N/setpagedevice{pop}N/copypage{}N/p 3 def
+@MacSetUp}N/doclip{psf$llx psf$lly psf$urx psf$ury currentpoint 6 2 roll
+newpath 4 copy 4 2 roll moveto 6 -1 roll S lineto S lineto S lineto
+closepath clip newpath moveto}N/endTexFig{end psf$SavedState restore}N
+/@beginspecial{SDict begin/SpecialSave save N gsave normalscale
+currentpoint TR @SpecialDefaults count/ocount X/dcount countdictstack N}
+N/@setspecial{CLIP 1 eq{newpath 0 0 moveto hs 0 rlineto 0 vs rlineto hs
+neg 0 rlineto closepath clip}if ho vo TR hsc vsc scale ang rotate
+rwiSeen{rwi urx llx sub div rhiSeen{rhi ury lly sub div}{dup}ifelse
+scale llx neg lly neg TR}{rhiSeen{rhi ury lly sub div dup scale llx neg
+lly neg TR}if}ifelse CLIP 2 eq{newpath llx lly moveto urx lly lineto urx
+ury lineto llx ury lineto closepath clip}if/showpage{}N/erasepage{}N
+/setpagedevice{pop}N/copypage{}N newpath}N/@endspecial{count ocount sub{
+pop}repeat countdictstack dcount sub{end}repeat grestore SpecialSave
+restore end}N/@defspecial{SDict begin}N/@fedspecial{end}B/li{lineto}B
+/rl{rlineto}B/rc{rcurveto}B/np{/SaveX currentpoint/SaveY X N 1
+setlinecap newpath}N/st{stroke SaveX SaveY moveto}N/fil{fill SaveX SaveY
+moveto}N/ellipse{/endangle X/startangle X/yrad X/xrad X/savematrix
+matrix currentmatrix N TR xrad yrad scale 0 0 1 startangle endangle arc
+savematrix setmatrix}N end
+
+%%EndProcSet
+%%BeginProcSet: color.pro 0 0
+%!
+TeXDict begin/setcmykcolor where{pop}{/setcmykcolor{dup 10 eq{pop
+setrgbcolor}{1 sub 4 1 roll 3{3 index add neg dup 0 lt{pop 0}if 3 1 roll
+}repeat setrgbcolor pop}ifelse}B}ifelse/TeXcolorcmyk{setcmykcolor}def
+/TeXcolorrgb{setrgbcolor}def/TeXcolorgrey{setgray}def/TeXcolorgray{
+setgray}def/TeXcolorhsb{sethsbcolor}def/currentcmykcolor where{pop}{
+/currentcmykcolor{currentrgbcolor 10}B}ifelse/DC{exch dup userdict exch
+known{pop pop}{X}ifelse}B/GreenYellow{0.15 0 0.69 0 setcmykcolor}DC
+/Yellow{0 0 1 0 setcmykcolor}DC/Goldenrod{0 0.10 0.84 0 setcmykcolor}DC
+/Dandelion{0 0.29 0.84 0 setcmykcolor}DC/Apricot{0 0.32 0.52 0
+setcmykcolor}DC/Peach{0 0.50 0.70 0 setcmykcolor}DC/Melon{0 0.46 0.50 0
+setcmykcolor}DC/YellowOrange{0 0.42 1 0 setcmykcolor}DC/Orange{0 0.61
+0.87 0 setcmykcolor}DC/BurntOrange{0 0.51 1 0 setcmykcolor}DC
+/Bittersweet{0 0.75 1 0.24 setcmykcolor}DC/RedOrange{0 0.77 0.87 0
+setcmykcolor}DC/Mahogany{0 0.85 0.87 0.35 setcmykcolor}DC/Maroon{0 0.87
+0.68 0.32 setcmykcolor}DC/BrickRed{0 0.89 0.94 0.28 setcmykcolor}DC/Red{
+0 1 1 0 setcmykcolor}DC/OrangeRed{0 1 0.50 0 setcmykcolor}DC/RubineRed{
+0 1 0.13 0 setcmykcolor}DC/WildStrawberry{0 0.96 0.39 0 setcmykcolor}DC
+/Salmon{0 0.53 0.38 0 setcmykcolor}DC/CarnationPink{0 0.63 0 0
+setcmykcolor}DC/Magenta{0 1 0 0 setcmykcolor}DC/VioletRed{0 0.81 0 0
+setcmykcolor}DC/Rhodamine{0 0.82 0 0 setcmykcolor}DC/Mulberry{0.34 0.90
+0 0.02 setcmykcolor}DC/RedViolet{0.07 0.90 0 0.34 setcmykcolor}DC
+/Fuchsia{0.47 0.91 0 0.08 setcmykcolor}DC/Lavender{0 0.48 0 0
+setcmykcolor}DC/Thistle{0.12 0.59 0 0 setcmykcolor}DC/Orchid{0.32 0.64 0
+0 setcmykcolor}DC/DarkOrchid{0.40 0.80 0.20 0 setcmykcolor}DC/Purple{
+0.45 0.86 0 0 setcmykcolor}DC/Plum{0.50 1 0 0 setcmykcolor}DC/Violet{
+0.79 0.88 0 0 setcmykcolor}DC/RoyalPurple{0.75 0.90 0 0 setcmykcolor}DC
+/BlueViolet{0.86 0.91 0 0.04 setcmykcolor}DC/Periwinkle{0.57 0.55 0 0
+setcmykcolor}DC/CadetBlue{0.62 0.57 0.23 0 setcmykcolor}DC
+/CornflowerBlue{0.65 0.13 0 0 setcmykcolor}DC/MidnightBlue{0.98 0.13 0
+0.43 setcmykcolor}DC/NavyBlue{0.94 0.54 0 0 setcmykcolor}DC/RoyalBlue{1
+0.50 0 0 setcmykcolor}DC/Blue{1 1 0 0 setcmykcolor}DC/Cerulean{0.94 0.11
+0 0 setcmykcolor}DC/Cyan{1 0 0 0 setcmykcolor}DC/ProcessBlue{0.96 0 0 0
+setcmykcolor}DC/SkyBlue{0.62 0 0.12 0 setcmykcolor}DC/Turquoise{0.85 0
+0.20 0 setcmykcolor}DC/TealBlue{0.86 0 0.34 0.02 setcmykcolor}DC
+/Aquamarine{0.82 0 0.30 0 setcmykcolor}DC/BlueGreen{0.85 0 0.33 0
+setcmykcolor}DC/Emerald{1 0 0.50 0 setcmykcolor}DC/JungleGreen{0.99 0
+0.52 0 setcmykcolor}DC/SeaGreen{0.69 0 0.50 0 setcmykcolor}DC/Green{1 0
+1 0 setcmykcolor}DC/ForestGreen{0.91 0 0.88 0.12 setcmykcolor}DC
+/PineGreen{0.92 0 0.59 0.25 setcmykcolor}DC/LimeGreen{0.50 0 1 0
+setcmykcolor}DC/YellowGreen{0.44 0 0.74 0 setcmykcolor}DC/SpringGreen{
+0.26 0 0.76 0 setcmykcolor}DC/OliveGreen{0.64 0 0.95 0.40 setcmykcolor}
+DC/RawSienna{0 0.72 1 0.45 setcmykcolor}DC/Sepia{0 0.83 1 0.70
+setcmykcolor}DC/Brown{0 0.81 1 0.60 setcmykcolor}DC/Tan{0.14 0.42 0.56 0
+setcmykcolor}DC/Gray{0 0 0 0.50 setcmykcolor}DC/Black{0 0 0 1
+setcmykcolor}DC/White{0 0 0 0 setcmykcolor}DC end
+
+%%EndProcSet
+TeXDict begin 40258437 52099154 1000 8000 8000 (temp.dvi)
+@start end
+%%EndProlog
+%%BeginSetup
+%%Feature: *Resolution 8000dpi
+TeXDict begin
+ end
+%%EndSetup
+TeXDict begin 1 0 bop Black Black 5535 20757 a @beginspecial
+0 @llx 0 @lly 318 @urx 135 @ury 3180 @rwi @setspecial
+%%BeginDocument: ch-stacks-files/figures/queue-callcenter.pstex
+%!PS-Adobe-2.0 EPSF-2.0
+%%Title: queue-callcenter.fig
+%%Creator: fig2dev Version 3.2 Patchlevel 5
+%%CreationDate: Tue Sep 11 13:07:39 2012
+%%For: goldwasser@CAS-MCS-W89267U266E (Michael Goldwasser)
+%%BoundingBox: 0 0 318 135
+%Magnification: 0.9000
+%%EndComments
+/$F2psDict 200 dict def
+$F2psDict begin
+$F2psDict /mtrx matrix put
+/col-1 {0 setgray} bind def
+/col0 {0.000 0.000 0.000 srgb} bind def
+/col1 {0.000 0.000 1.000 srgb} bind def
+/col2 {0.000 1.000 0.000 srgb} bind def
+/col3 {0.000 1.000 1.000 srgb} bind def
+/col4 {1.000 0.000 0.000 srgb} bind def
+/col5 {1.000 0.000 1.000 srgb} bind def
+/col6 {1.000 1.000 0.000 srgb} bind def
+/col7 {1.000 1.000 1.000 srgb} bind def
+/col8 {0.000 0.000 0.560 srgb} bind def
+/col9 {0.000 0.000 0.690 srgb} bind def
+/col10 {0.000 0.000 0.820 srgb} bind def
+/col11 {0.530 0.810 1.000 srgb} bind def
+/col12 {0.000 0.560 0.000 srgb} bind def
+/col13 {0.000 0.690 0.000 srgb} bind def
+/col14 {0.000 0.820 0.000 srgb} bind def
+/col15 {0.000 0.560 0.560 srgb} bind def
+/col16 {0.000 0.690 0.690 srgb} bind def
+/col17 {0.000 0.820 0.820 srgb} bind def
+/col18 {0.560 0.000 0.000 srgb} bind def
+/col19 {0.690 0.000 0.000 srgb} bind def
+/col20 {0.820 0.000 0.000 srgb} bind def
+/col21 {0.560 0.000 0.560 srgb} bind def
+/col22 {0.690 0.000 0.690 srgb} bind def
+/col23 {0.820 0.000 0.820 srgb} bind def
+/col24 {0.500 0.190 0.000 srgb} bind def
+/col25 {0.630 0.250 0.000 srgb} bind def
+/col26 {0.750 0.380 0.000 srgb} bind def
+/col27 {1.000 0.500 0.500 srgb} bind def
+/col28 {1.000 0.630 0.630 srgb} bind def
+/col29 {1.000 0.750 0.750 srgb} bind def
+/col30 {1.000 0.880 0.880 srgb} bind def
+/col31 {1.000 0.840 0.000 srgb} bind def
+/col32 {0.702 0.702 1.000 srgb} bind def
+/col33 {0.498 0.498 0.498 srgb} bind def
+/col34 {0.000 0.000 1.000 srgb} bind def
+
+end
+save
+newpath 0 135 moveto 0 0 lineto 318 0 lineto 318 135 lineto closepath clip newpath
+-129.4 269.4 translate
+1 -1 scale
+
+/cp {closepath} bind def
+/ef {eofill} bind def
+/gr {grestore} bind def
+/gs {gsave} bind def
+/sa {save} bind def
+/rs {restore} bind def
+/l {lineto} bind def
+/m {moveto} bind def
+/rm {rmoveto} bind def
+/n {newpath} bind def
+/s {stroke} bind def
+/sh {show} bind def
+/slc {setlinecap} bind def
+/slj {setlinejoin} bind def
+/slw {setlinewidth} bind def
+/srgb {setrgbcolor} bind def
+/rot {rotate} bind def
+/sc {scale} bind def
+/sd {setdash} bind def
+/ff {findfont} bind def
+/sf {setfont} bind def
+/scf {scalefont} bind def
+/sw {stringwidth} bind def
+/tr {translate} bind def
+/tnt {dup dup currentrgbcolor
+  4 -2 roll dup 1 exch sub 3 -1 roll mul add
+  4 -2 roll dup 1 exch sub 3 -1 roll mul add
+  4 -2 roll dup 1 exch sub 3 -1 roll mul add srgb}
+  bind def
+/shd {dup dup currentrgbcolor 4 -2 roll mul 4 -2 roll mul
+  4 -2 roll mul srgb} bind def
+ /DrawEllipse {
+	/endangle exch def
+	/startangle exch def
+	/yrad exch def
+	/xrad exch def
+	/y exch def
+	/x exch def
+	/savematrix mtrx currentmatrix def
+	x y tr xrad yrad sc 0 0 1 startangle endangle arc
+	closepath
+	savematrix setmatrix
+	} def
+
+/$F2psBegin {$F2psDict begin /$F2psEnteredState save def} def
+/$F2psEnd {$F2psEnteredState restore end} def
+
+$F2psBegin
+10 setmiterlimit
+0 slj 0 slc
+ 0.05400 0.05400 sc
+%
+% Fig objects follow
+%
+% 
+% here starts figure with depth 61
+% Polyline
+0 slj
+0 slc
+15.000 slw
+n 4800 3000 m
+ 4800 3525 l gs col0 s gr 
+% Polyline
+n 3300 3750 m
+ 3300 4275 l gs col0 s gr 
+% Polyline
+n 2850 3750 m
+ 2850 4275 l gs col0 s gr 
+% Polyline
+n 4350 3000 m
+ 4350 3525 l gs col0 s gr 
+% Polyline
+n 2445 3549 m
+ 2445 3699 l gs col0 s gr 
+% Polyline
+n 3504 3024 m
+ 3504 3174 l gs col0 s gr 
+% Polyline
+n 3729 3024 m
+ 3729 3174 l gs col0 s gr 
+% Polyline
+n 3879 2949 m
+ 3879 3099 l gs col0 s gr 
+% Polyline
+n 3166 3249 m
+ 3166 3399 l gs col0 s gr 
+% Polyline
+n 3316 3174 m
+ 3316 3324 l gs col0 s gr 
+% Polyline
+n 3091 3174 m
+ 3091 3324 l gs col0 s gr 
+% Polyline
+n 3654 2949 m
+ 3654 3099 l gs col0 s gr 
+% Polyline
+n 2941 3249 m
+ 2941 3399 l gs col0 s gr 
+% Polyline
+n 2670 3549 m
+ 2670 3699 l gs col0 s gr 
+% Polyline
+n 2820 3474 m
+ 2820 3624 l gs col0 s gr 
+% Polyline
+n 2595 3474 m
+ 2595 3624 l gs col0 s gr 
+% here ends figure;
+% 
+% here starts figure with depth 58
+% Polyline
+1 slj
+0 slc
+15.000 slw
+gs  clippath
+7452 3780 m 7260 3780 l 7260 3870 l 7452 3870 l 7452 3870 l 7302 3825 l 7452 3780 l cp
+eoclip
+n 8025 3825 m
+ 7275 3825 l gs col32 1.00 shd ef gr gs col0 s gr gr
+
+% arrowhead
+0 slj
+n 7452 3780 m 7302 3825 l 7452 3870 l 7452 3780 l  cp gs 0.00 setgray ef gr  col0 s
+% Polyline
+1 slj
+n 2941 3033 m 2941 3249 l 3091 3174 l 3091 2958 l
+ cp gs col32 1.00 shd ef gr gs col0 s gr 
+% Polyline
+n 3504 2808 m 3504 3024 l 3654 2949 l 3654 2733 l
+ cp gs col32 1.00 shd ef gr gs col0 s gr 
+% Polyline
+n 3504 3024 m 3654 2949 l 3879 2949 l 3729 3024 l
+ cp gs col32 1.00 shd ef gr gs col0 s gr 
+% Polyline
+gs  clippath
+4527 3855 m 4335 3855 l 4335 3945 l 4527 3945 l 4527 3945 l 4377 3900 l 4527 3855 l cp
+eoclip
+n 5025 3900 m
+ 4350 3900 l gs col32 1.00 shd ef gr gs col0 s gr gr
+
+% arrowhead
+0 slj
+n 4527 3855 m 4377 3900 l 4527 3945 l 4527 3855 l  cp gs 0.00 setgray ef gr  col0 s
+% Polyline
+1 slj
+gs  clippath
+7382 4063 m 7200 4002 l 7171 4087 l 7354 4149 l 7354 4149 l 7226 4059 l 7382 4063 l cp
+eoclip
+n 7875 4275 m
+ 7200 4050 l gs col32 1.00 shd ef gr gs col0 s gr gr
+
+% arrowhead
+0 slj
+n 7382 4063 m 7226 4059 l 7354 4149 l 7382 4063 l  cp gs 0.00 setgray ef gr  col0 s
+% Polyline
+1 slj
+gs  clippath
+7041 4362 m 6878 4260 l 6830 4337 l 6993 4438 l 6993 4438 l 6890 4321 l 7041 4362 l cp
+eoclip
+n 7467 4682 m
+ 6867 4307 l gs col32 1.00 shd ef gr gs col0 s gr gr
+
+% arrowhead
+0 slj
+n 7041 4362 m 6890 4321 l 6993 4438 l 7041 4362 l  cp gs 0.00 setgray ef gr  col0 s
+% Polyline
+1 slj
+n 2850 3750 m 2850 3975 l 3300 3975 l 3300 3750 l
+ cp gs col32 1.00 shd ef gr gs col0 s gr 
+% Polyline
+n 3300 3750 m 3300 3975 l 4800 3225 l 4800 3000 l
+ cp gs col32 1.00 shd ef gr gs col0 s gr 
+% Polyline
+n 2941 3249 m 3091 3174 l 3316 3174 l 3166 3249 l
+ cp gs col32 1.00 shd ef gr gs col0 s gr 
+% Polyline
+n 2445 3549 m 2595 3474 l 2820 3474 l 2670 3549 l
+ cp gs col32 1.00 shd ef gr gs col0 s gr 
+% Polyline
+n 2445 3333 m 2445 3549 l 2595 3474 l 2595 3258 l
+ cp gs col32 1.00 shd ef gr gs col0 s gr 
+% Polyline
+n 3300 3750 m 4800 3000 l 4350 3000 l 2850 3750 l
+ cp gs col32 1.00 shd ef gr gs col0 s gr 
+% Polyline
+gs  clippath
+7354 3500 m 7171 3562 l 7200 3647 l 7382 3586 l 7382 3586 l 7226 3591 l 7354 3500 l cp
+eoclip
+n 7875 3375 m
+ 7200 3600 l gs col32 1.00 shd ef gr gs col0 s gr gr
+
+% arrowhead
+0 slj
+n 7354 3500 m 7226 3591 l 7382 3586 l 7354 3500 l  cp gs 0.00 setgray ef gr  col0 s
+% Polyline
+1 slj
+gs  clippath
+7022 3194 m 6855 3290 l 6900 3368 l 7067 3272 l 7067 3272 l 6915 3308 l 7022 3194 l cp
+eoclip
+n 7416 3022 m
+ 6891 3322 l gs col32 1.00 shd ef gr gs col0 s gr gr
+
+% arrowhead
+0 slj
+n 7022 3194 m 6915 3308 l 7067 3272 l 7022 3194 l  cp gs 0.00 setgray ef gr  col0 s
+% Polyline
+2 slj
+n 5240 4040 m 5248 4059 l 5258 4078 l 5269 4097 l 5282 4115 l 5296 4133 l
+ 5312 4151 l 5330 4169 l 5349 4186 l 5370 4203 l 5392 4220 l
+ 5416 4237 l 5442 4253 l 5468 4268 l 5496 4283 l 5525 4298 l
+ 5556 4312 l 5587 4325 l 5618 4337 l 5651 4349 l 5684 4360 l
+ 5717 4370 l 5751 4379 l 5785 4387 l 5819 4394 l 5853 4401 l
+ 5887 4407 l 5921 4411 l 5955 4415 l 5988 4418 l 6021 4420 l
+ 6055 4422 l 6088 4423 l 6124 4422 l 6159 4421 l 6195 4419 l
+ 6232 4416 l 6268 4412 l 6305 4407 l 6343 4401 l 6381 4395 l
+ 6418 4387 l 6456 4378 l 6494 4368 l 6532 4357 l 6569 4346 l
+ 6606 4333 l 6642 4320 l 6677 4306 l 6712 4291 l 6745 4276 l
+ 6777 4260 l 6807 4244 l 6837 4227 l 6864 4210 l 6890 4192 l
+ 6914 4174 l 6937 4156 l 6958 4138 l 6977 4120 l 6994 4101 l
+ 7011 4082 l 7025 4063 l 7037 4044 l 7048 4025 l 7058 4006 l
+ 7066 3986 l 7074 3966 l 7080 3946 l 7084 3924 l 7088 3903 l
+ 7090 3881 l 7090 3859 l 7089 3836 l 7087 3813 l 7084 3790 l
+ 7079 3767 l 7072 3744 l 7064 3721 l 7055 3698 l 7045 3676 l
+ 7033 3654 l 7020 3632 l 7006 3611 l 6991 3591 l 6975 3571 l
+ 6957 3551 l 6939 3533 l 6920 3515 l 6900 3498 l 6879 3482 l
+ 6858 3467 l 6835 3452 l 6812 3438 l 6788 3425 l 6762 3412 l
+ 6736 3400 l 6709 3389 l 6680 3378 l 6650 3368 l 6619 3359 l
+ 6587 3350 l 6554 3341 l 6520 3334 l 6484 3327 l 6448 3321 l
+ 6411 3315 l 6373 3311 l 6334 3307 l 6295 3304 l 6256 3302 l
+ 6216 3301 l 6177 3301 l 6137 3301 l 6098 3303 l 6060 3305 l
+ 6022 3308 l 5984 3312 l 5948 3317 l 5912 3323 l 5877 3330 l
+ 5843 3337 l 5810 3345 l 5779 3354 l 5747 3363 l 5717 3374 l
+ 5688 3385 l 5659 3397 l 5631 3410 l 5604 3424 l 5577 3438 l
+ 5551 3454 l 5525 3471 l 5500 3488 l 5475 3506 l 5452 3526 l
+ 5428 3546 l 5406 3567 l 5385 3588 l 5365 3610 l 5345 3633 l
+ 5327 3656 l 5310 3680 l 5295 3704 l 5281 3728 l 5268 3752 l
+ 5257 3776 l 5247 3800 l 5239 3824 l 5232 3848 l 5227 3871 l
+ 5223 3894 l 5221 3916 l 5220 3938 l 5221 3959 l 5224 3980 l
+ 5227 4001 l 5233 4020 l
+ cp gs col32 1.00 shd ef gr gs col0 s gr 
+% here ends figure;
+% 
+% here starts figure with depth 50
+% Polyline
+0 slj
+0 slc
+15.000 slw
+n 3577 2632 m
+ 3577 2958 l gs col0 s gr 
+% Polyline
+2 slj
+n 8254 3995 m 8248 3980 l 8240 3969 l 8232 3963 l 8225 3961 l 8217 3962 l
+ 8210 3962 l 8202 3959 l 8193 3951 l 8183 3937 l 8174 3915 l
+ 8168 3895 l 8165 3876 l 8163 3861 l 8161 3850 l 8161 3841 l
+ 8161 3834 l 8161 3827 l 8161 3818 l 8163 3807 l 8165 3792 l
+ 8168 3773 l 8174 3753 l 8183 3731 l 8193 3717 l 8202 3709 l
+ 8210 3706 l 8217 3706 l 8225 3707 l 8232 3705 l 8240 3699 l
+ 8248 3688 l 8254 3673 l 8256 3662 l 8256 3651 l 8255 3642 l
+ 8254 3635 l 8253 3629 l 8252 3623 l 8251 3618 l 8249 3614 l
+ 8247 3609 l 8244 3605 l 8239 3600 l 8233 3596 l 8225 3592 l
+ 8214 3591 l 8205 3592 l 8195 3594 l 8187 3596 l 8178 3597 l
+ 8171 3598 l 8165 3599 l 8160 3599 l 8155 3599 l 8150 3598 l
+ 8146 3598 l 8141 3599 l 8135 3602 l 8130 3606 l 8123 3612 l
+ 8116 3622 l 8108 3635 l 8100 3652 l 8093 3673 l 8086 3699 l
+ 8081 3726 l 8078 3751 l 8076 3773 l 8074 3791 l 8073 3807 l
+ 8073 3821 l 8073 3834 l 8073 3847 l 8073 3861 l 8074 3877 l
+ 8076 3895 l 8078 3917 l 8081 3942 l 8086 3969 l 8093 3995 l
+ 8100 4016 l 8108 4033 l 8116 4046 l 8123 4056 l 8130 4062 l
+ 8135 4066 l 8141 4069 l 8146 4070 l 8150 4070 l 8155 4069 l
+ 8160 4069 l 8165 4069 l 8171 4070 l 8178 4071 l 8187 4072 l
+ 8195 4074 l 8205 4076 l 8214 4077 l 8225 4076 l 8233 4072 l
+ 8239 4068 l 8244 4063 l 8247 4059 l 8249 4054 l 8251 4049 l
+ 8252 4045 l 8253 4039 l 8254 4033 l 8255 4026 l 8256 4017 l
+ 8256 4006 l
+ cp gs col32 1.00 shd ef gr gs col0 s gr 
+% Polyline
+n 8120 4617 m 8114 4602 l 8106 4591 l 8098 4585 l 8091 4583 l 8083 4584 l
+ 8076 4584 l 8068 4581 l 8059 4573 l 8049 4559 l 8040 4537 l
+ 8034 4517 l 8031 4498 l 8029 4483 l 8027 4472 l 8027 4463 l
+ 8027 4456 l 8027 4449 l 8027 4440 l 8029 4429 l 8031 4414 l
+ 8034 4395 l 8040 4375 l 8049 4353 l 8059 4339 l 8068 4331 l
+ 8076 4328 l 8083 4328 l 8091 4329 l 8098 4327 l 8106 4321 l
+ 8114 4310 l 8120 4295 l 8122 4284 l 8122 4273 l 8121 4264 l
+ 8120 4257 l 8119 4251 l 8118 4245 l 8117 4240 l 8115 4236 l
+ 8113 4231 l 8110 4227 l 8105 4222 l 8099 4218 l 8091 4214 l
+ 8080 4213 l 8071 4214 l 8061 4216 l 8053 4218 l 8044 4219 l
+ 8037 4220 l 8031 4221 l 8026 4221 l 8021 4221 l 8016 4220 l
+ 8012 4220 l 8007 4221 l 8001 4224 l 7996 4228 l 7989 4234 l
+ 7982 4244 l 7974 4257 l 7966 4274 l 7959 4295 l 7952 4321 l
+ 7947 4348 l 7944 4373 l 7942 4395 l 7940 4413 l 7939 4429 l
+ 7939 4443 l 7939 4456 l 7939 4469 l 7939 4483 l 7940 4499 l
+ 7942 4517 l 7944 4539 l 7947 4564 l 7952 4591 l 7959 4617 l
+ 7966 4638 l 7974 4655 l 7982 4668 l 7989 4678 l 7996 4684 l
+ 8001 4688 l 8007 4691 l 8012 4692 l 8016 4692 l 8021 4691 l
+ 8026 4691 l 8031 4691 l 8037 4692 l 8044 4693 l 8053 4694 l
+ 8061 4696 l 8071 4698 l 8080 4699 l 8091 4698 l 8099 4694 l
+ 8105 4690 l 8110 4685 l 8113 4681 l 8115 4676 l 8117 4671 l
+ 8118 4667 l 8119 4661 l 8120 4655 l 8121 4648 l 8122 4639 l
+ 8122 4628 l
+ cp gs col32 1.00 shd ef gr gs col0 s gr 
+% Polyline
+n 7660 3024 m 7654 3009 l 7646 2998 l 7638 2992 l 7631 2990 l 7623 2991 l
+ 7616 2991 l 7608 2988 l 7599 2980 l 7589 2966 l 7580 2944 l
+ 7574 2924 l 7571 2905 l 7569 2890 l 7567 2879 l 7567 2870 l
+ 7567 2863 l 7567 2856 l 7567 2847 l 7569 2836 l 7571 2821 l
+ 7574 2802 l 7580 2782 l 7589 2760 l 7599 2746 l 7608 2738 l
+ 7616 2735 l 7623 2735 l 7631 2736 l 7638 2734 l 7646 2728 l
+ 7654 2717 l 7660 2702 l 7662 2691 l 7662 2680 l 7661 2671 l
+ 7660 2664 l 7659 2658 l 7658 2652 l 7657 2647 l 7655 2643 l
+ 7653 2638 l 7650 2634 l 7645 2629 l 7639 2625 l 7631 2621 l
+ 7620 2620 l 7611 2621 l 7601 2623 l 7593 2625 l 7584 2626 l
+ 7577 2627 l 7571 2628 l 7566 2628 l 7561 2628 l 7556 2627 l
+ 7552 2627 l 7547 2628 l 7541 2631 l 7536 2635 l 7529 2641 l
+ 7522 2651 l 7514 2664 l 7506 2681 l 7499 2702 l 7492 2728 l
+ 7487 2755 l 7484 2780 l 7482 2802 l 7480 2820 l 7479 2836 l
+ 7479 2850 l 7479 2863 l 7479 2876 l 7479 2890 l 7480 2906 l
+ 7482 2924 l 7484 2946 l 7487 2971 l 7492 2998 l 7499 3024 l
+ 7506 3045 l 7514 3062 l 7522 3075 l 7529 3085 l 7536 3091 l
+ 7541 3095 l 7547 3098 l 7552 3099 l 7556 3099 l 7561 3098 l
+ 7566 3098 l 7571 3098 l 7577 3099 l 7584 3100 l 7593 3101 l
+ 7601 3103 l 7611 3105 l 7620 3106 l 7631 3105 l 7639 3101 l
+ 7645 3097 l 7650 3092 l 7653 3088 l 7655 3083 l 7657 3078 l
+ 7658 3074 l 7659 3068 l 7660 3062 l 7661 3055 l 7662 3046 l
+ 7662 3035 l
+ cp gs col32 1.00 shd ef gr gs col0 s gr 
+% Polyline
+n 7688 4885 m 7682 4870 l 7674 4859 l 7666 4853 l 7659 4851 l 7651 4852 l
+ 7644 4852 l 7636 4849 l 7627 4841 l 7617 4827 l 7608 4805 l
+ 7602 4785 l 7599 4766 l 7597 4751 l 7595 4740 l 7595 4731 l
+ 7595 4724 l 7595 4717 l 7595 4708 l 7597 4697 l 7599 4682 l
+ 7602 4663 l 7608 4643 l 7617 4621 l 7627 4607 l 7636 4599 l
+ 7644 4596 l 7651 4596 l 7659 4597 l 7666 4595 l 7674 4589 l
+ 7682 4578 l 7688 4563 l 7690 4552 l 7690 4541 l 7689 4532 l
+ 7688 4525 l 7687 4519 l 7686 4513 l 7685 4508 l 7683 4504 l
+ 7681 4499 l 7678 4495 l 7673 4490 l 7667 4486 l 7659 4482 l
+ 7648 4481 l 7639 4482 l 7629 4484 l 7621 4486 l 7612 4487 l
+ 7605 4488 l 7599 4489 l 7594 4489 l 7589 4489 l 7584 4488 l
+ 7580 4488 l 7575 4489 l 7569 4492 l 7564 4496 l 7557 4502 l
+ 7550 4512 l 7542 4525 l 7534 4542 l 7527 4563 l 7520 4589 l
+ 7515 4616 l 7512 4641 l 7510 4663 l 7508 4681 l 7507 4697 l
+ 7507 4711 l 7507 4724 l 7507 4737 l 7507 4751 l 7508 4767 l
+ 7510 4785 l 7512 4807 l 7515 4832 l 7520 4859 l 7527 4885 l
+ 7534 4906 l 7542 4923 l 7550 4936 l 7557 4946 l 7564 4952 l
+ 7569 4956 l 7575 4959 l 7580 4960 l 7584 4960 l 7589 4959 l
+ 7594 4959 l 7599 4959 l 7605 4960 l 7612 4961 l 7621 4962 l
+ 7629 4964 l 7639 4966 l 7648 4967 l 7659 4966 l 7667 4962 l
+ 7673 4958 l 7678 4953 l 7681 4949 l 7683 4944 l 7685 4939 l
+ 7686 4935 l 7687 4929 l 7688 4923 l 7689 4916 l 7690 4907 l
+ 7690 4896 l
+ cp gs col32 1.00 shd ef gr gs col0 s gr 
+% Polyline
+n 8092 3390 m 8086 3375 l 8078 3364 l 8070 3358 l 8063 3356 l 8055 3357 l
+ 8048 3357 l 8040 3354 l 8031 3346 l 8021 3332 l 8012 3310 l
+ 8006 3290 l 8003 3271 l 8001 3256 l 7999 3245 l 7999 3236 l
+ 7999 3229 l 7999 3222 l 7999 3213 l 8001 3202 l 8003 3187 l
+ 8006 3168 l 8012 3148 l 8021 3126 l 8031 3112 l 8040 3104 l
+ 8048 3101 l 8055 3101 l 8063 3102 l 8070 3100 l 8078 3094 l
+ 8086 3083 l 8092 3068 l 8094 3057 l 8094 3046 l 8093 3037 l
+ 8092 3030 l 8091 3024 l 8090 3018 l 8089 3013 l 8087 3009 l
+ 8085 3004 l 8082 3000 l 8077 2995 l 8071 2991 l 8063 2987 l
+ 8052 2986 l 8043 2987 l 8033 2989 l 8025 2991 l 8016 2992 l
+ 8009 2993 l 8003 2994 l 7998 2994 l 7993 2994 l 7988 2993 l
+ 7984 2993 l 7979 2994 l 7973 2997 l 7968 3001 l 7961 3007 l
+ 7954 3017 l 7946 3030 l 7938 3047 l 7931 3068 l 7924 3094 l
+ 7919 3121 l 7916 3146 l 7914 3168 l 7912 3186 l 7911 3202 l
+ 7911 3216 l 7911 3229 l 7911 3242 l 7911 3256 l 7912 3272 l
+ 7914 3290 l 7916 3312 l 7919 3337 l 7924 3364 l 7931 3390 l
+ 7938 3411 l 7946 3428 l 7954 3441 l 7961 3451 l 7968 3457 l
+ 7973 3461 l 7979 3464 l 7984 3465 l 7988 3465 l 7993 3464 l
+ 7998 3464 l 8003 3464 l 8009 3465 l 8016 3466 l 8025 3467 l
+ 8033 3469 l 8043 3471 l 8052 3472 l 8063 3471 l 8071 3467 l
+ 8077 3463 l 8082 3458 l 8085 3454 l 8087 3449 l 8089 3444 l
+ 8090 3440 l 8091 3434 l 8092 3428 l 8093 3421 l 8094 3412 l
+ 8094 3401 l
+ cp gs col32 1.00 shd ef gr gs col0 s gr 
+% Polyline
+0 slj
+n 2518 3157 m
+ 2518 3483 l gs col0 s gr 
+% Polyline
+1 slj
+n 2734 3324 m 2518 3350 l
+ 2693 3396 l gs col0 s gr 
+% Polyline
+0 slj
+n 3014 2857 m
+ 3014 3183 l gs col0 s gr 
+% Polyline
+1 slj
+n 3230 3024 m 3014 3050 l
+ 3189 3096 l gs col0 s gr 
+% Polyline
+n 3793 2799 m 3577 2825 l
+ 3752 2871 l gs col0 s gr 
+% Ellipse
+n 3577 2596 91 91 0 360 DrawEllipse gs col32 1.00 shd ef gr gs col0 s gr
+
+% Ellipse
+n 2518 3121 91 91 0 360 DrawEllipse gs col32 1.00 shd ef gr gs col0 s gr
+
+% Ellipse
+n 3014 2821 91 91 0 360 DrawEllipse gs col32 1.00 shd ef gr gs col0 s gr
+
+% Polyline
+0 slj
+n 2543 3166 m 2467 3166 l
+ 2419 3102 l gs col0 s gr 
+% Polyline
+n 3602 2641 m 3526 2641 l
+ 3478 2577 l gs col0 s gr 
+% Polyline
+n 3039 2866 m 2963 2866 l
+ 2915 2802 l gs col0 s gr 
+% here ends figure;
+% 
+% here starts figure with depth 46
+% Polyline
+1 slj
+0 slc
+15.000 slw
+n 3322 3378 m 3270 3386 l 3273 3215 l 3015 3178 l 3227 3235 l 3227 3429 l
+
+ 3280 3435 l gs col0 s gr 
+% Polyline
+n 2826 3678 m 2774 3686 l 2777 3515 l 2519 3478 l 2731 3535 l 2731 3729 l
+
+ 2784 3735 l gs col0 s gr 
+% Polyline
+n 3885 3153 m 3833 3161 l 3836 2990 l 3578 2953 l 3790 3010 l 3790 3204 l
+
+ 3843 3210 l gs col0 s gr 
+% here ends figure;
+% 
+% here starts figure with depth 40
+/Times-Roman ff 183.33 scf sf
+4050 3555 m
+gs 1 -1 sc  26.6 rot (Call Center) dup sw pop 2 div neg 0 rm  col0 sh gr
+% Polyline
+1 slj
+0 slc
+15.000 slw
+n 8035 3350 m
+ 8035 3472 l gs col32 1.00 shd ef gr gs col0 s gr 
+% Polyline
+n 7631 4481 m
+ 7631 4603 l gs col32 1.00 shd ef gr gs col0 s gr 
+% Polyline
+n 7631 4845 m
+ 7631 4967 l gs col32 1.00 shd ef gr gs col0 s gr 
+% Polyline
+n 7603 2620 m
+ 7603 2742 l gs col32 1.00 shd ef gr gs col0 s gr 
+% Polyline
+n 7603 2984 m
+ 7603 3106 l gs col32 1.00 shd ef gr gs col0 s gr 
+% Polyline
+n 8063 4213 m
+ 8063 4335 l gs col32 1.00 shd ef gr gs col0 s gr 
+% Polyline
+n 8063 4577 m
+ 8063 4699 l gs col32 1.00 shd ef gr gs col0 s gr 
+% Polyline
+n 8197 3591 m
+ 8197 3713 l gs col32 1.00 shd ef gr gs col0 s gr 
+% Polyline
+n 8197 3955 m
+ 8197 4077 l gs col32 1.00 shd ef gr gs col0 s gr 
+/Times-Roman ff 183.33 scf sf
+6150 3900 m
+gs 1 -1 sc (Call Queue) dup sw pop 2 div neg 0 rm  col0 sh gr
+% Polyline
+n 8035 2986 m
+ 8035 3108 l gs col32 1.00 shd ef gr gs col0 s gr 
+% here ends figure;
+$F2psEnd
+rs
+showpage
+%%Trailer
+%EOF
+
+%%EndDocument
+ @endspecial Black Black eop end
+%%Trailer
+
+userdict /end-hook known{end-hook}if
+%%EOF
