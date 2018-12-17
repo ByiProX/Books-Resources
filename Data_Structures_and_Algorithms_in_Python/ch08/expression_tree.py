@@ -19,7 +19,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from linked_binary_tree import LinkedBinaryTree
+from ch08.linked_binary_tree import LinkedBinaryTree
 
 
 class ExpressionTree(LinkedBinaryTree):
@@ -35,7 +35,7 @@ class ExpressionTree(LinkedBinaryTree):
         and left and right should be existing ExpressionTree instances
         that become the operands for the binary operator.
         """
-        super(self).__init__()  # LinkedBinaryTree initialization
+        super().__init__()  # LinkedBinaryTree initialization
         if not isinstance(token, str):
             raise TypeError('Token must be a string')
         self._add_root(token)  # use inherited, nonpublic method
