@@ -74,3 +74,11 @@ class _DoublyLinkedBase:
         element = node._element  # record deleted element
         node._prev = node._next = node._element = None  # deprecate node
         return element  # return deleted element
+
+
+if __name__ == '__main__':
+    dlink = _DoublyLinkedBase()
+    print(len(dlink))
+    print(dlink.is_empty())
+
+    print(dlink._size)
